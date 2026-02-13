@@ -14,9 +14,9 @@ export default function Navbar() {
     <>
       <nav
         className="border-b bg-white dark:bg-gray-950 
-                 border-gray-200 dark:border-gray-800 
-                 text-gray-900 dark:text-white 
-                   transition-colors relative"
+          border-gray-200 dark:border-gray-800 
+          text-gray-900 dark:text-white 
+          transition-colors relative"
       >
         <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
           <img
@@ -80,14 +80,14 @@ export default function Navbar() {
       {searchOpen && (
         <div
           className="fixed inset-0 
-                        bg-white dark:bg-gray-950
-                        z-50 flex items-start p-4"
+            bg-white dark:bg-gray-950
+            z-50 flex items-start p-4"
         >
           <div
             className="flex items-center w-full border 
-                          border-gray-300 dark:border-gray-700
-                          rounded px-3 py-2
-                          bg-white dark:bg-gray-900"
+              border-gray-300 dark:border-gray-700
+              rounded px-3 py-2
+              bg-white dark:bg-gray-900"
           >
             <FaSearch className="text-gray-500 mr-2" />
             <input
