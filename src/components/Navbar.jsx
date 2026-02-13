@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { FaBars, FaSearch, FaTimes, FaMoon, FaSun } from "react-icons/fa";
 import Drawer from "./Drawer";
 import { ThemeContext } from "../context/ThemeContext";
+import main_logo from "../assets/logo.png";
 
 export default function Navbar() {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -21,8 +22,8 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
           <img
             className="image-fluid h-auto"
-            src="/src/assets/logo.png"
-            alt="U M Logo"
+            src={main_logo}
+            alt="U_M Logo"
             width={75}
           />
 
