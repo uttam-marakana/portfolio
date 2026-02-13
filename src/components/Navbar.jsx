@@ -19,7 +19,12 @@ export default function Navbar() {
                    transition-colors relative"
       >
         <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-          <h1 className="font-bold">Uttam Marakana</h1>
+          <img
+            className="image-fluid h-auto object-contain"
+            src="/src/assets/logo.png"
+            width="10%"
+            alt="U M Logo"
+          />
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-6">
