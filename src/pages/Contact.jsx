@@ -1,34 +1,96 @@
-import { personal } from "../data/personal";
+import { useState } from "react";
+import { db } from "../services/firebase";
+import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    projectType: "",
+    message: "",
+  });
+
+  const [loading, setLoading] = useState(false);
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    try {
+      await addDoc(collection(db, "contacts"), {
+        ...formData,
+        createdAt: serverTimestamp(),
+      });
+
+      alert("Message sent successfully!");
+      setFormData({
+        name: "",
+        email: "",
+        projectType: "",
+        message: "",
+      });
+    } catch (error) {
+      console.error(error);
+      alert("Error sending message");
+    }
+
+    setLoading(false);
+  };
+
   return (
     <section className="py-20">
-      <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10">
-        <div>
-          <h1 className="text-3xl font-semibold mb-4">Contact / Hire Me</h1>
+      <div className="max-w-3xl mx-auto px-4">
+        <h1 className="text-3xl font-semibold mb-8">Contact / Hire Me</h1>
 
-          <p className="text-gray-600 mb-6">
-            Available for Shopify and ReactJS development projects.
-          </p>
-
-          <p>Email: {personal.email}</p>
-          <p>Phone: {personal.phone}</p>
-        </div>
-
-        <form className="space-y-4">
-          <input className="w-full border p-3 rounded" placeholder="Name" />
-          <input className="w-full border p-3 rounded" placeholder="Email" />
+        <form onSubmit={handleSubmit} className="space-y-4">
           <input
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            placeholder="Your Name"
             className="w-full border p-3 rounded"
-            placeholder="Project Type"
+            required
           />
-          <textarea
+
+          <input
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            placeholder="Email"
             className="w-full border p-3 rounded"
+            required
+          />
+
+          <input
+            name="projectType"
+            value={formData.projectType}
+            onChange={handleChange}
+            placeholder="Project Type"
+            className="w-full border p-3 rounded"
+          />
+
+          <textarea
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
             rows="5"
             placeholder="Project Details"
+            className="w-full border p-3 rounded"
+            required
           />
-          <button className="bg-black text-white px-6 py-3 rounded">
-            Send Message
+
+          <button
+            disabled={loading}
+            className="bg-black text-white px-6 py-3 rounded"
+          >
+            {loading ? "Sending..." : "Send Message"}
           </button>
         </form>
       </div>
