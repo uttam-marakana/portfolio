@@ -6,7 +6,7 @@ export default function ProjectCard({ project }) {
       <div className="p-5">
         <h3 className="font-semibold text-lg">{project.title}</h3>
 
-        <p className="text-gray-600 text-sm mt-2">{project.description}</p>
+        <p className="text-white-600 text-sm mt-2">{project.description}</p>
 
         <p className="text-sm mt-3">{project.tech}</p>
 

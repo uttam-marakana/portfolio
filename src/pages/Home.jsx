@@ -11,9 +11,9 @@ export default function Home() {
           <div>
             <h1 className="text-4xl md:text-5xl font-bold">{personal.name}</h1>
 
-            <p className="mt-4 text-lg text-gray-600">{personal.role}</p>
+            <p className="mt-4 text-lg text-white-600">{personal.role}</p>
 
-            <p className="mt-6 text-gray-600 leading-relaxed">
+            <p className="mt-6 text-white-600 leading-relaxed">
               {personal.summary}
             </p>
           </div>
@@ -27,7 +27,7 @@ export default function Home() {
       </section>
 
       {/* FEATURED PROJECTS */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-3xl font-semibold mb-10">Featured Work</h2>
 
