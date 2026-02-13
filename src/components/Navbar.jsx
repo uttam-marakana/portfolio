@@ -19,7 +19,12 @@ export default function Navbar() {
                    transition-colors relative"
       >
         <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-          <h1 className="font-bold">Uttam Marakana</h1>
+          <img
+            className="image-fluid h-auto"
+            src="/src/assets/logo.png"
+            alt="U M Logo"
+            width={75}
+          />
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-6">
@@ -31,9 +36,9 @@ export default function Navbar() {
             {/* Desktop Search */}
             <div
               className="flex items-center border 
-                            border-gray-300 dark:border-gray-700
-                            rounded px-3 py-1
-                            bg-white dark:bg-gray-900"
+                border-gray-300 dark:border-gray-700
+                rounded px-3 py-1
+                bg-white dark:bg-gray-900"
             >
               <FaSearch className="text-gray-500 mr-2" />
               <input
@@ -47,8 +52,8 @@ export default function Navbar() {
             <button
               onClick={toggleTheme}
               className="p-2 rounded-lg 
-                         bg-gray-200 dark:bg-gray-800
-                         hover:scale-105 transition"
+              bg-gray-200 dark:bg-gray-800
+                hover:scale-105 transition"
             >
               {theme === "dark" ? <FaSun /> : <FaMoon />}
             </button>
