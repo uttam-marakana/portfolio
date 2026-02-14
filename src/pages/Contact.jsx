@@ -11,6 +11,7 @@ export default function Contact() {
   });
 
   const [loading, setLoading] = useState(false);
+  const [detectedService, setDetectedService] = useState(null);
 
   const [toast, setToast] = useState({
     show: false,
@@ -18,7 +19,7 @@ export default function Contact() {
     type: "success",
   });
 
-  /* ---------------- FORM INPUT ---------------- */
+  /* ---------------- INPUT HANDLER ---------------- */
 
   const handleChange = (e) => {
     setFormData((prev) => ({
@@ -37,22 +38,52 @@ export default function Contact() {
     }, 3000);
   };
 
+  /* ---------------- SERVICE DETECTION ---------------- */
+
+  const detectService = (text) => {
+    const msg = text.toLowerCase();
+
+    if (msg.includes("shopify")) return "Shopify";
+    if (msg.includes("react")) return "React";
+    if (msg.includes("cro") || msg.includes("conversion")) return "CRO";
+
+    return "General";
+  };
+
   /* ---------------- SUBMIT ---------------- */
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     if (loading) return;
 
     setLoading(true);
 
+    const cleanedData = {
+      name: formData.name.trim(),
+      email: formData.email.toLowerCase().trim(),
+      projectType: formData.projectType.trim(),
+      message: formData.message.trim(),
+    };
+
+    if (!cleanedData.name || !cleanedData.email || !cleanedData.message) {
+      showToast("Please fill all required fields", "error");
+      setLoading(false);
+      return;
+    }
+
+    const service =
+      cleanedData.projectType || detectService(cleanedData.message);
+
     try {
       await addDoc(collection(db, "contacts"), {
-        ...formData,
-        createdAt: serverTimestamp(),
-        source: "portfolio",
+        ...cleanedData,
+        service,
         status: "new",
+        source: "portfolio",
+        createdAt: serverTimestamp(),
       });
+
+      setDetectedService(service);
 
       showToast("Message sent successfully!", "success");
 
@@ -63,7 +94,7 @@ export default function Contact() {
         message: "",
       });
     } catch (error) {
-      console.error(error);
+      console.error("Firestore Error:", error);
       showToast("Error sending message. Try again.", "error");
     } finally {
       setLoading(false);
@@ -90,6 +121,13 @@ export default function Contact() {
             <p>📧 uttammarakana03@gmail.com</p>
             <p>📍 Rajkot, Gujarat, India</p>
           </div>
+
+          {/* SERVICE BADGE AFTER SUBMISSION */}
+          {detectedService && (
+            <div className="mt-6 inline-block bg-indigo-600/20 border border-indigo-500 text-indigo-300 px-4 py-2 rounded-lg text-sm">
+              Project categorized as: <b>{detectedService}</b>
+            </div>
+          )}
         </div>
 
         {/* FORM CARD */}
@@ -103,9 +141,9 @@ export default function Contact() {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="peer w-full bg-gray-950 border border-gray-700 rounded-lg px-4 pt-5 pb-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                className="w-full bg-gray-950 border border-gray-700 rounded-lg px-4 pt-5 pb-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
               />
-              <label className="absolute left-4 top-2 text-xs text-gray-400 peer-focus:text-indigo-400">
+              <label className="absolute left-4 top-2 text-xs text-gray-400">
                 Your Name
               </label>
             </div>
@@ -118,9 +156,9 @@ export default function Contact() {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="peer w-full bg-gray-950 border border-gray-700 rounded-lg px-4 pt-5 pb-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                className="w-full bg-gray-950 border border-gray-700 rounded-lg px-4 pt-5 pb-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
               />
-              <label className="absolute left-4 top-2 text-xs text-gray-400 peer-focus:text-indigo-400">
+              <label className="absolute left-4 top-2 text-xs text-gray-400">
                 Email Address
               </label>
             </div>
@@ -132,9 +170,9 @@ export default function Contact() {
                 name="projectType"
                 value={formData.projectType}
                 onChange={handleChange}
-                className="peer w-full bg-gray-950 border border-gray-700 rounded-lg px-4 pt-5 pb-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                className="w-full bg-gray-950 border border-gray-700 rounded-lg px-4 pt-5 pb-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
               />
-              <label className="absolute left-4 top-2 text-xs text-gray-400 peer-focus:text-indigo-400">
+              <label className="absolute left-4 top-2 text-xs text-gray-400">
                 Project Type (Shopify / React / CRO)
               </label>
             </div>
@@ -147,9 +185,9 @@ export default function Contact() {
                 value={formData.message}
                 onChange={handleChange}
                 required
-                className="peer w-full bg-gray-950 border border-gray-700 rounded-lg px-4 pt-5 pb-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                className="w-full bg-gray-950 border border-gray-700 rounded-lg px-4 pt-5 pb-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
               />
-              <label className="absolute left-4 top-2 text-xs text-gray-400 peer-focus:text-indigo-400">
+              <label className="absolute left-4 top-2 text-xs text-gray-400">
                 Project Details
               </label>
             </div>
@@ -158,7 +196,7 @@ export default function Contact() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-indigo-600 hover:bg-indigo-700 transition duration-300 py-3 rounded-lg font-semibold flex items-center justify-center gap-2 disabled:opacity-60"
+              className="w-full bg-indigo-600 hover:bg-indigo-700 transition py-3 rounded-lg font-semibold flex items-center justify-center gap-2 disabled:opacity-60"
             >
               {loading && (
                 <span className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></span>
@@ -172,7 +210,7 @@ export default function Contact() {
       {/* TOAST */}
       {toast.show && (
         <div
-          className={`fixed bottom-6 right-6 px-6 py-3 rounded-lg shadow-lg text-white transition-all pointer-events-none
+          className={`fixed bottom-6 right-6 px-6 py-3 rounded-lg shadow-lg text-white
           ${toast.type === "success" ? "bg-green-600" : "bg-red-600"}`}
         >
           {toast.message}

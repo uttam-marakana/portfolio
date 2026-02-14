@@ -1,45 +1,62 @@
-import { lazy } from "react";
-
-const Multi_Notes_App = lazy(() => import("../assets/multi-note-app.png"));
-const P2Care_Website = lazy(() => import("../assets/p2care.png"));
-const Alpine_Selection_Shopify = lazy(
-  () => import("../assets/alpine-selection.png"));
-const Catalan_Gourmet_Shopify = lazy(
-  () => import("../assets/catalan-gourmet.png"));
+import multiNotes from "../assets/images/multi-note-app.png";
+import p2care from "../assets/images/p2care.png";
+import alpine from "../assets/images/alpine-selection.png";
+import catalan from "../assets/images/catalan-gourmet.png";
 
 export const projects = [
   {
+    id: "multi-notes",
+    tech: "React",
     title: "Multi Notes App",
+    overview:
+      "Multi-board note management system with Firebase authentication.",
     description:
-      "Multi-board note management system with Firebase authentication and responsive UI.",
-    tech: "ReactJS, Firebase, Tailwind",
-    image: { Multi_Notes_App },
+      "A productivity-focused notes system with authentication and real-time storage.",
+    image: multiNotes,
     github: "#",
     preview: "#",
+    readme: `
+## Overview
+Multi-board notes system built with React and Firebase.
+
+## Features
+- Authentication
+- Responsive UI
+- Firebase storage
+`,
   },
+
   {
+    id: "p2care",
+    tech: "React",
     title: "P2Care Website",
-    description:
-      "Healthcare service platform with booking workflow and responsive UI.",
-    tech: "ReactJS, API Integration",
-    image: { P2Care_Website },
+    overview: "Healthcare service platform with booking workflow.",
+    description: "Healthcare platform with structured UI and API integration.",
+    image: p2care,
     github: "#",
     preview: "#",
+    readme: `Project overview and implementation details.`,
   },
+
   {
-    title: "Alpine Selection Shopify Store",
-    description:
-      "Custom Shopify theme development with performance-focused storefront layout.",
-    tech: "Shopify, Liquid",
-    image: { Alpine_Selection_Shopify },
+    id: "alpine-selection",
+    tech: "Shopify",
+    title: "Alpine Selection Store",
+    overview: "Custom Shopify storefront focused on performance.",
+    description: "Shopify theme development with optimized layout.",
+    image: alpine,
     preview: "https://uttam-rootways.myshopify.com",
+    readme: `Shopify theme customization project.`,
   },
+
   {
-    title: "Catalan Gourmet Shopify Store",
-    description:
-      "Shopify theme customization with responsive product and collection pages.",
-    tech: "Shopify, Liquid",
-    image: { Catalan_Gourmet_Shopify },
+    id: "catalan-gourmet",
+    tech: "Shopify",
+    title: "Catalan Gourmet Store",
+    overview: "Responsive Shopify theme customization.",
+    description: "Product and collection optimization for better UX.",
+    image: catalan,
     preview: "https://dev-calatan-gourmet.myshopify.com",
+    readme: `Shopify storefront development.`,
   },
 ];
