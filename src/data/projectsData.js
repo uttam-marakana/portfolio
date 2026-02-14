@@ -98,7 +98,7 @@ Shopify customization project focused on improving UX and storefront consistency
 
     image: "../assets/images/multi-note-app.png",
 
-    github: "https://github.com/uttam-marakana/multi-notes-app",
+    github: "uttam-marakana/multi-notes-app",
     preview: "#",
 
     highlights: [
@@ -139,7 +139,7 @@ A React-based notes management system with Firebase backend.
 
     image: "../assets/images/p2care.png",
 
-    github: "https://github.com/uttam-marakana/p2care",
+    github: "uttam-marakana/p2care",
     preview: "#",
 
     highlights: [
@@ -159,6 +159,47 @@ Healthcare service platform built using React.
 - Booking workflow
 - Responsive design
 - API integrations
+`,
+  },
+
+  {
+    id: "portfolio",
+    tech: "react",
+
+    title: "Portfolio",
+    shortDescription:
+      "Multi-board notes application with Firebase integration.",
+
+    overview:
+      "A scalable notes management system supporting multiple boards, Firebase persistence and responsive UI.",
+
+    image: "../assets/images/portfolio.png",
+
+    github: "uttam-marakana/portfolio",
+    preview: "#",
+
+    highlights: [
+      "Firebase Firestore integration",
+      "Real-time data updates",
+      "Component-driven architecture",
+      "Responsive dashboard UI",
+    ],
+
+    readme: `
+## Portfolio
+
+### Overview
+A React-based portfolio website with Firebase backend.
+
+### Features
+- Multiple boards
+- Real-time updates
+- Clean state management
+
+### Tech Stack
+- ReactJS
+- Firebase
+- Tailwind CSS
 `,
   },
 ];

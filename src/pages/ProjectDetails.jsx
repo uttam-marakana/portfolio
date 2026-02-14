@@ -1,6 +1,10 @@
 import { useParams } from "react-router-dom";
-import { projectsData } from "../data/projectsData";
+import { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+
+import { projectsData } from "../data/projectsData";
+import { fetchReadme } from "../services/githubReadme";
 import PageTransition from "../components/PageTransition";
 
 export default function ProjectDetails() {
@@ -8,9 +12,16 @@ export default function ProjectDetails() {
 
   const project = projectsData.find((p) => p.id === id);
 
-  if (!project) {
+  const [readme, setReadme] = useState("");
+
+  useEffect(() => {
+    if (project?.github) {
+      fetchReadme(project.github).then(setReadme);
+    }
+  }, [project]);
+
+  if (!project)
     return <div className="py-20 text-center">Project not found</div>;
-  }
 
   return (
     <PageTransition>
@@ -24,11 +35,21 @@ export default function ProjectDetails() {
           <img src={project.image} className="rounded-xl mb-10" />
 
           {/* ACTION BAR */}
-          <div className="top-20 bg-gray-950 py-4 flex gap-4 mb-10 z-10">
+          <div
+            className="
+            top-16 z-20
+            backdrop-blur-lg
+            bg-gray-950/70
+            border border-gray-800
+            rounded-xl
+            px-4 py-3
+            flex gap-4 mb-10
+            "
+          >
             {project.github && (
               <a
-                href={project.github}
-                target="_blank"
+                href={`https://github.com/${project.github}`}
+                // target="_blank"
                 className="px-5 py-2 bg-indigo-600 rounded-lg"
               >
                 GitHub
@@ -47,9 +68,9 @@ export default function ProjectDetails() {
           </div>
 
           {/* README */}
-          <div className="prose prose-invert max-w-none">
-            <ReactMarkdown>{project.readme}</ReactMarkdown>
-          </div>
+          <article className="prose prose-invert max-w-none">
+            <ReactMarkdown remarkPlugins={[remarkGfm]}>{readme}</ReactMarkdown>
+          </article>
         </div>
       </section>
     </PageTransition>

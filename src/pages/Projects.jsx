@@ -3,7 +3,7 @@ import PageTransition from "../components/PageTransition";
 import { FaShopify, FaReact } from "react-icons/fa";
 
 import shopifyBg from "../assets/images/shopify-banner.png";
-import reactBg from "../assets/images/react-banner.png";
+import reactBg from "../assets/images/reactjs-banner.png";
 
 export default function Projects() {
   return (
