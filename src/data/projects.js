@@ -1,10 +1,15 @@
+import Multi_Notes_App from "../assets/multi-note-app.png";
+import P2Care_Website from "../assets/p2care.png";
+import Alpine_Selection_Shopify from "../assets/alpine-selection.png";
+import Catalan_Gourmet_Shopify from "../assets/catalan-gourmet.png";
+
 export const projects = [
   {
     title: "Multi Notes App",
     description:
       "Multi-board note management system with Firebase authentication and responsive UI.",
     tech: "ReactJS, Firebase, Tailwind",
-    image: "https://picsum.photos/600/401",
+    image: {Multi_Notes_App},
     github: "#",
     preview: "#",
   },
@@ -13,7 +18,7 @@ export const projects = [
     description:
       "Healthcare service platform with booking workflow and responsive UI.",
     tech: "ReactJS, API Integration",
-    image: "https://picsum.photos/600/402",
+    image: {P2Care_Website},
     github: "#",
     preview: "#",
   },
@@ -22,7 +27,7 @@ export const projects = [
     description:
       "Custom Shopify theme development with performance-focused storefront layout.",
     tech: "Shopify, Liquid",
-    image: "https://picsum.photos/600/403",
+    image: {Alpine_Selection_Shopify},
     preview: "https://uttam-rootways.myshopify.com",
   },
   {
@@ -30,7 +35,7 @@ export const projects = [
     description:
       "Shopify theme customization with responsive product and collection pages.",
     tech: "Shopify, Liquid",
-    image: "https://picsum.photos/600/404",
+    image: {Catalan_Gourmet_Shopify},
     preview: "https://dev-calatan-gourmet.myshopify.com",
   },
 ];
