@@ -1,12 +1,13 @@
 import { personal } from "../data/personal";
-import { projects } from "../data/projects";
+import { projects } from "../data/projectsData";
 import ProjectCard from "../components/ProjectCard";
 
 import profile from "../assets/profile.jpeg";
+import PageTransition from "../components/PageTransition";
 
 export default function Home() {
   return (
-    <>
+    <PageTransition>
       {/* HERO */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
@@ -40,6 +41,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </>
+    </PageTransition>
   );
 }
