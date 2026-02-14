@@ -2,6 +2,8 @@ import { personal } from "../data/personal";
 import { projects } from "../data/projects";
 import ProjectCard from "../components/ProjectCard";
 
+import profile from "../assets/profile.jpeg";
+
 export default function Home() {
   return (
     <>
@@ -19,7 +21,7 @@ export default function Home() {
           </div>
 
           <img
-            src="https://picsum.photos/400"
+            src={profile}
             className="rounded-xl"
             alt="profile"
           />
