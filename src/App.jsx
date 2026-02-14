@@ -7,6 +7,8 @@ import Projects from "./pages/Projects";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 
+import { Analytics } from "@vercel/analytics/react";
+
 export default function App() {
   return (
     <BrowserRouter>
@@ -31,6 +33,7 @@ export default function App() {
         </main>
 
         <Footer />
+        <Analytics />
       </div>
     </BrowserRouter>
   );
