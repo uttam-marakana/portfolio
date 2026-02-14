@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 import PageTransition from "../components/PageTransition";
 import { FaShopify, FaReact } from "react-icons/fa";
 
-import shopifyBg from "../assets/images/shopify-cover.jpg";
-import reactBg from "../assets/images/react-cover.jpg";
+import shopifyBg from "../assets/images/shopify-banner.png";
+import reactBg from "../assets/images/react-banner.png";
 
 export default function Projects() {
   return (
@@ -22,7 +22,7 @@ export default function Projects() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-            {/* ================= SHOPIFY ================= */}
+            {/* ======= SHOPIFY ======= */}
             <Link to="/projects/shopify">
               <article
                 className="
@@ -77,7 +77,7 @@ export default function Projects() {
               </article>
             </Link>
 
-            {/* ================= REACT ================= */}
+            {/* ======= REACTJS ======= */}
             <Link to="/projects/react">
               <article
                 className="
