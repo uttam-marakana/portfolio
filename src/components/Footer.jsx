@@ -16,7 +16,7 @@ export default function Footer() {
         <div className="text-center lg:text-left">
           <div className="flex items-center justify-center lg:justify-start gap-3 mb-4">
             <img
-              src="/logo.png"
+              src="src/assets/logo.png"
               alt="Uttam Marakana Logo"
               className="w-10 h-10"
             />
@@ -48,11 +48,6 @@ export default function Footer() {
             <li>
               <a href="/projects" className="hover:text-white transition">
                 Projects
-              </a>
-            </li>
-            <li>
-              <a href="/blog" className="hover:text-white transition">
-                Blog
               </a>
             </li>
             <li>
