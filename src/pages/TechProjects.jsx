@@ -40,7 +40,9 @@ export default function TechProjects() {
 
           {/* PROJECT GRID */}
           {filteredProjects.length === 0 ? (
-            <p className="text-gray-400">No projects available.</p>
+            <p className="text-gray-400">
+              No projects are available at the current moment.
+            </p>
           ) : (
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {filteredProjects.map((project) => (
