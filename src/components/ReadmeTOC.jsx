@@ -43,7 +43,7 @@ export default function ReadmeTOC({ content }) {
   if (!headings.length) return null;
 
   return (
-    <aside className="hidden lg:block sticky top-24 h-fit">
+    <aside className="hidden lg:block top-24 h-fit">
       <h3 className="text-sm font-semibold mb-3 text-gray-400">On this page</h3>
 
       <ul className="space-y-2 text-sm">
