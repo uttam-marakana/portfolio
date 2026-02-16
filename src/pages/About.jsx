@@ -1,4 +1,4 @@
-import { personal } from "../data/personal";
+import personal from "../data/personal";
 
 export default function About() {
   const skills = [
