@@ -39,8 +39,7 @@ export default function Home() {
     <PageTransition>
       {/* ================= HERO ================= */}
       <section className="relative py-28 overflow-hidden">
-        {/* Gradient Background */}
-        <div className="absolute inset-0 -z-10 bg-gradient-to-br from-indigo-600/10 via-transparent to-cyan-500/10" />
+        <div className="absolute inset-0 -z-10 `bg-gradient-to-br` from-indigo-600/10 via-transparent to-cyan-500/10" />
 
         <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
           {/* LEFT */}
@@ -81,7 +80,7 @@ export default function Home() {
           <div className="flex justify-center md:justify-end">
             <img
               src={profile}
-              alt="profile"
+              alt="Uttam Marakana profile"
               className="rounded-2xl w-72 md:w-80 object-cover shadow-2xl"
             />
           </div>
@@ -96,7 +95,8 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-3xl font-semibold mb-10">Featured Work</h2>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Equal height cards + clean layout */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
             {featuredProjects.map((project) => (
               <ProjectCard key={project.id} project={project} />
             ))}
