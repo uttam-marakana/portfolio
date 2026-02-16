@@ -1,49 +1,34 @@
-export const projectsData = [
-  /* ===============================
-     SHOPIFY PROJECTS
-  =============================== */
+import alpine from "../../public/assets/images/alpine-selection.png";
+import catalan from "../../public/assets/images/catalan-gourmet.png";
+import notes from "../../public/assets/images/multi-note-app.png";
+import p2care from "../../public/assets/images/p2care.png";
+import portfolio from "../../public/assets/images/portfolio.png";
+
+const projectsData = [
+  /* ================= SHOPIFY ================= */
 
   {
     id: "alpine-selection",
     tech: "shopify",
 
     title: "Alpine Selection Store",
+
     shortDescription:
-      "Performance-focused Shopify storefront with custom theme architecture.",
+      "Performance-focused Shopify storefront with structured UI and optimized layouts.",
 
     overview:
-      "Custom Shopify theme built with scalability, performance optimization and conversion-focused UI. Implemented reusable sections and optimized product and collection workflows.",
+      "Shopify storefront focused on performance, structured layout hierarchy, and improved customer navigation experience.",
 
-    image: "../assets/images/alpine-selection.png",
+    image: alpine,
 
     preview: "https://uttam-rootways.myshopify.com",
 
     highlights: [
-      "Custom Shopify theme development",
-      "Section-based scalable architecture",
-      "Performance optimized storefront",
-      "Mobile-first responsive layout",
-      "Conversion-focused UI implementation",
+      "Shopify theme customization",
+      "Responsive storefront layout",
+      "Optimized product templates",
+      "Performance-focused UI improvements",
     ],
-
-    readme: `
-## Alpine Selection Shopify Store
-
-### Overview
-This project focuses on building a scalable Shopify storefront with performance-first architecture.
-
-### Features
-- Custom Liquid sections
-- Optimized collection templates
-- Fast loading product pages
-- Mobile-first design approach
-
-### Tech Stack
-- Shopify
-- Liquid
-- JavaScript
-- Tailwind CSS
-`,
   },
 
   {
@@ -51,79 +36,50 @@ This project focuses on building a scalable Shopify storefront with performance-
     tech: "shopify",
 
     title: "Catalan Gourmet Store",
+
     shortDescription:
-      "Shopify theme customization with optimized product experience.",
+      "Shopify storefront UI improvement and responsive experience optimization.",
 
     overview:
-      "Enhanced Shopify storefront with improved UI structure and responsive product layouts for better shopping experience.",
+      "Shopify customization project improving UI consistency and product browsing experience.",
 
-    image: "../assets/images/catalan-gourmet.png",
+    image: catalan,
 
     preview: "https://dev-calatan-gourmet.myshopify.com",
 
     highlights: [
       "Theme customization",
-      "Responsive product pages",
-      "Improved navigation structure",
-      "Optimized UI hierarchy",
+      "Product page improvements",
+      "Navigation restructuring",
+      "Responsive UI adjustments",
     ],
-
-    readme: `
-## Catalan Gourmet Shopify Store
-
-### Overview
-Shopify customization project focused on improving UX and storefront consistency.
-
-### Improvements
-- Product page optimization
-- Collection layout improvements
-- Responsive adjustments
-`,
   },
 
-  /* ===============================
-     REACT PROJECTS
-  =============================== */
+  /* ================= REACT ================= */
 
   {
     id: "multi-notes-app",
     tech: "react",
 
     title: "Multi Notes App",
+
     shortDescription:
-      "Multi-board notes application with Firebase integration.",
+      "Multi-board notes application with Firebase persistence.",
 
     overview:
-      "A scalable notes management system supporting multiple boards, Firebase persistence and responsive UI.",
+      "React-based notes system supporting multiple boards with real-time Firestore storage.",
 
-    image: "../assets/images/multi-note-app.png",
+    image: notes,
 
     github: "uttam-marakana/multi-notes-app",
     preview: "#",
 
     highlights: [
       "Firebase Firestore integration",
-      "Real-time data updates",
       "Component-driven architecture",
+      "Real-time updates",
       "Responsive dashboard UI",
     ],
-
-    readme: `
-## Multi Notes App
-
-### Overview
-A React-based notes management system with Firebase backend.
-
-### Features
-- Multiple boards
-- Real-time updates
-- Clean state management
-
-### Tech Stack
-- ReactJS
-- Firebase
-- Tailwind CSS
-`,
   },
 
   {
@@ -131,75 +87,51 @@ A React-based notes management system with Firebase backend.
     tech: "react",
 
     title: "P2Care Website",
-    shortDescription:
-      "Healthcare platform with booking workflow and responsive UI.",
+
+    shortDescription: "Healthcare service platform with booking workflow UI.",
 
     overview:
-      "Frontend system designed for healthcare services including booking workflows and scalable UI components.",
+      "Frontend system designed for healthcare services with scalable UI components.",
 
-    image: "../assets/images/p2care.png",
+    image: p2care,
 
     github: "uttam-marakana/p2care",
+
     preview: "#",
 
     highlights: [
       "API integration",
-      "Responsive UI system",
-      "Component-based architecture",
-      "Performance optimized rendering",
+      "Responsive layout system",
+      "Component architecture",
+      "Performance optimization",
     ],
-
-    readme: `
-## P2Care Website
-
-### Overview
-Healthcare service platform built using React.
-
-### Features
-- Booking workflow
-- Responsive design
-- API integrations
-`,
   },
 
   {
     id: "portfolio",
     tech: "react",
 
-    title: "Portfolio",
+    title: "Developer Portfolio",
+
     shortDescription:
-      "Multi-board notes application with Firebase integration.",
+      "Modern portfolio with GitHub README integration and Firebase contact system.",
 
     overview:
-      "A scalable notes management system supporting multiple boards, Firebase persistence and responsive UI.",
+      "Portfolio built using React, Firebase and Tailwind focusing on performance and structured project presentation.",
 
-    image: "../assets/images/portfolio.png",
+    image: portfolio,
 
     github: "uttam-marakana/portfolio",
+
     preview: "#",
 
     highlights: [
-      "Firebase Firestore integration",
-      "Real-time data updates",
-      "Component-driven architecture",
-      "Responsive dashboard UI",
+      "GitHub README auto rendering",
+      "Firebase contact workflow",
+      "Component architecture",
+      "Animated UI system",
     ],
-
-    readme: `
-## Portfolio
-
-### Overview
-A React-based portfolio website with Firebase backend.
-
-### Features
-- Multiple boards
-- Real-time updates
-- Clean state management
-
-### Tech Stack
-- ReactJS
-- Firebase
-- Tailwind CSS
-`,
   },
 ];
+
+export default projectsData;

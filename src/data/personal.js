@@ -1,4 +1,4 @@
-export const personal = {
+const personal = {
   name: "Uttam Marakana",
   role: "Shopify & ReactJS Developer",
   location: "Rajkot, Gujarat, India",
@@ -38,3 +38,6 @@ export const personal = {
     },
   ],
 };
+
+
+export default personal;
