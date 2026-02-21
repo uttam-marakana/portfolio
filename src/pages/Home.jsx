@@ -81,7 +81,7 @@ export default function Home() {
             <img
               src={profile}
               alt="Uttam Marakana profile"
-              className="rounded-2xl w-72 md:w-80 object-cover shadow-2xl"
+              className="w-72 h-72 md:w-80 md:h-80 rounded-full object-cover shadow-2xl border-4 border-neutral-800"
             />
           </div>
         </div>
