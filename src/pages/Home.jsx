@@ -4,7 +4,7 @@ import personal from "../data/personal";
 import ProjectCard from "../components/ProjectCard";
 import PageTransition from "../components/PageTransition";
 
-import profile from "../assets/profile.jpeg";
+import profile from "../assets/profile_logo.png";
 import { Link } from "react-router-dom";
 import projectsData from "../data/projectsData";
 
