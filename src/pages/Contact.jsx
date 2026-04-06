@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import PageTransition from "../components/PageTransition";
+import BackButton from "../components/BackButton";
 import { db, isFirebaseConfigured } from "../services/firebase";
 import usePageSeo from "../hooks/usePageSeo";
 import { getAbsoluteUrl } from "../lib/site";
@@ -156,103 +157,108 @@ export default function Contact() {
   return (
     <PageTransition>
       <section className="px-3 pt-6 pb-8">
-        <div className="page-shell grid gap-8 lg:grid-cols-[0.92fr_1.08fr]">
-          <div className="space-y-8">
-            <div className="premium-panel px-6 py-8 md:px-8">
-              <span className="eyebrow">Contact</span>
-              <h1 className="section-title mt-5">
-                If the frontend needs to feel cleaner, faster, and more deliberate, send the brief.
-              </h1>
+        <div className="page-shell space-y-8">
+          <BackButton fallback="/" />
 
-              <p className="section-copy mt-5">
-                I take on Shopify and React work where interface quality,
-                structure, and practical delivery all need to improve together.
-              </p>
+          <div className="grid gap-8 lg:grid-cols-[0.92fr_1.08fr]">
+            <div className="space-y-8">
+              <div className="premium-panel px-6 py-8 md:px-8">
+                <span className="eyebrow">Contact</span>
+                <h1 className="section-title mt-5">
+                  If the frontend needs to feel cleaner, faster, and more
+                  deliberate, send the brief.
+                </h1>
 
-              <div className="mt-8 grid gap-4">
-                <div className="metric-card">
-                  <p className="metric-label">Email</p>
-                  <p className="mt-3 text-lg font-medium">
-                    uttammarakana03@gmail.com
-                  </p>
+                <p className="section-copy mt-5">
+                  I take on Shopify and React work where interface quality,
+                  structure, and practical delivery all need to improve
+                  together.
+                </p>
+
+                <div className="mt-8 grid gap-4">
+                  <div className="metric-card">
+                    <p className="metric-label">Email</p>
+                    <p className="mt-3 text-lg font-medium">
+                      uttammarakana03@gmail.com
+                    </p>
+                  </div>
+                  <div className="metric-card">
+                    <p className="metric-label">Location</p>
+                    <p className="mt-3 text-lg font-medium">
+                      Rajkot, Gujarat, India
+                    </p>
+                  </div>
                 </div>
-                <div className="metric-card">
-                  <p className="metric-label">Location</p>
-                  <p className="mt-3 text-lg font-medium">
-                    Rajkot, Gujarat, India
-                  </p>
-                </div>
+              </div>
+
+              <div className="premium-panel p-6 md:p-8">
+                <span className="eyebrow">Good fit</span>
+                <h2 className="section-title mt-5">Typical engagements</h2>
+                <ul className="mt-6 space-y-3">
+                  {engagementNotes.map((note) => (
+                    <li
+                      key={note}
+                      className="rounded-[1.4rem] border border-(--line-soft) bg-white/6 px-4 py-4 text-sm leading-7 text-(--text-2)"
+                    >
+                      {note}
+                    </li>
+                  ))}
+                </ul>
+
+                {!isFirebaseConfigured && (
+                  <div className="mt-6 rounded-[1.4rem] border border-amber-500/40 bg-amber-500/10 px-4 py-4 text-sm text-amber-700 dark:text-amber-200">
+                    The form is intentionally disabled until Firebase
+                    environment values are configured.
+                  </div>
+                )}
+
+                {detectedService && (
+                  <div className="mt-6 rounded-[1.4rem] border border-(--line-soft) bg-white/6 px-4 py-4 text-sm text-(--text-2)">
+                    Request categorized as{" "}
+                    <b className="text-(--text-1)">{detectedService}</b>.
+                  </div>
+                )}
               </div>
             </div>
 
             <div className="premium-panel p-6 md:p-8">
-              <span className="eyebrow">Good fit</span>
-              <h2 className="section-title mt-5">Typical engagements</h2>
-              <ul className="mt-6 space-y-3">
-                {engagementNotes.map((note) => (
-                  <li
-                    key={note}
-                    className="rounded-[1.4rem] border border-(--line-soft) bg-white/6 px-4 py-4 text-sm leading-7 text-(--text-2)"
-                  >
-                    {note}
-                  </li>
-                ))}
-              </ul>
+              <span className="eyebrow">Project brief</span>
+              <h2 className="section-title mt-5">Send the details</h2>
+              <p className="mt-4 text-sm leading-7 text-(--text-2)">
+                A clear summary of the current problem, target outcome, and stack
+                is enough to start the conversation.
+              </p>
 
-              {!isFirebaseConfigured && (
-                <div className="mt-6 rounded-[1.4rem] border border-amber-500/40 bg-amber-500/10 px-4 py-4 text-sm text-amber-700 dark:text-amber-200">
-                  The form is intentionally disabled until Firebase environment
-                  values are configured.
+              <form onSubmit={handleSubmit} className="mt-8 space-y-6">
+                <div className="grid gap-6 md:grid-cols-2">
+                  <label className="block">
+                    <span className="mb-2 block text-xs uppercase tracking-[0.2em] text-(--text-2)">
+                      Your name
+                    </span>
+                    <input
+                      type="text"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
+                      required
+                      className="w-full rounded-[1.3rem] border border-(--line-soft) bg-white/6 px-4 py-4 outline-none focus:border-(--brand-1)"
+                    />
+                  </label>
+
+                  <label className="block">
+                    <span className="mb-2 block text-xs uppercase tracking-[0.2em] text-(--text-2)">
+                      Email
+                    </span>
+                    <input
+                      type="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      required
+                      className="w-full rounded-[1.3rem] border border-(--line-soft) bg-white/6 px-4 py-4 outline-none focus:border-(--brand-1)"
+                    />
+                  </label>
                 </div>
-              )}
-
-              {detectedService && (
-                <div className="mt-6 rounded-[1.4rem] border border-(--line-soft) bg-white/6 px-4 py-4 text-sm text-(--text-2)">
-                  Request categorized as{" "}
-                  <b className="text-(--text-1)">{detectedService}</b>.
-                </div>
-              )}
-            </div>
-          </div>
-
-          <div className="premium-panel p-6 md:p-8">
-            <span className="eyebrow">Project brief</span>
-            <h2 className="section-title mt-5">Send the details</h2>
-            <p className="mt-4 text-sm leading-7 text-(--text-2)">
-              A clear summary of the current problem, target outcome, and stack
-              is enough to start the conversation.
-            </p>
-
-            <form onSubmit={handleSubmit} className="mt-8 space-y-6">
-              <div className="grid gap-6 md:grid-cols-2">
-                <label className="block">
-                  <span className="mb-2 block text-xs uppercase tracking-[0.2em] text-(--text-2)">
-                    Your name
-                  </span>
-                  <input
-                    type="text"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    className="w-full rounded-[1.3rem] border border-(--line-soft) bg-white/6 px-4 py-4 outline-none focus:border-(--brand-1)"
-                  />
-                </label>
-
-                <label className="block">
-                  <span className="mb-2 block text-xs uppercase tracking-[0.2em] text-(--text-2)">
-                    Email
-                  </span>
-                  <input
-                    type="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    className="w-full rounded-[1.3rem] border border-(--line-soft) bg-white/6 px-4 py-4 outline-none focus:border-(--brand-1)"
-                  />
-                </label>
-              </div>
 
               <label className="block">
                 <span className="mb-2 block text-xs uppercase tracking-[0.2em] text-(--text-2)">
@@ -301,17 +307,18 @@ export default function Contact() {
                 />
               </label>
 
-              <button
-                type="submit"
-                disabled={loading || !isFirebaseConfigured}
-                className="premium-button premium-button--solid w-full disabled:cursor-not-allowed disabled:opacity-60"
-              >
-                {loading && (
-                  <span className="h-4 w-4 rounded-full border-2 border-white border-t-transparent animate-spin"></span>
-                )}
-                {loading ? "Sending..." : "Send Message"}
-              </button>
-            </form>
+                <button
+                  type="submit"
+                  disabled={loading || !isFirebaseConfigured}
+                  className="premium-button premium-button--solid w-full disabled:cursor-not-allowed disabled:opacity-60"
+                >
+                  {loading && (
+                    <span className="h-4 w-4 rounded-full border-2 border-white border-t-transparent animate-spin"></span>
+                  )}
+                  {loading ? "Sending..." : "Send Message"}
+                </button>
+              </form>
+            </div>
           </div>
         </div>
 

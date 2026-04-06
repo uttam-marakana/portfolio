@@ -1,4 +1,5 @@
 import personal from "../data/personal";
+import BackButton from "../components/BackButton";
 import usePageSeo from "../hooks/usePageSeo";
 import { getAbsoluteUrl } from "../lib/site";
 import profileImage from "../assets/profile.webp";
@@ -93,6 +94,8 @@ export default function About() {
   return (
     <section className="px-3 pt-6 pb-8">
       <div className="page-shell space-y-8">
+        <BackButton fallback="/" />
+
         <div className="premium-panel overflow-hidden px-6 py-8 md:px-10 md:py-10">
           <div className="grid gap-8 xl:grid-cols-[0.95fr_1.05fr] xl:items-center">
             <div className="premium-panel p-4 md:p-5">

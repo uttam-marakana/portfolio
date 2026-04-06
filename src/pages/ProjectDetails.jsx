@@ -7,6 +7,7 @@ import projectsData from "../data/projectsData";
 import { fetchReadme } from "../services/githubReadme";
 import ReadmeTOC from "../components/ReadmeTOC";
 import PageTransition from "../components/PageTransition";
+import BackButton from "../components/BackButton";
 import usePageSeo from "../hooks/usePageSeo";
 import { getAbsoluteUrl } from "../lib/site";
 
@@ -120,6 +121,8 @@ export default function ProjectDetails() {
       <section className="px-3 pt-6 pb-8">
         <div className="page-shell space-y-6 xl:grid xl:grid-cols-[minmax(0,1fr)_19rem] xl:gap-8 xl:space-y-0">
           <div className="space-y-6">
+            <BackButton fallback="/projects" />
+
             <div className="premium-panel overflow-hidden px-5 py-6 md:px-8 md:py-8 xl:px-10 xl:py-10">
               <div className="grid gap-8 xl:grid-cols-[1.08fr_0.92fr] xl:items-center">
                 <div>
