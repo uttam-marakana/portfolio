@@ -52,7 +52,8 @@ const projectsData = [
       {
         image: "/assets/images/alpine-selection.webp",
         alt: "Alpine Selection storefront overview",
-        caption: "Primary storefront surface with cleaner hierarchy and more controlled merchandising.",
+        caption:
+          "Primary storefront surface with cleaner hierarchy and more controlled merchandising.",
       },
     ],
     highlights: [
@@ -115,7 +116,8 @@ const projectsData = [
       {
         image: "/assets/images/catalan-gourmet.webp",
         alt: "Catalan Gourmet storefront view",
-        caption: "A more coherent browsing experience with better navigation handoffs and cleaner structure.",
+        caption:
+          "A more coherent browsing experience with better navigation handoffs and cleaner structure.",
       },
     ],
     highlights: [
@@ -179,12 +181,14 @@ const projectsData = [
       {
         image: "/assets/images/multi-note-app.webp",
         alt: "Multi Notes App dashboard overview",
-        caption: "Board-level workspace structure presented in a product-style dashboard layout.",
+        caption:
+          "Board-level workspace structure presented in a product-style dashboard layout.",
       },
       {
         image: "/assets/images/multi-notes-app-detail.webp",
         alt: "Multi Notes App supporting interface visual",
-        caption: "Supporting product visual from the repo showing the same system thinking carried into branded app surfaces.",
+        caption:
+          "Supporting product visual from the repo showing the same system thinking carried into branded app surfaces.",
       },
     ],
     highlights: [
@@ -247,17 +251,20 @@ const projectsData = [
       {
         image: "/assets/images/p2care.webp",
         alt: "P2Care hero view",
-        caption: "The main healthcare service surface focused on clarity, trust, and modular page composition.",
+        caption:
+          "The main healthcare service surface focused on clarity, trust, and modular page composition.",
       },
       {
         image: "/assets/images/p2care-hospital.webp",
         alt: "P2Care hospital detail visual",
-        caption: "A supporting hospital-focused section that reinforces the medical service context.",
+        caption:
+          "A supporting hospital-focused section that reinforces the medical service context.",
       },
       {
         image: "/assets/images/p2care-doctors.webp",
         alt: "P2Care doctor and care team visual",
-        caption: "Team-oriented supporting content used to build a more complete service-platform presentation.",
+        caption:
+          "Team-oriented supporting content used to build a more complete service-platform presentation.",
       },
     ],
     highlights: [
@@ -287,7 +294,7 @@ const projectsData = [
       "The result is a more production-oriented React system that demonstrates admin/public separation, serverless platform architecture, and healthcare-specific workflow thinking.",
     image: "/assets/images/dhatru_care.webp",
     github: "uttam-marakana/dhatru-care",
-    preview: "https://dhatrucare.vercel.app",
+    preview: "https://dhatru-care.vercel.app/",
     stack: [
       "React",
       "Vite",
@@ -322,12 +329,14 @@ const projectsData = [
       {
         image: "/assets/images/dhatru_care.webp",
         alt: "Dhatru Care platform hero view",
-        caption: "Public-facing healthcare platform presentation with stronger brand framing and service clarity.",
+        caption:
+          "Public-facing healthcare platform presentation with stronger brand framing and service clarity.",
       },
       {
         image: "/assets/images/dhatru-care-hospital.webp",
         alt: "Dhatru Care hospital supporting visual",
-        caption: "Supporting hospital image from the repo, useful for explaining the platform's care and institution context.",
+        caption:
+          "Supporting hospital image from the repo, useful for explaining the platform's care and institution context.",
       },
     ],
     highlights: [
@@ -393,7 +402,8 @@ const projectsData = [
       {
         image: "/assets/images/tradeos.webp",
         alt: "TradeOS dashboard hero view",
-        caption: "Execution-focused dashboard framing the product as a trading control layer instead of a simple tracker.",
+        caption:
+          "Execution-focused dashboard framing the product as a trading control layer instead of a simple tracker.",
       },
     ],
     highlights: [
@@ -458,7 +468,8 @@ const projectsData = [
       {
         image: "/assets/images/portfolio.webp",
         alt: "Portfolio homepage preview",
-        caption: "The portfolio itself, rebuilt to work as a case-study system instead of a simple project list.",
+        caption:
+          "The portfolio itself, rebuilt to work as a case-study system instead of a simple project list.",
       },
     ],
     highlights: [
