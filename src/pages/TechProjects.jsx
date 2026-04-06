@@ -15,12 +15,17 @@ function matchesProject(project, searchTerm) {
     project.title,
     project.role,
     project.sector,
+    project.timeline,
     project.shortDescription,
     project.overview,
     project.problem,
     project.solution,
     project.impact,
     ...project.stack,
+    ...(project.services ?? []),
+    ...(project.constraints ?? []),
+    ...(project.process ?? []),
+    ...(project.results ?? []),
     ...project.highlights,
   ]
     .join(" ")

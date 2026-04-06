@@ -50,6 +50,7 @@ function matchesProject(project, searchTerm) {
     project.title,
     project.role,
     project.sector,
+    project.timeline,
     project.shortDescription,
     project.overview,
     project.problem,
@@ -57,6 +58,10 @@ function matchesProject(project, searchTerm) {
     project.impact,
     project.tech,
     ...project.stack,
+    ...(project.services ?? []),
+    ...(project.constraints ?? []),
+    ...(project.process ?? []),
+    ...(project.results ?? []),
     ...project.highlights,
   ]
     .join(" ")
@@ -137,7 +142,7 @@ export default function Projects() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+          <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
             {categoryCards.map((category) => {
               const Icon = category.icon;
               const projectCount = projectsData.filter(
@@ -145,8 +150,12 @@ export default function Projects() {
               ).length;
 
               return (
-                <Link key={category.tech} to={`/projects/${category.tech}`} className="block">
-                  <article className="premium-panel group min-h-[21rem] px-7 py-7">
+                <Link
+                  key={category.tech}
+                  to={`/projects/${category.tech}`}
+                  className="block"
+                >
+                  <article className="premium-panel group min-h-[21rem] px-5 py-6 md:px-7 md:py-7">
                     <img
                       src={category.image}
                       alt={category.title}
@@ -168,14 +177,14 @@ export default function Projects() {
                       </div>
 
                       <div className="mt-auto">
-                        <h2 className="font-[var(--font-display)] text-4xl leading-none text-white">
+                        <h2 className="font-[var(--font-display)] text-3xl leading-none text-white md:text-4xl">
                           {category.title}
                         </h2>
 
                         <ul className="mt-5 space-y-2 text-sm text-white/78">
-                        {category.description.map((item) => (
-                          <li key={item}>• {item}</li>
-                        ))}
+                          {category.description.map((item) => (
+                            <li key={item}>{item}</li>
+                          ))}
                         </ul>
 
                         <div className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-white">

@@ -317,7 +317,7 @@ export default function Contact() {
 
         {toast.show && (
           <div
-            className={`fixed bottom-6 right-6 z-40 rounded-2xl px-6 py-4 shadow-2xl text-white
+            className={`fixed inset-x-3 bottom-4 z-40 rounded-2xl px-6 py-4 text-center shadow-2xl text-white sm:inset-x-auto sm:right-6 sm:max-w-sm
             ${toast.type === "success" ? "bg-green-600" : "bg-red-600"}`}
           >
             {toast.message}
