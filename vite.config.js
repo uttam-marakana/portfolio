@@ -5,7 +5,7 @@ import tailwindcss from "@tailwindcss/vite";
 import projectsData from "./src/data/projectsData.js";
 
 function generateSeoFiles(siteUrl) {
-  const staticRoutes = ["/", "/about", "/projects", "/contact"];
+  const staticRoutes = ["/", "/about", "/services", "/projects", "/contact"];
   const techRoutes = [...new Set(projectsData.map((project) => `/projects/${project.tech}`))];
   const projectRoutes = projectsData.map((project) => `/projects/details/${project.id}`);
   const routes = [...new Set([...staticRoutes, ...techRoutes, ...projectRoutes])];
