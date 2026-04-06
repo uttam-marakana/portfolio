@@ -11,13 +11,14 @@ const Contact = lazy(() => import("./pages/Contact"));
 const Projects = lazy(() => import("./pages/Projects"));
 const ProjectDetails = lazy(() => import("./pages/ProjectDetails"));
 const TechProjects = lazy(() => import("./pages/TechProjects"));
+const NotFound = lazy(() => import("./pages/NotFound"));
 
 /* ---------- Loading Screen ---------- */
 
 function PageLoader() {
   return (
     <div className="min-h-[60vh] flex items-center justify-center">
-      <div className="w-6 h-6 border-2 border-indigo-500 border-t-transparent rounded-full animate-spin"></div>
+      <div className="w-8 h-8 rounded-full border-2 border-[var(--brand-2)] border-t-transparent animate-spin"></div>
     </div>
   );
 }
@@ -27,10 +28,11 @@ export default function App() {
     <BrowserRouter>
       <div
         className="
+          app-shell
           min-h-screen
           flex flex-col
-          bg-white dark:bg-gray-950
-          text-gray-900 dark:text-white
+          bg-[var(--surface-0)]
+          text-[var(--text-1)]
           transition-colors duration-300
         "
       >
@@ -51,6 +53,7 @@ export default function App() {
               />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="*" element={<NotFound />} />
             </Routes>
           </Suspense>
         </main>
