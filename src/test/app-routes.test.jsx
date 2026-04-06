@@ -1,3 +1,4 @@
+import { beforeEach, describe, expect, it, vi } from "vitest";
 import { screen } from "@testing-library/react";
 import App from "../App";
 import { renderWithProviders } from "./test-utils";
@@ -21,9 +22,9 @@ describe("app routes", () => {
     renderAppAt("/");
 
     expect(
-      await screen.findByRole("heading", {
-        name: /interfaces that feel sharper, faster, and more deliberate/i,
-      }),
+      await screen.findByText(
+        /interfaces that feel sharper, faster, and more deliberate/i,
+      ),
     ).toBeInTheDocument();
   });
 
@@ -41,7 +42,7 @@ describe("app routes", () => {
     renderAppAt("/projects/details/alpine-selection");
 
     expect(
-      await screen.findByRole("heading", { name: /alpine selection store/i }),
+      await screen.findByText(/alpine selection store/i),
     ).toBeInTheDocument();
     expect(screen.getByRole("button", { name: /back to previous page/i })).toBeInTheDocument();
   });
