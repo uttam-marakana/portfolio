@@ -166,7 +166,7 @@ export default function Home() {
                   fetchPriority="high"
                   width="320"
                   height="320"
-                  className="aspect-[4/5] w-full rounded-[1.5rem] object-cover"
+                  className="aspect-4/5 w-full rounded-3xl object-cover"
                 />
               </div>
 

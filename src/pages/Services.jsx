@@ -184,7 +184,7 @@ export default function Services() {
                 {workflow.map((item) => (
                   <article
                     key={item.step}
-                    className="rounded-[1.5rem] border border-(--line-soft) bg-white/6 px-5 py-5"
+                    className="rounded-3xl border border-(--line-soft) bg-white/6 px-5 py-5"
                   >
                     <div className="flex gap-4">
                       <p className="font-(--font-display) text-3xl text-(--brand-1)">
@@ -211,7 +211,7 @@ export default function Services() {
                 {fitSignals.map((item) => (
                   <article
                     key={item}
-                    className="rounded-[1.5rem] border border-(--line-soft) bg-white/6 px-5 py-5 text-sm leading-7 text-(--text-2) md:text-base"
+                    className="rounded-3xl border border-(--line-soft) bg-white/6 px-5 py-5 text-sm leading-7 text-(--text-2) md:text-base"
                   >
                     {item}
                   </article>

@@ -99,7 +99,7 @@ export default function About() {
               <img
                 src={profileImage}
                 alt="Uttam Marakana portrait"
-                className="aspect-[4/5] w-full rounded-[1.5rem] object-cover"
+                className="aspect-4/5 w-full rounded-3xl object-cover"
               />
             </div>
 
@@ -159,7 +159,7 @@ export default function About() {
               {principles.map((item) => (
                 <article
                   key={item.title}
-                  className="rounded-[1.5rem] border border-(--line-soft) bg-white/6 p-5"
+                  className="rounded-3xl border border-(--line-soft) bg-white/6 p-5"
                 >
                   <h3 className="font-(--font-display) text-2xl">
                     {item.title}
@@ -181,7 +181,7 @@ export default function About() {
               {skills.map((group) => (
                 <article
                   key={group.title}
-                  className="rounded-[1.5rem] border border-(--line-soft) bg-white/6 p-5"
+                  className="rounded-3xl border border-(--line-soft) bg-white/6 p-5"
                 >
                   <h3 className="text-xl font-semibold">{group.title}</h3>
                   <ul className="mt-4 flex flex-wrap gap-2">
@@ -206,7 +206,7 @@ export default function About() {
             <h2 className="section-title mt-5">
               Academic base with frontend-specialized delivery on top.
             </h2>
-            <article className="mt-8 rounded-[1.5rem] border border-(--line-soft) bg-white/6 p-5">
+            <article className="mt-8 rounded-3xl border border-(--line-soft) bg-white/6 p-5">
               <h3 className="font-(--font-display) text-2xl">
                 {personal.education.degree}
               </h3>
@@ -228,7 +228,7 @@ export default function About() {
               {personal.currentLearning.map((item) => (
                 <article
                   key={item}
-                  className="rounded-[1.5rem] border border-(--line-soft) bg-white/6 px-5 py-5 text-sm leading-7 text-(--text-2)"
+                  className="rounded-3xl border border-(--line-soft) bg-white/6 px-5 py-5 text-sm leading-7 text-(--text-2)"
                 >
                   {item}
                 </article>
