@@ -1,17 +1,71 @@
+import { useContext, useMemo } from "react";
 import { useParams } from "react-router-dom";
 import { FaShopify, FaReact } from "react-icons/fa";
 import projectsData from "../data/projectsData";
 import ProjectCard from "../components/ProjectCard";
 import PageTransition from "../components/PageTransition";
+import { SearchContext } from "../context/search-context";
+import usePageSeo from "../hooks/usePageSeo";
+import { getAbsoluteUrl } from "../lib/site";
+
+function matchesProject(project, searchTerm) {
+  if (!searchTerm) return true;
+
+  const searchableContent = [
+    project.title,
+    project.shortDescription,
+    project.overview,
+    ...project.highlights,
+  ]
+    .join(" ")
+    .toLowerCase();
+
+  return searchableContent.includes(searchTerm);
+}
 
 export default function TechProjects() {
   const { tech } = useParams();
+  const { searchTerm } = useContext(SearchContext);
+  const normalizedSearchTerm = searchTerm.trim().toLowerCase();
 
-  const filteredProjects = projectsData.filter(
-    (project) => project.tech === tech,
+  const filteredProjects = useMemo(
+    () => projectsData.filter((project) => (
+      project.tech === tech && matchesProject(project, normalizedSearchTerm)
+    )),
+    [normalizedSearchTerm, tech],
   );
 
   const isShopify = tech === "shopify";
+  const pageTitle = isShopify ? "Shopify Projects" : "React Projects";
+  const pageDescription = isShopify
+    ? "Shopify storefront implementations focused on usability, performance, and improved customer experience."
+    : "Frontend applications built using React with focus on scalability, performance, and structured UI architecture.";
+
+  usePageSeo({
+    title: pageTitle,
+    description: pageDescription,
+    path: `/projects/${tech}`,
+    image: isShopify
+      ? "/assets/images/shopify-banner.webp"
+      : "/assets/images/reactjs-banner.webp",
+    keywords: [
+      `${tech} projects`,
+      "portfolio work",
+      "frontend development",
+      "ecommerce development",
+    ],
+    schema: {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      name: pageTitle,
+      url: getAbsoluteUrl(`/projects/${tech}`),
+      hasPart: filteredProjects.map((project) => ({
+        "@type": "CreativeWork",
+        name: project.title,
+        url: getAbsoluteUrl(`/projects/details/${project.id}`),
+      })),
+    },
+  });
 
   return (
     <PageTransition>
@@ -36,6 +90,13 @@ export default function TechProjects() {
                 ? "Shopify storefront implementations focused on usability, performance, and improved customer experience."
                 : "Frontend applications built using React with focus on scalability, performance, and structured UI architecture."}
             </p>
+
+            {normalizedSearchTerm && (
+              <p className="text-sm text-gray-500 mt-3">
+                Showing {filteredProjects.length} result
+                {filteredProjects.length === 1 ? "" : "s"} for "{searchTerm}"
+              </p>
+            )}
           </div>
 
           {/* PROJECT GRID */}
