@@ -2,6 +2,7 @@ const personal = {
   name: "Uttam Marakana",
   role: "Shopify & ReactJS Developer",
   location: "Rajkot, Gujarat, India",
+  resumeUrl: "/assets/docs/uttam-marakana-cv.pdf",
 
   email: "uttammarakana03@gmail.com",
   phone: "+916353098381",
@@ -36,6 +37,24 @@ const personal = {
       role: "ReactJS Developer",
       duration: "Sep 2023 – Feb 2024",
     },
+    {
+      company: "Bhavin Tank Technologies Pvt Ltd",
+      role: "ReactJS Trainee",
+      duration: "Feb 2023 – July 2023",
+    },
+  ],
+
+  education: {
+    institution: "Sarvodaya College of Computer Science, Rajkot",
+    degree: "Bachelor in Computer Applications",
+    result: "CGPA 8.11 • First Distinction",
+  },
+
+  currentLearning: [
+    "BigCommerce development with Stencil",
+    "Handlebars.js templating",
+    "Advanced theme architecture",
+    "Scalable ecommerce frontend systems",
   ],
 };
 

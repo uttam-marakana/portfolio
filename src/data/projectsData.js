@@ -157,6 +157,42 @@ const projectsData = [
     ],
   },
   {
+    id: "tradeos-dashboard",
+    tech: "react",
+    featured: true,
+    title: "TradeOS Dashboard",
+    sector: "Trading / Analytics Platform",
+    role: "React execution intelligence dashboard",
+    shortDescription:
+      "A trading decision-control system focused on discipline, pre-trade validation, risk enforcement, and behavioral analytics.",
+    overview:
+      "TradeOS is a React dashboard designed as an execution intelligence system for traders, combining immutable trade logs, pre-trade analysis, enforcement rules, scoring, and performance analytics in one operator-facing interface.",
+    problem:
+      "Most trading interfaces stop at charting or logging. The harder problem is preventing emotional entries, enforcing session rules, and giving traders a clearer operating system before they commit to a trade.",
+    solution:
+      "I structured the product around React components, reusable calculation utilities, session stores, and dedicated enforcement engines for risk, discipline, execution validation, analytics, and behavior warnings. The system evaluates trades before execution instead of only reporting after the fact.",
+    impact:
+      "The result feels closer to a serious trading control layer than a generic dashboard demo, showing stronger product thinking around discipline, decision support, and measurable execution quality.",
+    image: "/assets/images/tradeos.png",
+    github: "uttam-marakana/trading-dashboard",
+    preview: "",
+    stack: [
+      "React",
+      "Vite",
+      "Bootstrap",
+      "Formik",
+      "Recharts",
+      "LocalStorage",
+      "Day.js",
+    ],
+    highlights: [
+      "Pre-trade intelligence with risk, R:R, net PnL, and break-even preview",
+      "Execution engine that can block invalid or high-risk trades before entry",
+      "Discipline system with daily trade caps, loss limits, and session lock rules",
+      "Behavioral analytics for overtrading, expectancy drift, and repeated mistakes",
+    ],
+  },
+  {
     id: "portfolio",
     tech: "react",
     featured: true,
