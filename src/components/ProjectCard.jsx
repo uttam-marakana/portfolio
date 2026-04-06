@@ -4,15 +4,15 @@ export default function ProjectCard({ project }) {
   return (
     <Link to={`/projects/details/${project.id}`} className="block h-full">
       <article className="premium-panel group flex h-full flex-col">
-        <div className="relative overflow-hidden">
+        <div className="relative flex h-56 items-center justify-center overflow-hidden bg-[radial-gradient(circle_at_top,rgba(120,214,208,0.12),transparent_48%),linear-gradient(180deg,rgba(10,12,14,0.88),rgba(18,24,27,0.98))] p-3">
           <img
             src={project.image}
             alt={project.title}
             loading="lazy"
             decoding="async"
-            className="h-56 w-full object-cover transition duration-700 group-hover:scale-105"
+            className="h-full w-full rounded-[1.2rem] object-contain object-center transition duration-500 group-hover:scale-[1.02]"
           />
-          <div className="absolute inset-0 bg-linear-to-t from-[rgba(10,12,14,0.62)] via-transparent to-transparent" />
+          <div className="absolute inset-x-0 bottom-0 h-16 bg-linear-to-t from-[rgba(10,12,14,0.68)] via-transparent to-transparent" />
           <div className="absolute left-4 top-4 inline-flex rounded-full border border-white/15 bg-black/35 px-3 py-1 text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-white/80 backdrop-blur">
             {project.tech}
           </div>
@@ -25,7 +25,7 @@ export default function ProjectCard({ project }) {
                 {project.sector}
               </p>
               <h3 className="mt-2 font-(--font-display) text-2xl leading-tight md:text-[1.8rem]">
-              {project.title}
+                {project.title}
               </h3>
             </div>
             <span className="text-2xl text-(--brand-1) transition-transform duration-300 group-hover:translate-x-1">
