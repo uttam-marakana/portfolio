@@ -12,21 +12,27 @@ export default function NotFound() {
 
   return (
     <PageTransition>
-      <section className="min-h-[60vh] flex items-center justify-center px-4 py-20">
-        <div className="max-w-xl text-center">
-          <p className="text-sm uppercase tracking-[0.3em] text-gray-500 mb-4">
-            404
-          </p>
-          <h1 className="text-4xl font-semibold mb-4">Page not found</h1>
-          <p className="text-gray-400 mb-8">
-            The page you requested does not exist or the link is outdated.
-          </p>
-          <Link
-            to="/"
-            className="inline-flex items-center justify-center rounded-lg bg-indigo-600 px-6 py-3 font-medium text-white hover:bg-indigo-700 transition"
-          >
-            Back to Home
-          </Link>
+      <section className="px-3 py-10">
+        <div className="page-shell premium-panel flex min-h-[65vh] items-center justify-center px-6 py-10 md:px-10">
+          <div className="max-w-2xl text-center">
+            <span className="eyebrow">404</span>
+            <h1 className="section-title mt-5">Page not found</h1>
+            <p className="section-copy mx-auto mt-5">
+              The route is missing, outdated, or no longer part of the current
+              portfolio flow.
+            </p>
+            <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
+              <Link to="/" className="premium-button premium-button--solid">
+                Back to home
+              </Link>
+              <Link
+                to="/projects"
+                className="premium-button premium-button--ghost"
+              >
+                Browse projects
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
     </PageTransition>

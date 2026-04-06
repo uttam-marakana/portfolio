@@ -6,6 +6,12 @@ import usePageSeo from "../hooks/usePageSeo";
 import { getAbsoluteUrl } from "../lib/site";
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const serviceOptions = ["Shopify", "React", "CRO", "General"];
+const engagementNotes = [
+  "Storefront redesigns and theme customization",
+  "React interface implementation and refactors",
+  "Performance cleanup on existing frontend systems",
+];
 
 const initialFormData = {
   name: "",
@@ -149,79 +155,124 @@ export default function Contact() {
 
   return (
     <PageTransition>
-      <section className="min-h-screen py-20 px-6 bg-white text-gray-900 dark:bg-gray-950 dark:text-white transition-colors duration-300">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <h2 className="text-4xl font-bold mb-4">
-              Let’s Build Something Great
-            </h2>
+      <section className="px-3 pt-6 pb-8">
+        <div className="page-shell grid gap-8 lg:grid-cols-[0.92fr_1.08fr]">
+          <div className="space-y-8">
+            <div className="premium-panel px-6 py-8 md:px-8">
+              <span className="eyebrow">Contact</span>
+              <h1 className="section-title mt-5">
+                If the frontend needs to feel cleaner, faster, and more deliberate, send the brief.
+              </h1>
 
-            <p className="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
-              I build performance-focused Shopify and React solutions. Open for
-              freelance projects and long-term collaborations.
-            </p>
+              <p className="section-copy mt-5">
+                I take on Shopify and React work where interface quality,
+                structure, and practical delivery all need to improve together.
+              </p>
 
-            <div className="space-y-2 text-gray-700 dark:text-gray-300">
-              <p>📧 uttammarakana03@gmail.com</p>
-              <p>📍 Rajkot, Gujarat, India</p>
+              <div className="mt-8 grid gap-4">
+                <div className="metric-card">
+                  <p className="metric-label">Email</p>
+                  <p className="mt-3 text-lg font-medium">
+                    uttammarakana03@gmail.com
+                  </p>
+                </div>
+                <div className="metric-card">
+                  <p className="metric-label">Location</p>
+                  <p className="mt-3 text-lg font-medium">
+                    Rajkot, Gujarat, India
+                  </p>
+                </div>
+              </div>
             </div>
 
-            {!isFirebaseConfigured && (
-              <div className="mt-6 rounded-lg border border-amber-500/40 bg-amber-500/10 px-4 py-3 text-sm text-amber-700 dark:text-amber-200">
-                The contact form is disabled until Firebase environment values
-                are configured.
-              </div>
-            )}
+            <div className="premium-panel p-6 md:p-8">
+              <span className="eyebrow">Good fit</span>
+              <h2 className="section-title mt-5">Typical engagements</h2>
+              <ul className="mt-6 space-y-3">
+                {engagementNotes.map((note) => (
+                  <li
+                    key={note}
+                    className="rounded-[1.4rem] border border-[var(--line-soft)] bg-white/6 px-4 py-4 text-sm leading-7 text-[var(--text-2)]"
+                  >
+                    {note}
+                  </li>
+                ))}
+              </ul>
 
-            {detectedService && (
-              <div className="mt-6 inline-block bg-indigo-600/20 border border-indigo-500 text-indigo-300 px-4 py-2 rounded-lg text-sm">
-                Project categorized as: <b>{detectedService}</b>
-              </div>
-            )}
+              {!isFirebaseConfigured && (
+                <div className="mt-6 rounded-[1.4rem] border border-amber-500/40 bg-amber-500/10 px-4 py-4 text-sm text-amber-700 dark:text-amber-200">
+                  The form is intentionally disabled until Firebase environment
+                  values are configured.
+                </div>
+              )}
+
+              {detectedService && (
+                <div className="mt-6 rounded-[1.4rem] border border-[var(--line-soft)] bg-white/6 px-4 py-4 text-sm text-[var(--text-2)]">
+                  Request categorized as{" "}
+                  <b className="text-[var(--text-1)]">{detectedService}</b>.
+                </div>
+              )}
+            </div>
           </div>
 
-          <div className="bg-gray-100 dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-2xl p-8 shadow-xl transition-colors duration-300">
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="relative">
-                <input
-                  type="text"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                  className="w-full bg-white dark:bg-gray-950 border border-gray-300 dark:border-gray-700 rounded-lg px-4 pt-5 pb-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                />
-                <label className="absolute left-4 top-2 text-xs text-gray-500">
-                  Your Name
+          <div className="premium-panel p-6 md:p-8">
+            <span className="eyebrow">Project brief</span>
+            <h2 className="section-title mt-5">Send the details</h2>
+            <p className="mt-4 text-sm leading-7 text-[var(--text-2)]">
+              A clear summary of the current problem, target outcome, and stack
+              is enough to start the conversation.
+            </p>
+
+            <form onSubmit={handleSubmit} className="mt-8 space-y-6">
+              <div className="grid gap-6 md:grid-cols-2">
+                <label className="block">
+                  <span className="mb-2 block text-xs uppercase tracking-[0.2em] text-[var(--text-2)]">
+                    Your name
+                  </span>
+                  <input
+                    type="text"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
+                    className="w-full rounded-[1.3rem] border border-[var(--line-soft)] bg-white/6 px-4 py-4 outline-none focus:border-[var(--brand-1)]"
+                  />
+                </label>
+
+                <label className="block">
+                  <span className="mb-2 block text-xs uppercase tracking-[0.2em] text-[var(--text-2)]">
+                    Email
+                  </span>
+                  <input
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                    className="w-full rounded-[1.3rem] border border-[var(--line-soft)] bg-white/6 px-4 py-4 outline-none focus:border-[var(--brand-1)]"
+                  />
                 </label>
               </div>
 
-              <div className="relative">
-                <input
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  className="w-full bg-white dark:bg-gray-950 border border-gray-300 dark:border-gray-700 rounded-lg px-4 pt-5 pb-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                />
-                <label className="absolute left-4 top-2 text-xs text-gray-500">
-                  Email Address
-                </label>
-              </div>
-
-              <div className="relative">
+              <label className="block">
+                <span className="mb-2 block text-xs uppercase tracking-[0.2em] text-[var(--text-2)]">
+                  Project type
+                </span>
                 <input
                   type="text"
                   name="projectType"
+                  list="project-type-options"
                   value={formData.projectType}
                   onChange={handleChange}
-                  className="w-full bg-white dark:bg-gray-950 border border-gray-300 dark:border-gray-700 rounded-lg px-4 pt-5 pb-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                  placeholder="Shopify, React, CRO, or General"
+                  className="w-full rounded-[1.3rem] border border-[var(--line-soft)] bg-white/6 px-4 py-4 outline-none focus:border-[var(--brand-1)]"
                 />
-                <label className="absolute left-4 top-2 text-xs text-gray-500">
-                  Project Type (Shopify / React / CRO)
-                </label>
-              </div>
+                <datalist id="project-type-options">
+                  {serviceOptions.map((option) => (
+                    <option key={option} value={option} />
+                  ))}
+                </datalist>
+              </label>
 
               <div className="hidden" aria-hidden="true">
                 <label htmlFor="website">Website</label>
@@ -236,27 +287,27 @@ export default function Contact() {
                 />
               </div>
 
-              <div className="relative">
+              <label className="block">
+                <span className="mb-2 block text-xs uppercase tracking-[0.2em] text-[var(--text-2)]">
+                  Project details
+                </span>
                 <textarea
                   name="message"
-                  rows="4"
+                  rows="7"
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  className="w-full bg-white dark:bg-gray-950 border border-gray-300 dark:border-gray-700 rounded-lg px-4 pt-5 pb-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                  className="w-full rounded-[1.3rem] border border-[var(--line-soft)] bg-white/6 px-4 py-4 outline-none focus:border-[var(--brand-1)]"
                 />
-                <label className="absolute left-4 top-2 text-xs text-gray-500">
-                  Project Details
-                </label>
-              </div>
+              </label>
 
               <button
                 type="submit"
                 disabled={loading || !isFirebaseConfigured}
-                className="w-full bg-indigo-600 hover:bg-indigo-700 transition py-3 rounded-lg font-semibold flex items-center justify-center gap-2 disabled:opacity-60"
+                className="premium-button premium-button--solid w-full disabled:cursor-not-allowed disabled:opacity-60"
               >
                 {loading && (
-                  <span className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></span>
+                  <span className="h-4 w-4 rounded-full border-2 border-white border-t-transparent animate-spin"></span>
                 )}
                 {loading ? "Sending..." : "Send Message"}
               </button>
@@ -266,7 +317,7 @@ export default function Contact() {
 
         {toast.show && (
           <div
-            className={`fixed bottom-6 right-6 px-6 py-3 rounded-lg shadow-lg text-white
+            className={`fixed bottom-6 right-6 z-40 rounded-2xl px-6 py-4 shadow-2xl text-white
             ${toast.type === "success" ? "bg-green-600" : "bg-red-600"}`}
           >
             {toast.message}

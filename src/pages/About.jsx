@@ -3,6 +3,21 @@ import usePageSeo from "../hooks/usePageSeo";
 import { getAbsoluteUrl } from "../lib/site";
 import profileImage from "../assets/profile.webp";
 
+const principles = [
+  {
+    title: "Structure before decoration",
+    body: "I prefer clearer hierarchy, reusable layout systems, and practical content framing before visual polish starts.",
+  },
+  {
+    title: "Delivery under real constraints",
+    body: "The work is designed to survive client revisions, missing content, responsive breakpoints, and implementation pressure.",
+  },
+  {
+    title: "Premium through restraint",
+    body: "The goal is not more effects. It is a stronger visual direction with fewer weak decisions in the interface.",
+  },
+];
+
 export default function About() {
   usePageSeo({
     title: "About Uttam Marakana",
@@ -76,49 +91,121 @@ export default function About() {
   ];
 
   return (
-    <section className="py-20">
-      <div className="max-w-6xl mx-auto px-4">
-        {/* ABOUT INTRO */}
-        <h1 className="text-3xl font-semibold mb-6">About Me</h1>
-
-        <p className="text-gray-400 leading-relaxed mb-16">
-          {personal.summary}
-        </p>
-
-        {/* CORE SKILLS */}
-        <h2 className="text-2xl font-semibold mb-8">Core Skills</h2>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-          {skills.map((group, index) => (
-            <div
-              key={index}
-              className="border rounded-xl p-6 hover:shadow-md transition"
-            >
-              <h3 className="text-xl font-semibold mb-4">{group.title}</h3>
-
-              <ul className="space-y-2 text-gray-400">
-                {group.items.map((skill, i) => (
-                  <li key={i} className="flex gap-2 items-center">
-                    <span className="w-1.5 h-1.5 bg-gray-300 rounded-full"></span>
-                    {skill}
-                  </li>
-                ))}
-              </ul>
+    <section className="px-3 pt-6 pb-8">
+      <div className="page-shell space-y-8">
+        <div className="premium-panel overflow-hidden px-6 py-8 md:px-10 md:py-10">
+          <div className="grid gap-8 xl:grid-cols-[0.95fr_1.05fr] xl:items-center">
+            <div className="premium-panel p-4 md:p-5">
+              <img
+                src={profileImage}
+                alt="Uttam Marakana portrait"
+                className="aspect-[4/5] w-full rounded-[1.5rem] object-cover"
+              />
             </div>
-          ))}
+
+            <div>
+              <span className="eyebrow">About the work</span>
+              <h1 className="section-title mt-5">
+                Frontend delivery with more structure, less wasted motion.
+              </h1>
+              <p className="section-copy mt-5">
+                {personal.summary} My focus is usually where a product already
+                exists, but the interface needs better hierarchy, a cleaner
+                system, or stronger implementation quality to feel more
+                deliberate.
+              </p>
+
+              <div className="mt-8 grid gap-4 md:grid-cols-3">
+                <div className="metric-card">
+                  <p className="metric-value">{personal.experience.length}</p>
+                  <p className="metric-label mt-3">Professional roles</p>
+                </div>
+                <div className="metric-card">
+                  <p className="metric-value">{personal.skills.length}+</p>
+                  <p className="metric-label mt-3">Core capabilities</p>
+                </div>
+                <div className="metric-card">
+                  <p className="metric-value">Hybrid</p>
+                  <p className="metric-label mt-3">Shopify + React delivery</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
-        {/* EXPERIENCE */}
-        <h2 className="text-2xl font-semibold mb-6">Experience</h2>
-
-        {personal.experience.map((exp, i) => (
-          <div key={i} className="mb-6">
-            <h3 className="font-semibold">{exp.role}</h3>
-            <p className="text-gray-400">
-              {exp.company} — {exp.duration}
-            </p>
+        <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr]">
+          <div className="premium-panel p-6 md:p-8">
+            <span className="eyebrow">Working principles</span>
+            <h2 className="section-title mt-5">How I usually approach the build.</h2>
+            <div className="mt-8 space-y-5">
+              {principles.map((item) => (
+                <article
+                  key={item.title}
+                  className="rounded-[1.5rem] border border-[var(--line-soft)] bg-white/6 p-5"
+                >
+                  <h3 className="font-[var(--font-display)] text-2xl">
+                    {item.title}
+                  </h3>
+                  <p className="mt-3 text-sm leading-7 text-[var(--text-2)]">
+                    {item.body}
+                  </p>
+                </article>
+              ))}
+            </div>
           </div>
-        ))}
+
+          <div className="premium-panel p-6 md:p-8">
+            <span className="eyebrow">Skill snapshot</span>
+            <h2 className="section-title mt-5">Capabilities that show up repeatedly.</h2>
+            <div className="mt-8 grid gap-6 md:grid-cols-2">
+              {skills.map((group) => (
+                <article
+                  key={group.title}
+                  className="rounded-[1.5rem] border border-[var(--line-soft)] bg-white/6 p-5"
+                >
+                  <h3 className="text-xl font-semibold">{group.title}</h3>
+                  <ul className="mt-4 flex flex-wrap gap-2">
+                    {group.items.map((skill) => (
+                      <li
+                        key={skill}
+                        className="rounded-full border border-[var(--line-soft)] px-3 py-2 text-sm text-[var(--text-2)]"
+                      >
+                        {skill}
+                      </li>
+                    ))}
+                  </ul>
+                </article>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div className="premium-panel px-6 py-8 md:px-10">
+          <span className="eyebrow">Experience</span>
+          <h2 className="section-title mt-5">Professional timeline</h2>
+          <div className="mt-8 grid gap-5">
+            {personal.experience.map((exp) => (
+              <article
+                key={`${exp.company}-${exp.duration}`}
+                className="rounded-[1.75rem] border border-[var(--line-soft)] bg-white/6 px-5 py-5 md:px-6"
+              >
+                <div className="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
+                  <div>
+                    <h3 className="font-[var(--font-display)] text-3xl leading-none">
+                      {exp.role}
+                    </h3>
+                    <p className="mt-3 text-base text-[var(--text-2)]">
+                      {exp.company}
+                    </p>
+                  </div>
+                  <p className="text-sm uppercase tracking-[0.2em] text-[var(--text-2)]">
+                    {exp.duration}
+                  </p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );
