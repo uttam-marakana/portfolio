@@ -45,6 +45,14 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
+                    to="/services"
+                    className="hover:text-[var(--text-1)] transition"
+                  >
+                    Services
+                  </Link>
+                </li>
+                <li>
+                  <Link
                     to="/projects"
                     className="hover:text-[var(--text-1)] transition"
                   >

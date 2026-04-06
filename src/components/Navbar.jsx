@@ -65,6 +65,13 @@ export default function Navbar() {
                 Home
               </NavLink>
               <NavLink
+                to="/services"
+                className="premium-nav-link"
+                data-active={location.pathname === "/services"}
+              >
+                Services
+              </NavLink>
+              <NavLink
                 to="/projects"
                 className="premium-nav-link"
                 data-active={location.pathname.startsWith("/projects")}

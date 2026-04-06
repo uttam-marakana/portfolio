@@ -40,6 +40,13 @@ export default function Drawer({ open, setOpen }) {
             Home
           </NavLink>
           <NavLink
+            to="/services"
+            onClick={() => setOpen(false)}
+            className="rounded-2xl border border-transparent px-4 py-3 hover:border-[var(--line-soft)]"
+          >
+            Services
+          </NavLink>
+          <NavLink
             to="/projects"
             onClick={() => setOpen(false)}
             className="rounded-2xl border border-transparent px-4 py-3 hover:border-[var(--line-soft)]"
