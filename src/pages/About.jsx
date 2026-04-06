@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import personal from "../data/personal";
 import BackButton from "../components/BackButton";
 import usePageSeo from "../hooks/usePageSeo";
@@ -119,14 +120,12 @@ export default function About() {
               </p>
 
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-                <a
-                  href={personal.resumeUrl}
-                  target="_blank"
-                  rel="noreferrer"
+                <Link
+                  to="/resume"
                   className="premium-button premium-button--solid"
                 >
                   Open Resume
-                </a>
+                </Link>
                 <a
                   href={personal.resumeUrl}
                   download
