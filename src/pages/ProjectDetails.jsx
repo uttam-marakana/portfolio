@@ -166,18 +166,14 @@ export default function ProjectDetails() {
                   </div>
                 </div>
 
-                <div className="premium-panel p-3 md:p-4">
-                  <div className="project-media-stage aspect-[16/11] overflow-hidden p-4 md:p-5">
-                    <div className="project-media-frame h-full w-full overflow-hidden rounded-3xl p-3">
-                      <img
-                        src={project.image}
-                        loading="eager"
-                        decoding="async"
-                        className="project-media-image"
-                        alt={project.title}
-                      />
-                    </div>
-                  </div>
+                <div className="project-media-stage aspect-16/11 overflow-hidden p-5 md:p-6 xl:p-7">
+                  <img
+                    src={project.image}
+                    loading="eager"
+                    decoding="async"
+                    className="project-media-image"
+                    alt={project.title}
+                  />
                 </div>
               </div>
             </div>
@@ -215,20 +211,18 @@ export default function ProjectDetails() {
                   {galleryItems.map((item) => (
                     <article
                       key={`${project.id}-${item.image}-${item.caption}`}
-                      className="premium-panel overflow-hidden p-3"
+                      className="premium-panel overflow-hidden"
                     >
-                      <div className="project-media-stage aspect-[4/3] p-4">
-                        <div className="project-media-frame h-full w-full overflow-hidden rounded-3xl p-3">
-                          <img
-                            src={item.image}
-                            alt={item.alt}
-                            loading="lazy"
-                            decoding="async"
-                            className="project-media-image"
-                          />
-                        </div>
+                      <div className="project-media-stage aspect-4/3 border-b border-(--line-soft) px-4 py-4 md:px-5 md:py-5">
+                        <img
+                          src={item.image}
+                          alt={item.alt}
+                          loading="lazy"
+                          decoding="async"
+                          className="project-media-image"
+                        />
                       </div>
-                      <p className="px-2 pb-2 pt-4 text-sm leading-7 text-(--text-2)">
+                      <p className="px-5 pb-5 pt-4 text-sm leading-7 text-(--text-2)">
                         {item.caption}
                       </p>
                     </article>
