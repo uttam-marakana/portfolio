@@ -3,20 +3,18 @@ import { Link } from "react-router-dom";
 export default function ProjectCard({ project }) {
   return (
     <Link to={`/projects/details/${project.id}`} className="block h-full">
-      <article className="premium-panel group flex h-full flex-col">
-        <div className="relative p-3">
-          <div className="project-media-stage aspect-[16/10] overflow-hidden p-3">
-            <div className="project-media-frame h-full w-full overflow-hidden rounded-3xl p-2">
-              <img
-                src={project.image}
-                alt={project.title}
-                loading="lazy"
-                decoding="async"
-                className="project-media-image transition duration-500 group-hover:scale-[1.02]"
-              />
-            </div>
+      <article className="premium-panel group flex h-full flex-col overflow-hidden">
+        <div className="relative border-b border-(--line-soft)">
+          <div className="project-media-stage aspect-16/10 overflow-hidden px-4 pt-4 pb-3 md:px-5 md:pt-5 md:pb-4">
+            <img
+              src={project.image}
+              alt={project.title}
+              loading="lazy"
+              decoding="async"
+              className="project-media-image transition duration-500 group-hover:scale-[1.02]"
+            />
           </div>
-          <div className="absolute inset-x-0 bottom-0 h-16 bg-linear-to-t from-[rgba(10,12,14,0.68)] via-transparent to-transparent" />
+          <div className="absolute inset-x-0 bottom-0 h-20 bg-linear-to-t from-[rgba(10,12,14,0.76)] via-[rgba(10,12,14,0.28)] to-transparent" />
           <div className="absolute left-4 top-4 inline-flex rounded-full border border-white/15 bg-black/35 px-3 py-1 text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-white/80 backdrop-blur">
             {project.tech}
           </div>
