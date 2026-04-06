@@ -32,8 +32,19 @@ export default function ProjectCard({ project }) {
             {project.shortDescription}
           </p>
 
+          <div className="mt-4 flex flex-wrap gap-2">
+            {project.stack.slice(0, 3).map((item) => (
+              <span
+                key={item}
+                className="rounded-full border border-[var(--line-soft)] px-3 py-1 text-xs text-[var(--text-2)]"
+              >
+                {item}
+              </span>
+            ))}
+          </div>
+
           <div className="mt-5 flex items-center justify-between border-t border-[var(--line-soft)] pt-4 text-sm">
-            <span className="text-[var(--text-2)]">Case details + stack</span>
+            <span className="text-[var(--text-2)]">{project.impact}</span>
             <span className="font-medium text-[var(--text-1)]">Open project</span>
           </div>
         </div>
