@@ -186,7 +186,7 @@ const projectsData = [
       "I implemented a modular React frontend with reusable UI patterns, responsive page structure, and integration-ready sections for service-oriented flows.",
     impact:
       "The project shows stronger component discipline and a clearer service-platform presentation than a static marketing site.",
-    image: "/assets/images/dhatru_care.png",
+    image: "/assets/images/p2care.webp",
     github: "uttam-marakana/p2care",
     preview: "",
     stack: [
@@ -242,7 +242,7 @@ const projectsData = [
       "I structured the platform around React routing, admin domain separation, Firebase Authentication, Firestore data management, protected routes, and modular UI sections.",
     impact:
       "The result is a more production-oriented React system that demonstrates admin/public separation, serverless platform architecture, and healthcare-specific workflow thinking.",
-    image: "/assets/images/p2care.webp",
+    image: "/assets/images/dhatru_care.png",
     github: "uttam-marakana/dhatru-care",
     preview: "https://dhatrucare.vercel.app",
     stack: [
