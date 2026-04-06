@@ -1,6 +1,33 @@
 import personal from "../data/personal";
+import usePageSeo from "../hooks/usePageSeo";
+import { getAbsoluteUrl } from "../lib/site";
+import profileImage from "../assets/profile.webp";
 
 export default function About() {
+  usePageSeo({
+    title: "About Uttam Marakana",
+    description:
+      "Learn about Uttam Marakana's experience in Shopify development, React frontend engineering, ecommerce optimization, and performance-focused delivery.",
+    path: "/about",
+    image: profileImage,
+    keywords: [
+      "about Uttam Marakana",
+      "Shopify experience",
+      "React developer experience",
+      "frontend engineer portfolio",
+    ],
+    schema: {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      mainEntity: {
+        "@type": "Person",
+        name: personal.name,
+        description: personal.summary,
+        url: getAbsoluteUrl("/about"),
+      },
+    },
+  });
+
   const skills = [
     {
       title: "Frontend Development",
@@ -54,7 +81,7 @@ export default function About() {
         {/* ABOUT INTRO */}
         <h1 className="text-3xl font-semibold mb-6">About Me</h1>
 
-        <p className="text-white-600 leading-relaxed mb-16">
+        <p className="text-gray-400 leading-relaxed mb-16">
           {personal.summary}
         </p>
 
@@ -69,10 +96,10 @@ export default function About() {
             >
               <h3 className="text-xl font-semibold mb-4">{group.title}</h3>
 
-              <ul className="space-y-2 text-white-600">
+              <ul className="space-y-2 text-gray-400">
                 {group.items.map((skill, i) => (
                   <li key={i} className="flex gap-2 items-center">
-                    <span className="w-1.5 h-1.5 bg-black rounded-full"></span>
+                    <span className="w-1.5 h-1.5 bg-gray-300 rounded-full"></span>
                     {skill}
                   </li>
                 ))}
@@ -87,7 +114,7 @@ export default function About() {
         {personal.experience.map((exp, i) => (
           <div key={i} className="mb-6">
             <h3 className="font-semibold">{exp.role}</h3>
-            <p className="text-white-600">
+            <p className="text-gray-400">
               {exp.company} — {exp.duration}
             </p>
           </div>
