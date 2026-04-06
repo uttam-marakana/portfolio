@@ -20,3 +20,12 @@ Object.defineProperty(window, "matchMedia", {
 });
 
 window.scrollTo = vi.fn();
+
+class MockIntersectionObserver {
+  observe = vi.fn();
+  unobserve = vi.fn();
+  disconnect = vi.fn();
+}
+
+window.IntersectionObserver = MockIntersectionObserver;
+globalThis.IntersectionObserver = MockIntersectionObserver;
