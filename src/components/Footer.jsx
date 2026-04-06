@@ -1,108 +1,80 @@
-import { FaGithub, FaLinkedin, FaEnvelope, FaWhatsapp } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import SocialLinks from "./SocialLinks";
+import mainLogo from "../assets/logo.webp";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-300 mt-16">
-      <div
-        className="
-        max-w-7xl mx-auto px-6 py-12
-        grid gap-10
-        grid-cols-1
-        sm:grid-cols-2
-        lg:grid-cols-3
-      "
-      >
-        {/* -=-=-=-=-=-=- LOGO + NAME -=-=-=-=-=-=- */}
-        <div className="text-center lg:text-left">
-          <div className="flex items-center justify-center lg:justify-start gap-3 mb-4">
-            <img
-              src="src/assets/logo.png"
-              alt="Uttam Marakana Logo"
-              className="w-10 h-10"
-            />
+    <footer className="px-3 pb-6 pt-10">
+      <div className="page-shell">
+        <div className="section-frame rounded-[2rem] px-6 py-10 md:px-10">
+          <div className="grid gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="text-center lg:text-left">
+              <div className="flex items-center justify-center lg:justify-start gap-3 mb-4">
+                <img
+                  src={mainLogo}
+                  alt="Uttam Marakana Logo"
+                  className="h-12 w-12 rounded-2xl border border-[var(--line-soft)] bg-white/8 p-2"
+                />
 
-            <div>
-              <h3 className="text-white font-semibold text-lg">
-                Uttam Marakana
-              </h3>
-              <p className="text-sm text-gray-400">React & Shopify Developer</p>
+                <div>
+                  <h3 className="text-[var(--text-1)] font-semibold text-lg">
+                    Uttam Marakana
+                  </h3>
+                  <p className="text-sm text-[var(--text-2)]">
+                    Shopify & React Developer
+                  </p>
+                </div>
+              </div>
+
+              <p className="text-sm leading-relaxed max-w-sm mx-auto lg:mx-0 text-[var(--text-2)]">
+                Conversion-aware ecommerce builds, frontend systems with better
+                structure, and interfaces that feel sharp under pressure.
+              </p>
+            </div>
+
+            <div className="text-center lg:text-left">
+              <h4 className="text-[var(--text-1)] font-semibold mb-4">
+                Quick Links
+              </h4>
+
+              <ul className="space-y-3 text-sm text-[var(--text-2)]">
+                <li>
+                  <Link to="/" className="hover:text-[var(--text-1)] transition">
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/projects"
+                    className="hover:text-[var(--text-1)] transition"
+                  >
+                    Projects
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/contact"
+                    className="hover:text-[var(--text-1)] transition"
+                  >
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            <div className="text-center lg:text-left">
+              <h4 className="text-[var(--text-1)] font-semibold mb-4">
+                Connect
+              </h4>
+              <SocialLinks />
             </div>
           </div>
 
-          <p className="text-sm leading-relaxed max-w-sm mx-auto lg:mx-0">
-            Building scalable ecommerce experiences, performance-driven
-            frontends, and reliable digital systems.
-          </p>
-        </div>
-
-        {/* -=-=-=-=-=-=- QUICK LINKS -=-=-=-=-=-=- */}
-        <div className="text-center lg:text-left">
-          <h4 className="text-white font-semibold mb-4">Quick Links</h4>
-
-          <ul className="space-y-2 text-sm">
-            <li>
-              <a href="/" className="hover:text-white transition">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="/projects" className="hover:text-white transition">
-                Projects
-              </a>
-            </li>
-            <li>
-              <a href="/contact" className="hover:text-white transition">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        {/* -=-=-=-=-=-=- SOCIAL LINKS -=-=-=-=-=-=- */}
-        <div className="text-center lg:text-left">
-          <h4 className="text-white font-semibold mb-4">Connect</h4>
-
-          <div className="flex justify-center lg:justify-start gap-4 text-xl">
-            <a
-              href="https://github.com/uttam-marakana"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-white text-[#181717] p-3 rounded-full hover:scale-110 transition"
-            >
-              <FaGithub />
-            </a>
-
-            <a
-              href="https://www.linkedin.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-[#0A66C2] text-white p-3 rounded-full hover:scale-110 transition"
-            >
-              <FaLinkedin />
-            </a>
-
-            <a
-              href="mailto:uttammarakana03@gmail.com"
-              className="bg-[#EA4335] text-white p-3 rounded-full hover:scale-110 transition"
-            >
-              <FaEnvelope />
-            </a>
-
-            <a
-              href="https://wa.me/916353098381"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-[#25D366] text-white p-3 rounded-full hover:scale-110 transition"
-            >
-              <FaWhatsapp />
-            </a>
+          <div className="mt-10 flex flex-col gap-3 border-t border-[var(--line-soft)] pt-6 text-sm text-[var(--text-2)] md:flex-row md:items-center md:justify-between">
+            <p>© {new Date().getFullYear()} Uttam Marakana. All rights reserved.</p>
+            <p>Built for sharper portfolios, better hiring signals, and cleaner frontend delivery.</p>
           </div>
         </div>
-      </div>
-
-      {/* -=-=-=-=-=-=- BOTTOM BAR -=-=-=-=-=-=- */}
-      <div className="border-t border-gray-800 text-center text-sm py-4">
-        © {new Date().getFullYear()} Uttam Marakana. All rights reserved.
       </div>
     </footer>
   );
