@@ -41,10 +41,10 @@ export default function ReadmeTOC({ content }) {
   return (
     <aside className="sticky top-24 hidden h-fit xl:block">
       <div className="premium-panel p-5">
-        <p className="text-xs uppercase tracking-[0.24em] text-[var(--text-2)]">
+        <p className="text-xs uppercase tracking-[0.24em] text-(--text-2)">
           On this page
         </p>
-        <h3 className="mt-2 font-[var(--font-display)] text-2xl">
+        <h3 className="mt-2 font-(--font-display) text-2xl">
           README map
         </h3>
 
@@ -55,8 +55,8 @@ export default function ReadmeTOC({ content }) {
                 href={`#${h.id}`}
                 className={`block rounded-2xl border px-3 py-3 transition ${
                   active === h.id
-                    ? "border-[var(--brand-1)] bg-[rgba(255,141,87,0.12)] text-[var(--text-1)]"
-                    : "border-transparent text-[var(--text-2)] hover:border-[var(--line-soft)] hover:text-[var(--text-1)]"
+                    ? "border-(--brand-1) bg-[rgba(255,141,87,0.12)] text-(--text-1)"
+                    : "border-transparent text-(--text-2) hover:border-(--line-soft) hover:text-(--text-1)"
                 }`}
               >
                 {h.text}
