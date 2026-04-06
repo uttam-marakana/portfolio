@@ -182,7 +182,7 @@ const projectsData = [
         caption: "Board-level workspace structure presented in a product-style dashboard layout.",
       },
       {
-        image: "/assets/images/multi-notes-app-detail.png",
+        image: "/assets/images/multi-notes-app-detail.webp",
         alt: "Multi Notes App supporting interface visual",
         caption: "Supporting product visual from the repo showing the same system thinking carried into branded app surfaces.",
       },
@@ -250,12 +250,12 @@ const projectsData = [
         caption: "The main healthcare service surface focused on clarity, trust, and modular page composition.",
       },
       {
-        image: "/assets/images/p2care-hospital.png",
+        image: "/assets/images/p2care-hospital.webp",
         alt: "P2Care hospital detail visual",
         caption: "A supporting hospital-focused section that reinforces the medical service context.",
       },
       {
-        image: "/assets/images/p2care-doctors.png",
+        image: "/assets/images/p2care-doctors.webp",
         alt: "P2Care doctor and care team visual",
         caption: "Team-oriented supporting content used to build a more complete service-platform presentation.",
       },
@@ -285,7 +285,7 @@ const projectsData = [
       "I structured the platform around React routing, admin domain separation, Firebase Authentication, Firestore data management, protected routes, and modular UI sections.",
     impact:
       "The result is a more production-oriented React system that demonstrates admin/public separation, serverless platform architecture, and healthcare-specific workflow thinking.",
-    image: "/assets/images/dhatru_care.png",
+    image: "/assets/images/dhatru_care.webp",
     github: "uttam-marakana/dhatru-care",
     preview: "https://dhatrucare.vercel.app",
     stack: [
@@ -320,12 +320,12 @@ const projectsData = [
     ],
     gallery: [
       {
-        image: "/assets/images/dhatru_care.png",
+        image: "/assets/images/dhatru_care.webp",
         alt: "Dhatru Care platform hero view",
         caption: "Public-facing healthcare platform presentation with stronger brand framing and service clarity.",
       },
       {
-        image: "/assets/images/dhatru-care-hospital.png",
+        image: "/assets/images/dhatru-care-hospital.webp",
         alt: "Dhatru Care hospital supporting visual",
         caption: "Supporting hospital image from the repo, useful for explaining the platform's care and institution context.",
       },
@@ -355,7 +355,7 @@ const projectsData = [
       "I structured the product around React components, reusable calculation utilities, session stores, and dedicated enforcement engines for risk, discipline, execution validation, analytics, and behavior warnings. The system evaluates trades before execution instead of only reporting after the fact.",
     impact:
       "The result feels closer to a serious trading control layer than a generic dashboard demo, showing stronger product thinking around discipline, decision support, and measurable execution quality.",
-    image: "/assets/images/tradeos.png",
+    image: "/assets/images/tradeos.webp",
     github: "uttam-marakana/trading-dashboard",
     preview: "",
     stack: [
@@ -391,7 +391,7 @@ const projectsData = [
     ],
     gallery: [
       {
-        image: "/assets/images/tradeos.png",
+        image: "/assets/images/tradeos.webp",
         alt: "TradeOS dashboard hero view",
         caption: "Execution-focused dashboard framing the product as a trading control layer instead of a simple tracker.",
       },
