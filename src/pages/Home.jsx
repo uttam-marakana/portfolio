@@ -127,7 +127,7 @@ export default function Home() {
               <h1 className="display-title mt-6">
                 Interfaces that feel sharper, faster, and more deliberate.
               </h1>
-              <p className="mt-6 max-w-2xl text-lg leading-8 text-[var(--text-2)]">
+              <p className="mt-6 max-w-2xl text-lg leading-8 text-(--text-2)">
                 {personal.summary} I work across Shopify storefronts and React
                 products where cleaner structure, stronger hierarchy, and
                 practical delivery matter more than visual noise.
@@ -159,7 +159,7 @@ export default function Home() {
             </div>
 
             <div className="premium-panel mx-auto max-w-md p-5 md:p-7">
-              <div className="rounded-[1.75rem] border border-[var(--line-soft)] bg-[rgba(255,255,255,0.04)] p-4">
+              <div className="rounded-[1.75rem] border border-(--line-soft) bg-[rgba(255,255,255,0.04)] p-4">
                 <img
                   src={profileImage}
                   alt="Uttam Marakana profile"
@@ -171,9 +171,9 @@ export default function Home() {
               </div>
 
               <div className="mt-5 space-y-4">
-                <div className="flex items-center justify-between border-b border-[var(--line-soft)] pb-4">
+                <div className="flex items-center justify-between border-b border-(--line-soft) pb-4">
                   <div>
-                    <p className="text-xs uppercase tracking-[0.24em] text-[var(--text-2)]">
+                    <p className="text-xs uppercase tracking-[0.24em] text-(--text-2)">
                       Based in
                     </p>
                     <p className="mt-2 text-lg font-medium">
@@ -184,16 +184,16 @@ export default function Home() {
                 </div>
 
                 <div className="grid gap-3 sm:grid-cols-2">
-                  <div className="rounded-[1.25rem] border border-[var(--line-soft)] p-4">
-                    <p className="text-xs uppercase tracking-[0.2em] text-[var(--text-2)]">
+                  <div className="rounded-[1.25rem] border border-(--line-soft) p-4">
+                    <p className="text-xs uppercase tracking-[0.2em] text-(--text-2)">
                       Focus
                     </p>
                     <p className="mt-2 font-medium">
                       React systems, storefront UX, implementation quality
                     </p>
                   </div>
-                  <div className="rounded-[1.25rem] border border-[var(--line-soft)] p-4">
-                    <p className="text-xs uppercase tracking-[0.2em] text-[var(--text-2)]">
+                  <div className="rounded-[1.25rem] border border-(--line-soft) p-4">
+                    <p className="text-xs uppercase tracking-[0.2em] text-(--text-2)">
                       Working style
                     </p>
                     <p className="mt-2 font-medium">
@@ -255,13 +255,13 @@ export default function Home() {
             <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
               {capabilities.map((item) => (
                 <article key={item.title} className="premium-panel p-6">
-                  <p className="text-xs uppercase tracking-[0.22em] text-[var(--brand-2)]">
+                  <p className="text-xs uppercase tracking-[0.22em] text-(--brand-2)">
                     {item.accent}
                   </p>
-                  <h3 className="mt-4 font-[var(--font-display)] text-2xl">
+                  <h3 className="mt-4 font-(--font-display) text-2xl">
                     {item.title}
                   </h3>
-                  <p className="mt-4 text-sm leading-7 text-[var(--text-2)]">
+                  <p className="mt-4 text-sm leading-7 text-(--text-2)">
                     {item.body}
                   </p>
                 </article>
@@ -290,11 +290,11 @@ export default function Home() {
           <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
             {processSteps.map((step) => (
               <article key={step.step} className="premium-panel p-6">
-                <p className="font-[var(--font-display)] text-4xl text-[var(--brand-1)]">
+                <p className="font-(--font-display) text-4xl text-(--brand-1)">
                   {step.step}
                 </p>
                 <h3 className="mt-4 text-xl font-semibold">{step.title}</h3>
-                <p className="mt-3 text-sm leading-7 text-[var(--text-2)]">
+                <p className="mt-3 text-sm leading-7 text-(--text-2)">
                   {step.body}
                 </p>
               </article>

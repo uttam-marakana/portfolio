@@ -192,7 +192,7 @@ export default function Contact() {
                 {engagementNotes.map((note) => (
                   <li
                     key={note}
-                    className="rounded-[1.4rem] border border-[var(--line-soft)] bg-white/6 px-4 py-4 text-sm leading-7 text-[var(--text-2)]"
+                    className="rounded-[1.4rem] border border-(--line-soft) bg-white/6 px-4 py-4 text-sm leading-7 text-(--text-2)"
                   >
                     {note}
                   </li>
@@ -207,9 +207,9 @@ export default function Contact() {
               )}
 
               {detectedService && (
-                <div className="mt-6 rounded-[1.4rem] border border-[var(--line-soft)] bg-white/6 px-4 py-4 text-sm text-[var(--text-2)]">
+                <div className="mt-6 rounded-[1.4rem] border border-(--line-soft) bg-white/6 px-4 py-4 text-sm text-(--text-2)">
                   Request categorized as{" "}
-                  <b className="text-[var(--text-1)]">{detectedService}</b>.
+                  <b className="text-(--text-1)">{detectedService}</b>.
                 </div>
               )}
             </div>
@@ -218,7 +218,7 @@ export default function Contact() {
           <div className="premium-panel p-6 md:p-8">
             <span className="eyebrow">Project brief</span>
             <h2 className="section-title mt-5">Send the details</h2>
-            <p className="mt-4 text-sm leading-7 text-[var(--text-2)]">
+            <p className="mt-4 text-sm leading-7 text-(--text-2)">
               A clear summary of the current problem, target outcome, and stack
               is enough to start the conversation.
             </p>
@@ -226,7 +226,7 @@ export default function Contact() {
             <form onSubmit={handleSubmit} className="mt-8 space-y-6">
               <div className="grid gap-6 md:grid-cols-2">
                 <label className="block">
-                  <span className="mb-2 block text-xs uppercase tracking-[0.2em] text-[var(--text-2)]">
+                  <span className="mb-2 block text-xs uppercase tracking-[0.2em] text-(--text-2)">
                     Your name
                   </span>
                   <input
@@ -235,12 +235,12 @@ export default function Contact() {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full rounded-[1.3rem] border border-[var(--line-soft)] bg-white/6 px-4 py-4 outline-none focus:border-[var(--brand-1)]"
+                    className="w-full rounded-[1.3rem] border border-(--line-soft) bg-white/6 px-4 py-4 outline-none focus:border-(--brand-1)"
                   />
                 </label>
 
                 <label className="block">
-                  <span className="mb-2 block text-xs uppercase tracking-[0.2em] text-[var(--text-2)]">
+                  <span className="mb-2 block text-xs uppercase tracking-[0.2em] text-(--text-2)">
                     Email
                   </span>
                   <input
@@ -249,13 +249,13 @@ export default function Contact() {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full rounded-[1.3rem] border border-[var(--line-soft)] bg-white/6 px-4 py-4 outline-none focus:border-[var(--brand-1)]"
+                    className="w-full rounded-[1.3rem] border border-(--line-soft) bg-white/6 px-4 py-4 outline-none focus:border-(--brand-1)"
                   />
                 </label>
               </div>
 
               <label className="block">
-                <span className="mb-2 block text-xs uppercase tracking-[0.2em] text-[var(--text-2)]">
+                <span className="mb-2 block text-xs uppercase tracking-[0.2em] text-(--text-2)">
                   Project type
                 </span>
                 <input
@@ -265,7 +265,7 @@ export default function Contact() {
                   value={formData.projectType}
                   onChange={handleChange}
                   placeholder="Shopify, React, CRO, or General"
-                  className="w-full rounded-[1.3rem] border border-[var(--line-soft)] bg-white/6 px-4 py-4 outline-none focus:border-[var(--brand-1)]"
+                  className="w-full rounded-[1.3rem] border border-(--line-soft) bg-white/6 px-4 py-4 outline-none focus:border-(--brand-1)"
                 />
                 <datalist id="project-type-options">
                   {serviceOptions.map((option) => (
@@ -288,7 +288,7 @@ export default function Contact() {
               </div>
 
               <label className="block">
-                <span className="mb-2 block text-xs uppercase tracking-[0.2em] text-[var(--text-2)]">
+                <span className="mb-2 block text-xs uppercase tracking-[0.2em] text-(--text-2)">
                   Project details
                 </span>
                 <textarea
@@ -297,7 +297,7 @@ export default function Contact() {
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  className="w-full rounded-[1.3rem] border border-[var(--line-soft)] bg-white/6 px-4 py-4 outline-none focus:border-[var(--brand-1)]"
+                  className="w-full rounded-[1.3rem] border border-(--line-soft) bg-white/6 px-4 py-4 outline-none focus:border-(--brand-1)"
                 />
               </label>
 

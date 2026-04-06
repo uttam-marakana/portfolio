@@ -159,12 +159,12 @@ export default function About() {
               {principles.map((item) => (
                 <article
                   key={item.title}
-                  className="rounded-[1.5rem] border border-[var(--line-soft)] bg-white/6 p-5"
+                  className="rounded-[1.5rem] border border-(--line-soft) bg-white/6 p-5"
                 >
-                  <h3 className="font-[var(--font-display)] text-2xl">
+                  <h3 className="font-(--font-display) text-2xl">
                     {item.title}
                   </h3>
-                  <p className="mt-3 text-sm leading-7 text-[var(--text-2)]">
+                  <p className="mt-3 text-sm leading-7 text-(--text-2)">
                     {item.body}
                   </p>
                 </article>
@@ -181,14 +181,14 @@ export default function About() {
               {skills.map((group) => (
                 <article
                   key={group.title}
-                  className="rounded-[1.5rem] border border-[var(--line-soft)] bg-white/6 p-5"
+                  className="rounded-[1.5rem] border border-(--line-soft) bg-white/6 p-5"
                 >
                   <h3 className="text-xl font-semibold">{group.title}</h3>
                   <ul className="mt-4 flex flex-wrap gap-2">
                     {group.items.map((skill) => (
                       <li
                         key={skill}
-                        className="rounded-full border border-[var(--line-soft)] px-3 py-2 text-sm text-[var(--text-2)]"
+                        className="rounded-full border border-(--line-soft) px-3 py-2 text-sm text-(--text-2)"
                       >
                         {skill}
                       </li>
@@ -206,14 +206,14 @@ export default function About() {
             <h2 className="section-title mt-5">
               Academic base with frontend-specialized delivery on top.
             </h2>
-            <article className="mt-8 rounded-[1.5rem] border border-[var(--line-soft)] bg-white/6 p-5">
-              <h3 className="font-[var(--font-display)] text-2xl">
+            <article className="mt-8 rounded-[1.5rem] border border-(--line-soft) bg-white/6 p-5">
+              <h3 className="font-(--font-display) text-2xl">
                 {personal.education.degree}
               </h3>
-              <p className="mt-3 text-sm leading-7 text-[var(--text-2)]">
+              <p className="mt-3 text-sm leading-7 text-(--text-2)">
                 {personal.education.institution}
               </p>
-              <p className="mt-4 text-xs uppercase tracking-[0.22em] text-[var(--brand-2)]">
+              <p className="mt-4 text-xs uppercase tracking-[0.22em] text-(--brand-2)">
                 {personal.education.result}
               </p>
             </article>
@@ -228,7 +228,7 @@ export default function About() {
               {personal.currentLearning.map((item) => (
                 <article
                   key={item}
-                  className="rounded-[1.5rem] border border-[var(--line-soft)] bg-white/6 px-5 py-5 text-sm leading-7 text-[var(--text-2)]"
+                  className="rounded-[1.5rem] border border-(--line-soft) bg-white/6 px-5 py-5 text-sm leading-7 text-(--text-2)"
                 >
                   {item}
                 </article>
@@ -244,18 +244,18 @@ export default function About() {
             {personal.experience.map((exp) => (
               <article
                 key={`${exp.company}-${exp.duration}`}
-                className="rounded-[1.75rem] border border-[var(--line-soft)] bg-white/6 px-5 py-5 md:px-6"
+                className="rounded-[1.75rem] border border-(--line-soft) bg-white/6 px-5 py-5 md:px-6"
               >
                 <div className="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
                   <div>
-                    <h3 className="font-[var(--font-display)] text-3xl leading-none">
+                    <h3 className="font-(--font-display) text-3xl leading-none">
                       {exp.role}
                     </h3>
-                    <p className="mt-3 text-base text-[var(--text-2)]">
+                    <p className="mt-3 text-base text-(--text-2)">
                       {exp.company}
                     </p>
                   </div>
-                  <p className="text-sm uppercase tracking-[0.2em] text-[var(--text-2)]">
+                  <p className="text-sm uppercase tracking-[0.2em] text-(--text-2)">
                     {exp.duration}
                   </p>
                 </div>

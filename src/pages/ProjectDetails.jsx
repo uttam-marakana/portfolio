@@ -115,18 +115,18 @@ export default function ProjectDetails() {
                 <div>
                   <span className="eyebrow">{project.tech} case study</span>
                   <h1 className="section-title mt-5">{project.title}</h1>
-                  <p className="mt-5 max-w-2xl text-base leading-8 text-[var(--text-2)] md:text-lg">
+                  <p className="mt-5 max-w-2xl text-base leading-8 text-(--text-2) md:text-lg">
                     {project.overview}
                   </p>
 
                   <div className="mt-6 flex flex-wrap gap-3">
-                    <span className="rounded-full border border-[var(--line-soft)] px-4 py-2 text-sm text-[var(--text-2)]">
+                    <span className="rounded-full border border-(--line-soft) px-4 py-2 text-sm text-(--text-2)">
                       {project.role}
                     </span>
-                    <span className="rounded-full border border-[var(--line-soft)] px-4 py-2 text-sm text-[var(--text-2)]">
+                    <span className="rounded-full border border-(--line-soft) px-4 py-2 text-sm text-(--text-2)">
                       {project.sector}
                     </span>
-                    <span className="rounded-full border border-[var(--line-soft)] px-4 py-2 text-sm text-[var(--text-2)]">
+                    <span className="rounded-full border border-(--line-soft) px-4 py-2 text-sm text-(--text-2)">
                       {project.timeline}
                     </span>
                   </div>
@@ -174,7 +174,7 @@ export default function ProjectDetails() {
                   <a
                     key={section.id}
                     href={`#${section.id}`}
-                    className="shrink-0 rounded-full border border-[var(--line-soft)] bg-white/6 px-4 py-2 text-sm text-[var(--text-2)] hover:border-[var(--brand-1)] hover:text-[var(--text-1)]"
+                    className="shrink-0 rounded-full border border-(--line-soft) bg-white/6 px-4 py-2 text-sm text-(--text-2) hover:border-(--brand-1) hover:text-(--text-1)"
                   >
                     {section.label}
                   </a>
@@ -189,7 +189,7 @@ export default function ProjectDetails() {
               <div className="premium-panel p-6 md:p-8">
                 <span className="eyebrow">Project summary</span>
                 <h2 className="section-title mt-5">Context and scope</h2>
-                <p className="mt-5 text-sm leading-8 text-[var(--text-2)] md:text-base">
+                <p className="mt-5 text-sm leading-8 text-(--text-2) md:text-base">
                   {project.impact}
                 </p>
 
@@ -222,7 +222,7 @@ export default function ProjectDetails() {
                   {project.services.map((item) => (
                     <article
                       key={item}
-                      className="rounded-[1.5rem] border border-[var(--line-soft)] bg-white/6 px-5 py-5 text-sm leading-7 text-[var(--text-2)]"
+                      className="rounded-[1.5rem] border border-(--line-soft) bg-white/6 px-5 py-5 text-sm leading-7 text-(--text-2)"
                     >
                       {item}
                     </article>
@@ -238,7 +238,7 @@ export default function ProjectDetails() {
               <div className="premium-panel p-6 md:p-8">
                 <span className="eyebrow">Challenge</span>
                 <h2 className="section-title mt-5">What needed to improve</h2>
-                <p className="mt-5 text-sm leading-8 text-[var(--text-2)] md:text-base">
+                <p className="mt-5 text-sm leading-8 text-(--text-2) md:text-base">
                   {project.problem}
                 </p>
               </div>
@@ -250,7 +250,7 @@ export default function ProjectDetails() {
                   {project.constraints.map((item) => (
                     <article
                       key={item}
-                      className="rounded-[1.5rem] border border-[var(--line-soft)] bg-white/6 px-5 py-5 text-sm leading-7 text-[var(--text-2)]"
+                      className="rounded-[1.5rem] border border-(--line-soft) bg-white/6 px-5 py-5 text-sm leading-7 text-(--text-2)"
                     >
                       {item}
                     </article>
@@ -267,7 +267,7 @@ export default function ProjectDetails() {
                 <div className="premium-panel p-6 md:p-8">
                   <span className="eyebrow">Delivery</span>
                   <h2 className="section-title mt-5">What I implemented</h2>
-                  <p className="mt-5 text-sm leading-8 text-[var(--text-2)] md:text-base">
+                  <p className="mt-5 text-sm leading-8 text-(--text-2) md:text-base">
                     {project.solution}
                   </p>
                 </div>
@@ -279,7 +279,7 @@ export default function ProjectDetails() {
                     {project.stack.map((item) => (
                       <span
                         key={item}
-                        className="rounded-full border border-[var(--line-soft)] px-4 py-2 text-sm text-[var(--text-2)]"
+                        className="rounded-full border border-(--line-soft) px-4 py-2 text-sm text-(--text-2)"
                       >
                         {item}
                       </span>
@@ -295,13 +295,13 @@ export default function ProjectDetails() {
                   {project.process.map((item, index) => (
                     <article
                       key={item}
-                      className="rounded-[1.5rem] border border-[var(--line-soft)] bg-white/6 px-5 py-5"
+                      className="rounded-[1.5rem] border border-(--line-soft) bg-white/6 px-5 py-5"
                     >
                       <div className="flex gap-4">
-                        <p className="font-[var(--font-display)] text-3xl text-[var(--brand-1)]">
+                        <p className="font-(--font-display) text-3xl text-(--brand-1)">
                           {String(index + 1).padStart(2, "0")}
                         </p>
-                        <p className="pt-1 text-sm leading-7 text-[var(--text-2)] md:text-base">
+                        <p className="pt-1 text-sm leading-7 text-(--text-2) md:text-base">
                           {item}
                         </p>
                       </div>
@@ -322,7 +322,7 @@ export default function ProjectDetails() {
                   {project.results.map((item) => (
                     <article
                       key={item}
-                      className="rounded-[1.5rem] border border-[var(--line-soft)] bg-white/6 px-5 py-5 text-sm leading-7 text-[var(--text-2)] md:text-base"
+                      className="rounded-[1.5rem] border border-(--line-soft) bg-white/6 px-5 py-5 text-sm leading-7 text-(--text-2) md:text-base"
                     >
                       {item}
                     </article>
@@ -337,7 +337,7 @@ export default function ProjectDetails() {
                   {project.highlights.map((highlight) => (
                     <article
                       key={highlight}
-                      className="rounded-[1.5rem] border border-[var(--line-soft)] bg-white/6 px-5 py-5 text-sm leading-7 text-[var(--text-2)] md:text-base"
+                      className="rounded-[1.5rem] border border-(--line-soft) bg-white/6 px-5 py-5 text-sm leading-7 text-(--text-2) md:text-base"
                     >
                       {highlight}
                     </article>
@@ -356,16 +356,16 @@ export default function ProjectDetails() {
                     <span className="eyebrow">Technical notes</span>
                     <h2 className="section-title mt-5">Repository README</h2>
                   </div>
-                  <p className="max-w-lg text-sm leading-7 text-[var(--text-2)]">
+                  <p className="max-w-lg text-sm leading-7 text-(--text-2)">
                     GitHub documentation remains available as supporting
                     technical context, but the case study above carries the main
                     product and implementation story.
                   </p>
                 </div>
 
-                <article className="premium-prose prose mt-10 max-w-none prose-headings:scroll-mt-32 prose-p:text-[var(--text-2)] prose-li:text-[var(--text-2)] prose-strong:text-[var(--text-1)] prose-code:text-[var(--brand-1)]">
+                <article className="premium-prose prose mt-10 max-w-none prose-headings:scroll-mt-32 prose-p:text-(--text-2) prose-li:text-(--text-2) prose-strong:text-(--text-1) prose-code:text-(--brand-1)">
                   {loading ? (
-                    <p className="text-[var(--text-2)]">Loading README...</p>
+                    <p className="text-(--text-2)">Loading README...</p>
                   ) : readme ? (
                     <ReactMarkdown
                       remarkPlugins={[remarkGfm]}
@@ -388,7 +388,7 @@ export default function ProjectDetails() {
                       {readme}
                     </ReactMarkdown>
                   ) : (
-                    <p className="text-[var(--text-2)]">
+                    <p className="text-(--text-2)">
                       This project does not expose a public README summary here,
                       so the case-study sections above carry the main delivery
                       context.
