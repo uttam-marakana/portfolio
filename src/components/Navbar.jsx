@@ -56,7 +56,7 @@ export default function Navbar() {
               </div>
             </NavLink>
 
-            <div className="hidden lg:flex items-center gap-6">
+            <div className="hidden xl:flex items-center gap-5">
               <NavLink
                 to="/"
                 className="premium-nav-link"
@@ -86,6 +86,13 @@ export default function Navbar() {
                 About
               </NavLink>
               <NavLink
+                to="/resume"
+                className="premium-nav-link"
+                data-active={location.pathname === "/resume"}
+              >
+                Resume
+              </NavLink>
+              <NavLink
                 to="/contact"
                 className="premium-nav-link"
                 data-active={location.pathname === "/contact"}
@@ -101,7 +108,7 @@ export default function Navbar() {
                     placeholder="Search work"
                     value={searchTerm}
                     onChange={handleSearchChange}
-                    className="w-40 bg-transparent text-(--text-1) outline-none placeholder:text-(--text-2)"
+                  className="w-36 bg-transparent text-(--text-1) outline-none placeholder:text-(--text-2)"
                   />
                 </label>
 
@@ -115,7 +122,7 @@ export default function Navbar() {
               </div>
             </div>
 
-            <div className="flex items-center gap-3 lg:hidden">
+            <div className="flex items-center gap-3 xl:hidden">
               <button
                 onClick={toggleTheme}
                 className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-(--line-soft) bg-white/8"

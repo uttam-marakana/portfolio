@@ -61,6 +61,13 @@ export default function Drawer({ open, setOpen }) {
             About
           </NavLink>
           <NavLink
+            to="/resume"
+            onClick={() => setOpen(false)}
+            className="rounded-2xl border border-transparent px-4 py-3 hover:border-(--line-soft)"
+          >
+            Resume
+          </NavLink>
+          <NavLink
             to="/contact"
             onClick={() => setOpen(false)}
             className="rounded-2xl border border-transparent px-4 py-3 hover:border-(--line-soft)"

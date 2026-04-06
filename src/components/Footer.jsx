@@ -67,6 +67,14 @@ export default function Footer() {
                     Contact
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    to="/resume"
+                    className="hover:text-(--text-1) transition"
+                  >
+                    Resume
+                  </Link>
+                </li>
               </ul>
             </div>
 
