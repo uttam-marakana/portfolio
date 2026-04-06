@@ -1,4 +1,3 @@
-
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import personal from "../data/personal";
@@ -122,7 +121,9 @@ export default function Home() {
         <div className="page-shell premium-panel overflow-hidden px-6 py-8 md:px-10 md:py-12">
           <div className="grid items-center gap-10 lg:grid-cols-[1.15fr_0.85fr]">
             <div>
-              <span className="eyebrow">Available for freelance and product work</span>
+              <span className="eyebrow">
+                Available for freelance and product work
+              </span>
               <h1 className="display-title mt-6">
                 Interfaces that feel sharper, faster, and more deliberate.
               </h1>
@@ -133,10 +134,16 @@ export default function Home() {
               </p>
 
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-                <Link to="/projects" className="premium-button premium-button--solid">
+                <Link
+                  to="/projects"
+                  className="premium-button premium-button--solid"
+                >
                   Explore Selected Work
                 </Link>
-                <Link to="/contact" className="premium-button premium-button--ghost">
+                <Link
+                  to="/contact"
+                  className="premium-button premium-button--ghost"
+                >
                   Start a Conversation
                 </Link>
               </div>
@@ -169,7 +176,9 @@ export default function Home() {
                     <p className="text-xs uppercase tracking-[0.24em] text-[var(--text-2)]">
                       Based in
                     </p>
-                    <p className="mt-2 text-lg font-medium">{personal.location}</p>
+                    <p className="mt-2 text-lg font-medium">
+                      {personal.location}
+                    </p>
                   </div>
                   <div className="h-14 w-14 rounded-full bg-[radial-gradient(circle,var(--brand-2),transparent_70%)] opacity-70" />
                 </div>
@@ -179,13 +188,18 @@ export default function Home() {
                     <p className="text-xs uppercase tracking-[0.2em] text-[var(--text-2)]">
                       Focus
                     </p>
-                    <p className="mt-2 font-medium">React systems, storefront UX, implementation quality</p>
+                    <p className="mt-2 font-medium">
+                      React systems, storefront UX, implementation quality
+                    </p>
                   </div>
                   <div className="rounded-[1.25rem] border border-[var(--line-soft)] p-4">
                     <p className="text-xs uppercase tracking-[0.2em] text-[var(--text-2)]">
                       Working style
                     </p>
-                    <p className="mt-2 font-medium">Calm delivery, practical scope, detail-heavy frontend execution</p>
+                    <p className="mt-2 font-medium">
+                      Calm delivery, practical scope, detail-heavy frontend
+                      execution
+                    </p>
                   </div>
                 </div>
               </div>
@@ -202,10 +216,13 @@ export default function Home() {
           <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
             <div>
               <span className="eyebrow">Selected work</span>
-              <h2 className="section-title mt-5">Projects with stronger structure and cleaner delivery</h2>
+              <h2 className="section-title mt-5">
+                Projects with stronger structure and cleaner delivery
+              </h2>
             </div>
             <p className="section-copy md:max-w-md">
-              A compact selection of frontend and storefront work that reflects how I approach hierarchy, scale, and implementation detail.
+              A compact selection of frontend and storefront work that reflects
+              how I approach hierarchy, scale, and implementation detail.
             </p>
           </div>
 
@@ -225,9 +242,13 @@ export default function Home() {
           <div className="grid gap-8 lg:grid-cols-[0.78fr_1.22fr]">
             <div className="premium-panel p-6 md:p-8">
               <span className="eyebrow">Core capabilities</span>
-              <h2 className="section-title mt-5">The work is visual, but the value is structural.</h2>
+              <h2 className="section-title mt-5">
+                The work is visual, but the value is structural.
+              </h2>
               <p className="section-copy mt-5">
-                Premium UI is not about adding more gradients. It comes from better hierarchy, cleaner content flow, and sharper execution under real constraints.
+                Premium UI is not about adding more gradients. It comes from
+                better hierarchy, cleaner content flow, and sharper execution
+                under real constraints.
               </p>
             </div>
 
@@ -257,9 +278,12 @@ export default function Home() {
         <div className="page-shell premium-panel px-6 py-8 md:px-10">
           <span className="eyebrow">Approach</span>
           <div className="mt-5 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-            <h2 className="section-title max-w-2xl">A workflow built to reduce waste before polish begins.</h2>
+            <h2 className="section-title max-w-2xl">
+              A workflow built to reduce waste before polish begins.
+            </h2>
             <p className="section-copy md:max-w-md">
-              I prefer clear system thinking up front so design, build quality, and performance do not fight each other later.
+              I prefer clear system thinking up front so design, build quality,
+              and performance do not fight each other later.
             </p>
           </div>
 
@@ -287,9 +311,14 @@ export default function Home() {
           <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-end">
             <div>
               <span className="eyebrow">Open for new work</span>
-              <h2 className="section-title mt-5">If the product needs sharper UI and cleaner frontend delivery, let’s talk.</h2>
+              <h2 className="section-title mt-5">
+                If the product needs sharper UI and cleaner frontend delivery,
+                let’s talk.
+              </h2>
               <p className="section-copy mt-5">
-                I can help with Shopify storefront improvements, React interfaces, or a practical pass over frontend quality where the current system feels heavy or inconsistent.
+                I can help with Shopify storefront improvements, React
+                interfaces, or a practical pass over frontend quality where the
+                current system feels heavy or inconsistent.
               </p>
             </div>
 

@@ -115,6 +115,24 @@ export default function About() {
                 deliberate.
               </p>
 
+              <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+                <a
+                  href={personal.resumeUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="premium-button premium-button--solid"
+                >
+                  Open Resume
+                </a>
+                <a
+                  href={personal.resumeUrl}
+                  download
+                  className="premium-button premium-button--ghost"
+                >
+                  Download PDF
+                </a>
+              </div>
+
               <div className="mt-8 grid gap-4 md:grid-cols-3">
                 <div className="metric-card">
                   <p className="metric-value">{personal.experience.length}</p>
@@ -156,7 +174,9 @@ export default function About() {
 
           <div className="premium-panel p-6 md:p-8">
             <span className="eyebrow">Skill snapshot</span>
-            <h2 className="section-title mt-5">Capabilities that show up repeatedly.</h2>
+            <h2 className="section-title mt-5">
+              Capabilities that show up repeatedly.
+            </h2>
             <div className="mt-8 grid gap-6 md:grid-cols-2">
               {skills.map((group) => (
                 <article
@@ -174,6 +194,43 @@ export default function About() {
                       </li>
                     ))}
                   </ul>
+                </article>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div className="grid gap-8 lg:grid-cols-[0.88fr_1.12fr]">
+          <div className="premium-panel p-6 md:p-8">
+            <span className="eyebrow">Education</span>
+            <h2 className="section-title mt-5">
+              Academic base with frontend-specialized delivery on top.
+            </h2>
+            <article className="mt-8 rounded-[1.5rem] border border-[var(--line-soft)] bg-white/6 p-5">
+              <h3 className="font-[var(--font-display)] text-2xl">
+                {personal.education.degree}
+              </h3>
+              <p className="mt-3 text-sm leading-7 text-[var(--text-2)]">
+                {personal.education.institution}
+              </p>
+              <p className="mt-4 text-xs uppercase tracking-[0.22em] text-[var(--brand-2)]">
+                {personal.education.result}
+              </p>
+            </article>
+          </div>
+
+          <div className="premium-panel p-6 md:p-8">
+            <span className="eyebrow">Currently learning</span>
+            <h2 className="section-title mt-5">
+              Expanding from frontend execution into broader commerce systems.
+            </h2>
+            <div className="mt-8 grid gap-4 md:grid-cols-2">
+              {personal.currentLearning.map((item) => (
+                <article
+                  key={item}
+                  className="rounded-[1.5rem] border border-[var(--line-soft)] bg-white/6 px-5 py-5 text-sm leading-7 text-[var(--text-2)]"
+                >
+                  {item}
                 </article>
               ))}
             </div>
