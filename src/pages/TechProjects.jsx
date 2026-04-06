@@ -4,6 +4,7 @@ import { FaReact, FaShopify } from "react-icons/fa";
 import projectsData from "../data/projectsData";
 import ProjectCard from "../components/ProjectCard";
 import PageTransition from "../components/PageTransition";
+import BackButton from "../components/BackButton";
 import { SearchContext } from "../context/search-context";
 import usePageSeo from "../hooks/usePageSeo";
 import { getAbsoluteUrl } from "../lib/site";
@@ -84,6 +85,8 @@ export default function TechProjects() {
     <PageTransition>
       <section className="px-3 pt-6 pb-8">
         <div className="page-shell space-y-8">
+          <BackButton fallback="/projects" />
+
           <div className="premium-panel px-6 py-8 md:px-10">
             <div className="grid gap-6 lg:grid-cols-[1fr_auto] lg:items-end">
               <div>

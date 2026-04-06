@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import usePageSeo from "../hooks/usePageSeo";
 import { getAbsoluteUrl } from "../lib/site";
 import PageTransition from "../components/PageTransition";
+import BackButton from "../components/BackButton";
 
 const serviceTracks = [
   {
@@ -101,6 +102,8 @@ export default function Services() {
     <PageTransition>
       <section className="px-3 pt-6 pb-8">
         <div className="page-shell space-y-8">
+          <BackButton fallback="/" />
+
           <div className="premium-panel overflow-hidden px-6 py-8 md:px-10 md:py-10">
             <div className="grid gap-8 lg:grid-cols-[1.02fr_0.98fr] lg:items-end">
               <div>
