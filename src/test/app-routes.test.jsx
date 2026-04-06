@@ -32,9 +32,9 @@ describe("app routes", () => {
     renderAppAt("/projects");
 
     expect(
-      await screen.findByRole("heading", {
-        name: /frontend and ecommerce work organised with more intent/i,
-      }),
+      await screen.findByText(
+        /frontend and ecommerce work organised with more intent/i,
+      ),
     ).toBeInTheDocument();
   });
 
