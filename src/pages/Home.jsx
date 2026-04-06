@@ -252,7 +252,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="grid gap-6 md:grid-cols-3">
+            <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
               {capabilities.map((item) => (
                 <article key={item.title} className="premium-panel p-6">
                   <p className="text-xs uppercase tracking-[0.22em] text-[var(--brand-2)]">
