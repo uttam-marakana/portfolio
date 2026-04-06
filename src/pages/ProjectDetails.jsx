@@ -28,10 +28,20 @@ export default function ProjectDetails() {
   const readme = project?.github ? (readmesByRepo[project.github] ?? "") : "";
   const loading = Boolean(project?.github) && !(project.github in readmesByRepo);
   const hasPreview = useMemo(() => Boolean(project?.preview), [project?.preview]);
+  const galleryItems = project?.gallery?.length
+    ? project.gallery
+    : [
+        {
+          image: project?.image,
+          alt: project?.title,
+          caption: project?.overview,
+        },
+      ];
 
   const pageSections = useMemo(() => {
     const baseSections = [
       { id: "summary", label: "Summary" },
+      { id: "gallery", label: "Gallery" },
       { id: "challenge", label: "Challenge" },
       { id: "delivery", label: "Delivery" },
       { id: "results", label: "Results" },
@@ -179,6 +189,45 @@ export default function ProjectDetails() {
                     {section.label}
                   </a>
                 ))}
+              </div>
+            </div>
+
+            <div id="gallery" className="scroll-mt-32 space-y-6">
+              <div className="premium-panel p-6 md:p-8">
+                <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+                  <div>
+                    <span className="eyebrow">Gallery</span>
+                    <h2 className="section-title mt-5">
+                      Screens and supporting visuals
+                    </h2>
+                  </div>
+                  <p className="max-w-lg text-sm leading-7 text-(--text-2)">
+                    Additional visuals used to make the case study feel closer to
+                    the actual product surface, not just a single hero image.
+                  </p>
+                </div>
+
+                <div className="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+                  {galleryItems.map((item) => (
+                    <article
+                      key={`${project.id}-${item.image}-${item.caption}`}
+                      className="premium-panel overflow-hidden p-3"
+                    >
+                      <div className="flex aspect-[4/3] items-center justify-center rounded-3xl bg-[radial-gradient(circle_at_top,rgba(120,214,208,0.12),transparent_48%),linear-gradient(180deg,rgba(10,12,14,0.88),rgba(18,24,27,0.98))] p-4">
+                        <img
+                          src={item.image}
+                          alt={item.alt}
+                          loading="lazy"
+                          decoding="async"
+                          className="h-full w-full rounded-3xl object-contain object-center"
+                        />
+                      </div>
+                      <p className="px-2 pb-2 pt-4 text-sm leading-7 text-(--text-2)">
+                        {item.caption}
+                      </p>
+                    </article>
+                  ))}
+                </div>
               </div>
             </div>
 
