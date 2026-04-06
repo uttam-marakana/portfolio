@@ -1,193 +1,83 @@
-# Uttam Marakana — Portfolio Website
+# Uttam Marakana Portfolio
 
-A modern, responsive portfolio website built using **ReactJS + Vite**, designed to showcase professional experience, completed projects, and provide a structured hiring interface.
+Personal portfolio built with React, Vite, Tailwind CSS, Firebase Firestore, and GitHub README integration.
 
-This project is not just a portfolio showcase — it is built as a **work-output system**, integrating GitHub repositories, professional experience, and a Firebase-powered contact workflow.
+## Current Scope
 
----
+- Home, About, Projects, Project Details, Contact, and 404 pages
+- Project search from the global navbar
+- Project detail pages with GitHub README rendering
+- Firebase-backed contact form with client validation and Firestore rules
+- Light/dark theme support
 
-## Live Purpose
+## Stack
 
-The portfolio is designed to:
+- React 19
+- Vite 7
+- React Router
+- Tailwind CSS 4
+- Firebase Firestore
+- React Markdown + remark-gfm
+- Vercel Analytics
 
-- Present professional experience clearly
-- Showcase ReactJS and Shopify development work
-- Display completed and ongoing projects
-- Automatically integrate GitHub repositories
-- Capture client inquiries through Firebase Firestore
-- Provide a scalable foundation for future case studies
-
----
-
-## Tech Stack
-
-### Frontend
-
-- ReactJS
-- Vite
-- React Router DOM
-- Tailwind CSS
-- Axios
-- React Icons
-
-### Backend / Services
-
-- Firebase Firestore (Contact form data storage)
-- GitHub REST API (Project integration)
-
----
-
-## Project Structure
-
-```
-src/
-│
-├── components/
-│   ├── Navbar.jsx
-│   ├── Drawer.jsx
-│   ├── Footer.jsx
-│   ├── ProjectCard.jsx
-│   └── SocialLinks.jsx
-│
-├── context/
-│   └── SearchContext.jsx
-│
-├── data/
-│   ├── personal.js
-│   └── projects.js
-│
-├── pages/
-│   ├── Home.jsx
-│   ├── Projects.jsx
-│   ├── About.jsx
-│   └── Contact.jsx
-│
-├── services/
-│   ├── firebase.js
-│   └── githubApi.js
-│
-├── App.jsx
-└── main.jsx
-```
-
----
-
-## Features
-
-### ✅ Responsive Portfolio Layout
-
-- Desktop, tablet, and mobile optimized
-- Drawer navigation for smaller screens
-- Modern typography and spacing system
-
-### ✅ Dynamic Projects System
-
-- Manual professional projects (Shopify / client work)
-- Auto-fetched GitHub repositories
-- Unified project grid layout
-
-### ✅ Global Search
-
-- Navbar search input
-- Filters projects dynamically
-- Context-based state management
-
-### ✅ Contact / Hire System
-
-- Contact form integrated with Firebase Firestore
-- Stores inquiries securely
-- Serverless architecture
-
----
-
-## Contact Form Flow
-
-```
-User submits form
-        ↓
-React Contact Page
-        ↓
-Firebase SDK
-        ↓
-Firestore Database (contacts collection)
-```
-
-Stored fields:
-
-- Name
-- Email
-- Project Type
-- Message
-- Timestamp
-
----
-
-## Firestore Security Rules
-
-Only form submissions are allowed:
-
-```js
-match /contacts/{document} {
-  allow create: if true;
-  allow read, update, delete: if false;
-}
-```
-
----
-
-## Installation & Setup
-
-### 1️⃣ Clone Repository
+## Local Setup
 
 ```bash
 git clone https://github.com/uttam-marakana/portfolio.git
 cd portfolio
-```
-
-### 2️⃣ Install Dependencies
-
-```bash
 npm install
-```
-
-### 3️⃣ Run Development Server
-
-```bash
+cp .env.example .env
 npm run dev
 ```
 
----
+## Environment Variables
 
-## Firebase Setup
+Create `.env` from `.env.example` and provide:
 
-1. Create Firebase project
-2. Enable Firestore Database
-3. Create `firebase.js` inside `/services`
-4. Add Firebase configuration keys
+- `VITE_FIREBASE_API_KEY`
+- `VITE_FIREBASE_AUTH_DOMAIN`
+- `VITE_FIREBASE_PROJECT_ID`
+- `VITE_FIREBASE_STORAGE_BUCKET`
+- `VITE_FIREBASE_MESSAGING_SENDER_ID`
+- `VITE_FIREBASE_APP_ID`
 
----
+The contact form stays disabled until these values are present.
 
-## Future Improvements
+`VITE_SITE_URL` is used to generate canonical URLs, `robots.txt`, and `sitemap.xml` during the production build.
 
-- Case study pages for projects
-- GitHub project filtering by tech stack
-- Email notification on form submission
-- Admin dashboard for inquiries
-- SEO optimization and meta management
+## Quality Checks
 
----
+```bash
+npm run lint
+npm run build
+```
 
-## Author
+## Firestore Rules
 
-**Uttam Marakana**
-Shopify & ReactJS Developer
+Firestore rules live in [firestore.rules](/home/a/Desktop/Uttam/Docs/Projects/Git_Repo/portfolio/firestore.rules).
 
-- GitHub: [https://github.com/uttam-marakana](https://github.com/uttam-marakana)
-- LinkedIn: Uttam Marakana
-- Email: [uttammarakana03@gmail.com](mailto:uttammarakana03@gmail.com)
+They only allow unauthenticated `create` requests to the `contacts` collection when the payload shape and field constraints match the portfolio form.
 
----
+## Project Structure
 
-## License
+```text
+src/
+  components/
+  context/
+  data/
+  pages/
+  services/
+  App.jsx
+  main.jsx
+public/
+  assets/images/
+firestore.rules
+firebase.json
+```
 
-This project is open for learning and reference purposes.
+## Known Next Priorities
+
+- Add dedicated case study pages instead of README-led detail pages
+- Optimize and compress large image assets
+- Add SEO metadata, sitemap, robots.txt, and structured data
+- Add automated tests for routing and the contact flow
