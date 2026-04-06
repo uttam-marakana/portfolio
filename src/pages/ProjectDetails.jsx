@@ -167,13 +167,17 @@ export default function ProjectDetails() {
                 </div>
 
                 <div className="premium-panel p-3 md:p-4">
-                  <img
-                    src={project.image}
-                    loading="eager"
-                    decoding="async"
-                    className="aspect-[1.1/1] w-full rounded-3xl object-cover"
-                    alt={project.title}
-                  />
+                  <div className="project-media-stage aspect-[16/11] overflow-hidden p-4 md:p-5">
+                    <div className="project-media-frame h-full w-full overflow-hidden rounded-3xl p-3">
+                      <img
+                        src={project.image}
+                        loading="eager"
+                        decoding="async"
+                        className="project-media-image"
+                        alt={project.title}
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -213,14 +217,16 @@ export default function ProjectDetails() {
                       key={`${project.id}-${item.image}-${item.caption}`}
                       className="premium-panel overflow-hidden p-3"
                     >
-                      <div className="flex aspect-[4/3] items-center justify-center rounded-3xl bg-[radial-gradient(circle_at_top,rgba(120,214,208,0.12),transparent_48%),linear-gradient(180deg,rgba(10,12,14,0.88),rgba(18,24,27,0.98))] p-4">
-                        <img
-                          src={item.image}
-                          alt={item.alt}
-                          loading="lazy"
-                          decoding="async"
-                          className="h-full w-full rounded-3xl object-contain object-center"
-                        />
+                      <div className="project-media-stage aspect-[4/3] p-4">
+                        <div className="project-media-frame h-full w-full overflow-hidden rounded-3xl p-3">
+                          <img
+                            src={item.image}
+                            alt={item.alt}
+                            loading="lazy"
+                            decoding="async"
+                            className="project-media-image"
+                          />
+                        </div>
                       </div>
                       <p className="px-2 pb-2 pt-4 text-sm leading-7 text-(--text-2)">
                         {item.caption}
