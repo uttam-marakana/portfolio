@@ -1,9 +1,3 @@
-import alpine from "../../public/assets/images/alpine-selection.png";
-import catalan from "../../public/assets/images/catalan-gourmet.png";
-import notes from "../../public/assets/images/multi-note-app.png";
-import p2care from "../../public/assets/images/p2care.png";
-import portfolio from "../../public/assets/images/portfolio.png";
-
 const projectsData = [
   /* ================= SHOPIFY ================= */
 
@@ -19,7 +13,7 @@ const projectsData = [
     overview:
       "Shopify storefront focused on performance, structured layout hierarchy, and improved customer navigation experience.",
 
-    image: alpine,
+    image: "/assets/images/alpine-selection.webp",
 
     preview: "https://uttam-rootways.myshopify.com",
 
@@ -43,7 +37,7 @@ const projectsData = [
     overview:
       "Shopify customization project improving UI consistency and product browsing experience.",
 
-    image: catalan,
+    image: "/assets/images/catalan-gourmet.webp",
 
     preview: "https://dev-calatan-gourmet.myshopify.com",
 
@@ -69,10 +63,10 @@ const projectsData = [
     overview:
       "React-based notes system supporting multiple boards with real-time Firestore storage.",
 
-    image: notes,
+    image: "/assets/images/multi-note-app.webp",
 
     github: "uttam-marakana/multi-notes-app",
-    preview: "#",
+    preview: "",
 
     highlights: [
       "Firebase Firestore integration",
@@ -93,11 +87,11 @@ const projectsData = [
     overview:
       "Frontend system designed for healthcare services with scalable UI components.",
 
-    image: p2care,
+    image: "/assets/images/p2care.webp",
 
     github: "uttam-marakana/p2care",
 
-    preview: "#",
+    preview: "",
 
     highlights: [
       "API integration",
@@ -119,11 +113,11 @@ const projectsData = [
     overview:
       "Portfolio built using React, Firebase and Tailwind focusing on performance and structured project presentation.",
 
-    image: portfolio,
+    image: "/assets/images/portfolio.webp",
 
     github: "uttam-marakana/portfolio",
 
-    preview: "#",
+    preview: "",
 
     highlights: [
       "GitHub README auto rendering",
