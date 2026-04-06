@@ -156,7 +156,7 @@ export default function Services() {
               <article key={service.title} className="premium-panel p-6 md:p-8">
                 <span className="eyebrow">{service.eyebrow}</span>
                 <h2 className="section-title mt-5">{service.title}</h2>
-                <p className="mt-5 text-sm leading-8 text-[var(--text-2)] md:text-base">
+                <p className="mt-5 text-sm leading-8 text-(--text-2) md:text-base">
                   {service.body}
                 </p>
 
@@ -164,7 +164,7 @@ export default function Services() {
                   {service.deliverables.map((item) => (
                     <div
                       key={item}
-                      className="rounded-[1.4rem] border border-[var(--line-soft)] bg-white/6 px-4 py-4 text-sm leading-7 text-[var(--text-2)]"
+                      className="rounded-[1.4rem] border border-(--line-soft) bg-white/6 px-4 py-4 text-sm leading-7 text-(--text-2)"
                     >
                       {item}
                     </div>
@@ -184,15 +184,15 @@ export default function Services() {
                 {workflow.map((item) => (
                   <article
                     key={item.step}
-                    className="rounded-[1.5rem] border border-[var(--line-soft)] bg-white/6 px-5 py-5"
+                    className="rounded-[1.5rem] border border-(--line-soft) bg-white/6 px-5 py-5"
                   >
                     <div className="flex gap-4">
-                      <p className="font-[var(--font-display)] text-3xl text-[var(--brand-1)]">
+                      <p className="font-(--font-display) text-3xl text-(--brand-1)">
                         {item.step}
                       </p>
                       <div>
                         <h3 className="text-lg font-semibold">{item.title}</h3>
-                        <p className="mt-2 text-sm leading-7 text-[var(--text-2)]">
+                        <p className="mt-2 text-sm leading-7 text-(--text-2)">
                           {item.body}
                         </p>
                       </div>
@@ -211,18 +211,18 @@ export default function Services() {
                 {fitSignals.map((item) => (
                   <article
                     key={item}
-                    className="rounded-[1.5rem] border border-[var(--line-soft)] bg-white/6 px-5 py-5 text-sm leading-7 text-[var(--text-2)] md:text-base"
+                    className="rounded-[1.5rem] border border-(--line-soft) bg-white/6 px-5 py-5 text-sm leading-7 text-(--text-2) md:text-base"
                   >
                     {item}
                   </article>
                 ))}
               </div>
 
-              <div className="mt-8 rounded-[1.75rem] border border-[var(--line-soft)] bg-white/6 p-5 md:p-6">
-                <p className="text-xs uppercase tracking-[0.22em] text-[var(--text-2)]">
+              <div className="mt-8 rounded-[1.75rem] border border-(--line-soft) bg-white/6 p-5 md:p-6">
+                <p className="text-xs uppercase tracking-[0.22em] text-(--text-2)">
                   Need a cleaner frontend pass?
                 </p>
-                <p className="mt-3 text-base leading-8 text-[var(--text-2)]">
+                <p className="mt-3 text-base leading-8 text-(--text-2)">
                   If the current product already exists but feels inconsistent,
                   crowded, or unreliable across breakpoints, that is usually the
                   best place for me to help.

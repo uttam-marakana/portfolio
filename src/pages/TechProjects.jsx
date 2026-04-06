@@ -101,7 +101,7 @@ export default function TechProjects() {
                 <p className="section-copy mt-5">{pageDescription}</p>
 
                 {normalizedSearchTerm && (
-                  <p className="mt-5 text-sm text-[var(--text-2)]">
+                  <p className="mt-5 text-sm text-(--text-2)">
                     Showing {filteredProjects.length} result
                     {filteredProjects.length === 1 ? "" : "s"} for "{searchTerm}"
                   </p>
@@ -116,7 +116,7 @@ export default function TechProjects() {
           </div>
 
           {filteredProjects.length === 0 ? (
-            <div className="premium-panel px-6 py-8 text-[var(--text-2)]">
+            <div className="premium-panel px-6 py-8 text-(--text-2)">
               No projects are available for the current filter.
             </div>
           ) : (

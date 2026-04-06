@@ -122,7 +122,7 @@ export default function Projects() {
                 </p>
 
                 {normalizedSearchTerm && (
-                  <p className="mt-5 text-sm text-[var(--text-2)]">
+                  <p className="mt-5 text-sm text-(--text-2)">
                     Showing {filteredProjects.length} result
                     {filteredProjects.length === 1 ? "" : "s"} for "{searchTerm}"
                   </p>
@@ -161,7 +161,7 @@ export default function Projects() {
                       alt={category.title}
                       className="absolute inset-0 h-full w-full object-cover opacity-[0.18] transition duration-500 group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(11,14,18,0.08),rgba(11,14,18,0.72))]" />
+                    <div className="absolute inset-0 bg-linear-to-b from-[rgba(11,14,18,0.08)] to-[rgba(11,14,18,0.72)]" />
                     <div
                       className="absolute inset-0 opacity-70"
                       style={{
@@ -177,7 +177,7 @@ export default function Projects() {
                       </div>
 
                       <div className="mt-auto">
-                        <h2 className="font-[var(--font-display)] text-3xl leading-none text-white md:text-4xl">
+                        <h2 className="font-(--font-display) text-3xl leading-none text-white md:text-4xl">
                           {category.title}
                         </h2>
 
@@ -203,14 +203,14 @@ export default function Projects() {
               <div>
                 <span className="eyebrow">Catalogue</span>
                 <h2 className="section-title mt-5">All projects</h2>
-                <p className="mt-3 text-sm text-[var(--text-2)]">
+                <p className="mt-3 text-sm text-(--text-2)">
                   Search works across project titles, summaries, and highlight details.
                 </p>
               </div>
             </div>
 
             {filteredProjects.length === 0 ? (
-              <div className="rounded-[1.75rem] border border-[var(--line-soft)] bg-white/5 p-8 text-[var(--text-2)]">
+              <div className="rounded-[1.75rem] border border-(--line-soft) bg-white/5 p-8 text-(--text-2)">
                 No projects match the current search.
               </div>
             ) : (
