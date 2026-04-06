@@ -12,7 +12,7 @@ export default function ProjectCard({ project }) {
             decoding="async"
             className="h-56 w-full object-cover transition duration-700 group-hover:scale-105"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[rgba(10,12,14,0.62)] via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-linear-to-t from-[rgba(10,12,14,0.62)] via-transparent to-transparent" />
           <div className="absolute left-4 top-4 inline-flex rounded-full border border-white/15 bg-black/35 px-3 py-1 text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-white/80 backdrop-blur">
             {project.tech}
           </div>
