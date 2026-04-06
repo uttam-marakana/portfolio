@@ -9,6 +9,7 @@ const Footer = lazy(() => import("./components/Footer"));
 const Home = lazy(() => import("./pages/Home"));
 const About = lazy(() => import("./pages/About"));
 const Contact = lazy(() => import("./pages/Contact"));
+const Services = lazy(() => import("./pages/Services"));
 const Projects = lazy(() => import("./pages/Projects"));
 const ProjectDetails = lazy(() => import("./pages/ProjectDetails"));
 const TechProjects = lazy(() => import("./pages/TechProjects"));
@@ -47,6 +48,7 @@ export default function App() {
           <Suspense fallback={<PageLoader />}>
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/services" element={<Services />} />
               <Route path="/projects" element={<Projects />} />
               <Route path="/projects/:tech" element={<TechProjects />} />
               <Route
