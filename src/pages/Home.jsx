@@ -58,7 +58,7 @@ const processSteps = [
 
 export default function Home() {
   const sectionsRef = useRef([]);
-  const featuredProjects = projectsData.slice(0, 3);
+  const featuredProjects = projectsData.filter((project) => project.featured);
 
   usePageSeo({
     title: "Uttam Marakana | Shopify & React Developer",

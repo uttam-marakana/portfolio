@@ -92,6 +92,15 @@ export default function ProjectDetails() {
                     {project.overview}
                   </p>
 
+                  <div className="mt-6 flex flex-wrap gap-3">
+                    <span className="rounded-full border border-[var(--line-soft)] px-4 py-2 text-sm text-[var(--text-2)]">
+                      {project.role}
+                    </span>
+                    <span className="rounded-full border border-[var(--line-soft)] px-4 py-2 text-sm text-[var(--text-2)]">
+                      {project.sector}
+                    </span>
+                  </div>
+
                   <div className="mt-8 flex flex-col gap-4 sm:flex-row">
                     {project.github && (
                       <a
@@ -140,6 +149,45 @@ export default function ProjectDetails() {
               </div>
             </div>
 
+            <div className="grid gap-8 lg:grid-cols-[0.92fr_1.08fr]">
+              <div className="premium-panel p-6 md:p-8">
+                <span className="eyebrow">Case study</span>
+                <h2 className="section-title mt-5">What needed to improve</h2>
+                <p className="mt-5 text-sm leading-8 text-[var(--text-2)]">
+                  {project.problem}
+                </p>
+
+                <h3 className="mt-8 font-[var(--font-display)] text-3xl">
+                  What I implemented
+                </h3>
+                <p className="mt-4 text-sm leading-8 text-[var(--text-2)]">
+                  {project.solution}
+                </p>
+
+                <h3 className="mt-8 font-[var(--font-display)] text-3xl">
+                  Outcome
+                </h3>
+                <p className="mt-4 text-sm leading-8 text-[var(--text-2)]">
+                  {project.impact}
+                </p>
+              </div>
+
+              <div className="premium-panel p-6 md:p-8">
+                <span className="eyebrow">Stack</span>
+                <h2 className="section-title mt-5">Implementation surface</h2>
+                <div className="mt-8 flex flex-wrap gap-3">
+                  {project.stack.map((item) => (
+                    <span
+                      key={item}
+                      className="rounded-full border border-[var(--line-soft)] px-4 py-2 text-sm text-[var(--text-2)]"
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+
             <div className="premium-panel px-6 py-8 md:px-10">
               <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
                 <div>
@@ -154,7 +202,7 @@ export default function ProjectDetails() {
               <article className="premium-prose prose mt-10 max-w-none prose-headings:scroll-mt-32 prose-p:text-[var(--text-2)] prose-li:text-[var(--text-2)] prose-strong:text-[var(--text-1)] prose-code:text-[var(--brand-1)]">
                 {loading ? (
                   <p className="text-[var(--text-2)]">Loading README...</p>
-                ) : (
+                ) : readme ? (
                   <ReactMarkdown
                     remarkPlugins={[remarkGfm]}
                     components={{
@@ -170,6 +218,12 @@ export default function ProjectDetails() {
                   >
                     {readme}
                   </ReactMarkdown>
+                ) : (
+                  <p className="text-[var(--text-2)]">
+                    This project does not expose a public README summary here,
+                    so the case-study sections above carry the main delivery
+                    context.
+                  </p>
                 )}
               </article>
             </div>

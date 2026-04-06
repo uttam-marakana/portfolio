@@ -48,9 +48,15 @@ function matchesProject(project, searchTerm) {
 
   const searchableContent = [
     project.title,
+    project.role,
+    project.sector,
     project.shortDescription,
     project.overview,
+    project.problem,
+    project.solution,
+    project.impact,
     project.tech,
+    ...project.stack,
     ...project.highlights,
   ]
     .join(" ")
