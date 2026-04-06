@@ -20,7 +20,7 @@ const NotFound = lazy(() => import("./pages/NotFound"));
 function PageLoader() {
   return (
     <div className="min-h-[60vh] flex items-center justify-center">
-      <div className="w-8 h-8 rounded-full border-2 border-[var(--brand-2)] border-t-transparent animate-spin"></div>
+      <div className="w-8 h-8 rounded-full border-2 border-(--brand-2) border-t-transparent animate-spin"></div>
     </div>
   );
 }
@@ -34,8 +34,8 @@ export default function App() {
           app-shell
           min-h-screen
           flex flex-col
-          bg-[var(--surface-0)]
-          text-[var(--text-1)]
+          bg-(--surface-0)
+          text-(--text-1)
           transition-colors duration-300
         "
       >
