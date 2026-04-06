@@ -1,15 +1,13 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 export default function ReadmeTOC({ content }) {
-  const [headings, setHeadings] = useState([]);
   const [active, setActive] = useState("");
 
-  useEffect(() => {
-    if (!content) return;
-
+  const headings = useMemo(() => {
+    if (!content) return [];
     const lines = content.split("\n");
 
-    const extracted = lines
+    return lines
       .filter((l) => l.startsWith("## "))
       .map((l) => {
         const text = l.replace("## ", "").trim();
@@ -18,8 +16,6 @@ export default function ReadmeTOC({ content }) {
           text,
         };
       });
-
-    setHeadings(extracted);
   }, [content]);
 
   useEffect(() => {
@@ -43,25 +39,32 @@ export default function ReadmeTOC({ content }) {
   if (!headings.length) return null;
 
   return (
-    <aside className="hidden lg:block top-24 h-fit">
-      <h3 className="text-sm font-semibold mb-3 text-gray-400">On this page</h3>
+    <aside className="sticky top-28 hidden h-fit lg:block">
+      <div className="premium-panel p-5">
+        <p className="text-xs uppercase tracking-[0.24em] text-[var(--text-2)]">
+          On this page
+        </p>
+        <h3 className="mt-2 font-[var(--font-display)] text-2xl">
+          README map
+        </h3>
 
-      <ul className="space-y-2 text-sm">
-        {headings.map((h) => (
-          <li key={h.id}>
-            <a
-              href={`#${h.id}`}
-              className={`block transition ${
-                active === h.id
-                  ? "text-indigo-400"
-                  : "text-gray-500 hover:text-gray-300"
-              }`}
-            >
-              {h.text}
-            </a>
-          </li>
-        ))}
-      </ul>
+        <ul className="mt-5 space-y-2 text-sm">
+          {headings.map((h) => (
+            <li key={h.id}>
+              <a
+                href={`#${h.id}`}
+                className={`block rounded-2xl border px-3 py-3 transition ${
+                  active === h.id
+                    ? "border-[var(--brand-1)] bg-[rgba(255,141,87,0.12)] text-[var(--text-1)]"
+                    : "border-transparent text-[var(--text-2)] hover:border-[var(--line-soft)] hover:text-[var(--text-1)]"
+                }`}
+              >
+                {h.text}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
     </aside>
   );
 }

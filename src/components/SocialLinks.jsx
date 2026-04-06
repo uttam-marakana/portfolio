@@ -6,16 +6,18 @@ export default function SocialLinks() {
       <a
         href="https://github.com/uttam-marakana"
         target="_blank"
-        className="bg-white text-[#181717] p-3 rounded-full hover:scale-110 transition"
+        rel="noreferrer"
+        className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-[var(--line-soft)] bg-white/8 text-[var(--text-1)] hover:-translate-y-1"
         aria-label="GitHub"
       >
         <FaGithub />
       </a>
 
       <a
-        href="http://in.linkedin.com/in/uttam-marakana-b65938244"
+        href="https://www.linkedin.com/in/uttam-marakana-b65938244"
         target="_blank"
-        className="bg-[#0A66C2] text-white p-3 rounded-full hover:scale-110 transition"
+        rel="noreferrer"
+        className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-[var(--line-soft)] bg-white/8 text-[var(--text-1)] hover:-translate-y-1"
         aria-label="LinkedIn"
       >
         <FaLinkedin />
@@ -23,17 +25,17 @@ export default function SocialLinks() {
 
       <a
         href="mailto:uttammarakana03@gmail.com"
-        target="_blank"
-        className="bg-[#EA4335] text-white p-3 rounded-full hover:scale-110 transition"
+        className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-[var(--line-soft)] bg-white/8 text-[var(--text-1)] hover:-translate-y-1"
         aria-label="Email"
       >
         <FaEnvelope />
       </a>
 
       <a
-        href="https://wa.me/6353098381"
+        href="https://wa.me/916353098381"
         target="_blank"
-        className="bg-[#25D366] text-white p-3 rounded-full hover:scale-110 transition"
+        rel="noreferrer"
+        className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-[var(--line-soft)] bg-white/8 text-[var(--text-1)] hover:-translate-y-1"
         aria-label="WhatsApp"
       >
         <FaWhatsapp />
