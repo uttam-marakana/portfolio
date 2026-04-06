@@ -12,7 +12,7 @@ export default function Drawer({ open, setOpen }) {
       />
 
       <div
-        className={`fixed top-3 right-3 bottom-3 z-50 w-[18rem] rounded-[2rem] border border-[var(--line-soft)] bg-[var(--surface-2)] shadow-2xl
+        className={`fixed top-3 right-3 bottom-3 z-50 w-[min(20rem,calc(100vw-1.5rem))] rounded-[2rem] border border-[var(--line-soft)] bg-[var(--surface-2)] shadow-2xl
         transform transition-transform duration-300
         ${open ? "translate-x-0" : "translate-x-full"}`}
       >

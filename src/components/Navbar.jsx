@@ -56,7 +56,7 @@ export default function Navbar() {
               </div>
             </NavLink>
 
-            <div className="hidden md:flex items-center gap-6">
+            <div className="hidden lg:flex items-center gap-6">
               <NavLink
                 to="/"
                 className="premium-nav-link"
@@ -108,7 +108,7 @@ export default function Navbar() {
               </div>
             </div>
 
-            <div className="flex items-center gap-3 md:hidden">
+            <div className="flex items-center gap-3 lg:hidden">
               <button
                 onClick={toggleTheme}
                 className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-[var(--line-soft)] bg-white/8"

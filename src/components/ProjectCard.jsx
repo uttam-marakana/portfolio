@@ -18,17 +18,22 @@ export default function ProjectCard({ project }) {
           </div>
         </div>
 
-        <div className="flex flex-1 flex-col p-6">
+        <div className="flex flex-1 flex-col p-5 md:p-6">
           <div className="flex items-start justify-between gap-4">
-            <h3 className="font-[var(--font-display)] text-2xl leading-tight">
+            <div className="min-w-0">
+              <p className="text-xs uppercase tracking-[0.2em] text-[var(--text-2)]">
+                {project.sector}
+              </p>
+              <h3 className="mt-2 font-[var(--font-display)] text-2xl leading-tight md:text-[1.8rem]">
               {project.title}
-            </h3>
+              </h3>
+            </div>
             <span className="text-2xl text-[var(--brand-1)] transition-transform duration-300 group-hover:translate-x-1">
               ↗
             </span>
           </div>
 
-          <p className="mt-3 text-sm leading-7 text-[var(--text-2)]">
+          <p className="mt-3 text-sm leading-7 text-[var(--text-2)] clamp-3">
             {project.shortDescription}
           </p>
 
@@ -43,9 +48,16 @@ export default function ProjectCard({ project }) {
             ))}
           </div>
 
-          <div className="mt-5 flex items-center justify-between border-t border-[var(--line-soft)] pt-4 text-sm">
-            <span className="text-[var(--text-2)]">{project.impact}</span>
-            <span className="font-medium text-[var(--text-1)]">Open project</span>
+          <div className="mt-5 border-t border-[var(--line-soft)] pt-4 text-sm">
+            <p className="clamp-3 text-[var(--text-2)]">{project.impact}</p>
+            <div className="mt-4 flex items-center justify-between gap-4">
+              <span className="rounded-full border border-[var(--line-soft)] px-3 py-1 text-xs text-[var(--text-2)]">
+                {project.timeline}
+              </span>
+              <span className="shrink-0 font-medium text-[var(--text-1)]">
+                Open case study
+              </span>
+            </div>
           </div>
         </div>
       </article>

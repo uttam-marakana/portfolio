@@ -39,7 +39,7 @@ export default function ReadmeTOC({ content }) {
   if (!headings.length) return null;
 
   return (
-    <aside className="sticky top-28 hidden h-fit lg:block">
+    <aside className="sticky top-24 hidden h-fit xl:block">
       <div className="premium-panel p-5">
         <p className="text-xs uppercase tracking-[0.24em] text-[var(--text-2)]">
           On this page
