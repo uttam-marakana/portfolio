@@ -5,7 +5,7 @@ import tailwindcss from "@tailwindcss/vite";
 import projectsData from "./src/data/projectsData.js";
 
 function generateSeoFiles(siteUrl) {
-  const staticRoutes = ["/", "/about", "/services", "/projects", "/contact"];
+  const staticRoutes = ["/", "/about", "/services", "/resume", "/projects", "/contact"];
   const techRoutes = [...new Set(projectsData.map((project) => `/projects/${project.tech}`))];
   const projectRoutes = projectsData.map((project) => `/projects/details/${project.id}`);
   const routes = [...new Set([...staticRoutes, ...techRoutes, ...projectRoutes])];
@@ -54,6 +54,11 @@ export default defineConfig(({ mode }) => {
     plugins: [react(), tailwindcss(), generateSeoFiles(siteUrl)],
     build: {
       chunkSizeWarningLimit: 1000,
+    },
+    test: {
+      environment: "jsdom",
+      setupFiles: "./vitest.setup.js",
+      globals: true,
     },
   };
 });
