@@ -48,6 +48,13 @@ const projectsData = [
       "More deliberate merchandising presentation without adding unnecessary theme complexity",
       "A storefront UI that reads as more trustworthy, more polished, and easier to navigate",
     ],
+    gallery: [
+      {
+        image: "/assets/images/alpine-selection.webp",
+        alt: "Alpine Selection storefront overview",
+        caption: "Primary storefront surface with cleaner hierarchy and more controlled merchandising.",
+      },
+    ],
     highlights: [
       "Shopify theme customization aligned to merchandising goals",
       "Responsive storefront layout improvements across key templates",
@@ -103,6 +110,13 @@ const projectsData = [
       "Stronger browsing flow through collections and product detail surfaces",
       "Less visual inconsistency between page types and responsive breakpoints",
       "A storefront that feels more coherent and easier to trust during purchase evaluation",
+    ],
+    gallery: [
+      {
+        image: "/assets/images/catalan-gourmet.webp",
+        alt: "Catalan Gourmet storefront view",
+        caption: "A more coherent browsing experience with better navigation handoffs and cleaner structure.",
+      },
     ],
     highlights: [
       "Theme customization focused on storefront consistency",
@@ -161,6 +175,18 @@ const projectsData = [
       "Persistent board-based workflows that are easier to scale and maintain",
       "Stronger evidence of React state, composition, and data-handling discipline",
     ],
+    gallery: [
+      {
+        image: "/assets/images/multi-note-app.webp",
+        alt: "Multi Notes App dashboard overview",
+        caption: "Board-level workspace structure presented in a product-style dashboard layout.",
+      },
+      {
+        image: "/assets/images/multi-notes-app-detail.png",
+        alt: "Multi Notes App supporting interface visual",
+        caption: "Supporting product visual from the repo showing the same system thinking carried into branded app surfaces.",
+      },
+    ],
     highlights: [
       "Multiple note boards with clearer workspace separation",
       "Firebase Firestore integration for persistent note data",
@@ -216,6 +242,23 @@ const projectsData = [
       "A stronger platform-ready frontend than a one-page healthcare marketing site",
       "Clearer service presentation with room for booking and data-backed workflows",
       "Better evidence of reusable React architecture across multiple page types",
+    ],
+    gallery: [
+      {
+        image: "/assets/images/p2care.webp",
+        alt: "P2Care hero view",
+        caption: "The main healthcare service surface focused on clarity, trust, and modular page composition.",
+      },
+      {
+        image: "/assets/images/p2care-hospital.png",
+        alt: "P2Care hospital detail visual",
+        caption: "A supporting hospital-focused section that reinforces the medical service context.",
+      },
+      {
+        image: "/assets/images/p2care-doctors.png",
+        alt: "P2Care doctor and care team visual",
+        caption: "Team-oriented supporting content used to build a more complete service-platform presentation.",
+      },
     ],
     highlights: [
       "Scalable healthcare-oriented layout system",
@@ -274,6 +317,18 @@ const projectsData = [
       "A more production-ready React platform with admin/public separation built in",
       "Serverless infrastructure choices that match a practical healthcare operations workflow",
       "Better demonstration of frontend system design than a standard brochure site",
+    ],
+    gallery: [
+      {
+        image: "/assets/images/dhatru_care.png",
+        alt: "Dhatru Care platform hero view",
+        caption: "Public-facing healthcare platform presentation with stronger brand framing and service clarity.",
+      },
+      {
+        image: "/assets/images/dhatru-care-hospital.png",
+        alt: "Dhatru Care hospital supporting visual",
+        caption: "Supporting hospital image from the repo, useful for explaining the platform's care and institution context.",
+      },
     ],
     highlights: [
       "Public website plus admin dashboard in one structured frontend system",
@@ -334,6 +389,13 @@ const projectsData = [
       "Clearer evidence of complex domain modeling inside a React frontend",
       "A trading interface that emphasizes decision quality, rule enforcement, and operator discipline",
     ],
+    gallery: [
+      {
+        image: "/assets/images/tradeos.png",
+        alt: "TradeOS dashboard hero view",
+        caption: "Execution-focused dashboard framing the product as a trading control layer instead of a simple tracker.",
+      },
+    ],
     highlights: [
       "Pre-trade intelligence with risk, R:R, net PnL, and break-even preview",
       "Execution engine that can block invalid or high-risk trades before entry",
@@ -391,6 +453,13 @@ const projectsData = [
       "A stronger hiring and freelance signal than the original portfolio implementation",
       "Improved technical reliability alongside a more premium user-facing presentation",
       "A site structure that can keep growing with new projects, case studies, and service pages",
+    ],
+    gallery: [
+      {
+        image: "/assets/images/portfolio.webp",
+        alt: "Portfolio homepage preview",
+        caption: "The portfolio itself, rebuilt to work as a case-study system instead of a simple project list.",
+      },
     ],
     highlights: [
       "Project data model designed around case-study style content",
