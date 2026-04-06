@@ -24,26 +24,23 @@ describe("app routes", () => {
     expect(
       await screen.findByRole("link", {
         name: /explore selected work/i,
-      ),
+      }),
     ).toBeInTheDocument();
   });
 
   it("renders the projects page", async () => {
     renderAppAt("/projects");
 
-    expect(
-      await screen.findByRole("link", {
-        current: "page",
-        name: /^projects$/i,
-      ),
-    ).toBeInTheDocument();
+    expect(await screen.findByText(/project library/i)).toBeInTheDocument();
   });
 
-  it("renders a project details page", async () => {
-    renderAppAt("/projects/details/alpine-selection");
+  it("renders the services page", async () => {
+    renderAppAt("/services");
 
     expect(
-      await screen.findByRole("button", { name: /back to previous page/i }),
+      await screen.findByRole("heading", {
+        name: /frontend work that improves structure, clarity, and delivery quality\./i,
+      }),
     ).toBeInTheDocument();
   });
 
@@ -51,9 +48,8 @@ describe("app routes", () => {
     renderAppAt("/resume");
 
     expect(
-      await screen.findByRole("link", {
-        current: "page",
-        name: /^resume$/i,
+      await screen.findByRole("heading", {
+        name: /frontend experience presented for faster hiring decisions\./i,
       }),
     ).toBeInTheDocument();
   });
