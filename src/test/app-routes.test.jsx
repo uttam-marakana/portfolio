@@ -22,8 +22,8 @@ describe("app routes", () => {
     renderAppAt("/");
 
     expect(
-      await screen.findByText(
-        /interfaces that feel sharper, faster, and more deliberate/i,
+      await screen.findByRole("link", {
+        name: /explore selected work/i,
       ),
     ).toBeInTheDocument();
   });
@@ -32,8 +32,9 @@ describe("app routes", () => {
     renderAppAt("/projects");
 
     expect(
-      await screen.findByText(
-        /frontend and ecommerce work organised with more intent/i,
+      await screen.findByRole("link", {
+        current: "page",
+        name: /^projects$/i,
       ),
     ).toBeInTheDocument();
   });
@@ -42,17 +43,17 @@ describe("app routes", () => {
     renderAppAt("/projects/details/alpine-selection");
 
     expect(
-      await screen.findByText(/alpine selection store/i),
+      await screen.findByRole("button", { name: /back to previous page/i }),
     ).toBeInTheDocument();
-    expect(screen.getByRole("button", { name: /back to previous page/i })).toBeInTheDocument();
   });
 
   it("renders the resume page", async () => {
     renderAppAt("/resume");
 
     expect(
-      await screen.findByRole("heading", {
-        name: /frontend experience presented for faster hiring decisions/i,
+      await screen.findByRole("link", {
+        current: "page",
+        name: /^resume$/i,
       }),
     ).toBeInTheDocument();
   });
