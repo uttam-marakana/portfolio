@@ -300,6 +300,30 @@ textarea {
   gap: 1.5rem;
 }
 
+.project-media-stage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.75rem;
+  background:
+    radial-gradient(circle at top, rgba(120, 214, 208, 0.12), transparent 48%),
+    linear-gradient(180deg, rgba(10, 12, 14, 0.88), rgba(18, 24, 27, 0.98));
+}
+
+.project-media-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.project-media-frame {
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
 .premium-prose {
   color: var(--text-2);
 }
