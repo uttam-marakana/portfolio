@@ -13,40 +13,40 @@ export default function Footer() {
                 <img
                   src={mainLogo}
                   alt="Uttam Marakana Logo"
-                  className="h-12 w-12 rounded-2xl border border-[var(--line-soft)] bg-white/8 p-2"
+                  className="h-12 w-12 rounded-2xl border border-(--line-soft) bg-white/8 p-2"
                 />
 
                 <div>
-                  <h3 className="text-[var(--text-1)] font-semibold text-lg">
+                  <h3 className="text-(--text-1) font-semibold text-lg">
                     Uttam Marakana
                   </h3>
-                  <p className="text-sm text-[var(--text-2)]">
+                  <p className="text-sm text-(--text-2)">
                     Shopify & React Developer
                   </p>
                 </div>
               </div>
 
-              <p className="text-sm leading-relaxed max-w-sm mx-auto lg:mx-0 text-[var(--text-2)]">
+              <p className="text-sm leading-relaxed max-w-sm mx-auto lg:mx-0 text-(--text-2)">
                 Conversion-aware ecommerce builds, frontend systems with better
                 structure, and interfaces that feel sharp under pressure.
               </p>
             </div>
 
             <div className="text-center lg:text-left">
-              <h4 className="text-[var(--text-1)] font-semibold mb-4">
+              <h4 className="text-(--text-1) font-semibold mb-4">
                 Quick Links
               </h4>
 
-              <ul className="space-y-3 text-sm text-[var(--text-2)]">
+              <ul className="space-y-3 text-sm text-(--text-2)">
                 <li>
-                  <Link to="/" className="hover:text-[var(--text-1)] transition">
+                  <Link to="/" className="hover:text-(--text-1) transition">
                     Home
                   </Link>
                 </li>
                 <li>
                   <Link
                     to="/services"
-                    className="hover:text-[var(--text-1)] transition"
+                    className="hover:text-(--text-1) transition"
                   >
                     Services
                   </Link>
@@ -54,7 +54,7 @@ export default function Footer() {
                 <li>
                   <Link
                     to="/projects"
-                    className="hover:text-[var(--text-1)] transition"
+                    className="hover:text-(--text-1) transition"
                   >
                     Projects
                   </Link>
@@ -62,7 +62,7 @@ export default function Footer() {
                 <li>
                   <Link
                     to="/contact"
-                    className="hover:text-[var(--text-1)] transition"
+                    className="hover:text-(--text-1) transition"
                   >
                     Contact
                   </Link>
@@ -71,14 +71,14 @@ export default function Footer() {
             </div>
 
             <div className="text-center lg:text-left">
-              <h4 className="text-[var(--text-1)] font-semibold mb-4">
+              <h4 className="text-(--text-1) font-semibold mb-4">
                 Connect
               </h4>
               <SocialLinks />
             </div>
           </div>
 
-          <div className="mt-10 flex flex-col gap-3 border-t border-[var(--line-soft)] pt-6 text-sm text-[var(--text-2)] md:flex-row md:items-center md:justify-between">
+          <div className="mt-10 flex flex-col gap-3 border-t border-(--line-soft) pt-6 text-sm text-(--text-2) md:flex-row md:items-center md:justify-between">
             <p>© {new Date().getFullYear()} Uttam Marakana. All rights reserved.</p>
             <p>Built for sharper portfolios, better hiring signals, and cleaner frontend delivery.</p>
           </div>

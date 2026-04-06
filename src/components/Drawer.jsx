@@ -12,20 +12,20 @@ export default function Drawer({ open, setOpen }) {
       />
 
       <div
-        className={`fixed top-3 right-3 bottom-3 z-50 w-[min(20rem,calc(100vw-1.5rem))] rounded-[2rem] border border-[var(--line-soft)] bg-[var(--surface-2)] shadow-2xl
+        className={`fixed top-3 right-3 bottom-3 z-50 w-[min(20rem,calc(100vw-1.5rem))] rounded-[2rem] border border-(--line-soft) bg-(--surface-2) shadow-2xl
         transform transition-transform duration-300
         ${open ? "translate-x-0" : "translate-x-full"}`}
       >
-        <div className="flex items-center justify-between border-b border-[var(--line-soft)] px-5 py-5">
+        <div className="flex items-center justify-between border-b border-(--line-soft) px-5 py-5">
           <div>
-            <p className="text-xs uppercase tracking-[0.24em] text-[var(--text-2)]">
+            <p className="text-xs uppercase tracking-[0.24em] text-(--text-2)">
               Navigation
             </p>
             <h2 className="font-semibold">Menu</h2>
           </div>
           <button
             onClick={() => setOpen(false)}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-[var(--line-soft)]"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-(--line-soft)"
           >
             <FaTimes />
           </button>
@@ -35,35 +35,35 @@ export default function Drawer({ open, setOpen }) {
           <NavLink
             to="/"
             onClick={() => setOpen(false)}
-            className="rounded-2xl border border-transparent px-4 py-3 hover:border-[var(--line-soft)]"
+            className="rounded-2xl border border-transparent px-4 py-3 hover:border-(--line-soft)"
           >
             Home
           </NavLink>
           <NavLink
             to="/services"
             onClick={() => setOpen(false)}
-            className="rounded-2xl border border-transparent px-4 py-3 hover:border-[var(--line-soft)]"
+            className="rounded-2xl border border-transparent px-4 py-3 hover:border-(--line-soft)"
           >
             Services
           </NavLink>
           <NavLink
             to="/projects"
             onClick={() => setOpen(false)}
-            className="rounded-2xl border border-transparent px-4 py-3 hover:border-[var(--line-soft)]"
+            className="rounded-2xl border border-transparent px-4 py-3 hover:border-(--line-soft)"
           >
             Projects
           </NavLink>
           <NavLink
             to="/about"
             onClick={() => setOpen(false)}
-            className="rounded-2xl border border-transparent px-4 py-3 hover:border-[var(--line-soft)]"
+            className="rounded-2xl border border-transparent px-4 py-3 hover:border-(--line-soft)"
           >
             About
           </NavLink>
           <NavLink
             to="/contact"
             onClick={() => setOpen(false)}
-            className="rounded-2xl border border-transparent px-4 py-3 hover:border-[var(--line-soft)]"
+            className="rounded-2xl border border-transparent px-4 py-3 hover:border-(--line-soft)"
           >
             Hire Me
           </NavLink>

@@ -41,7 +41,7 @@ export default function Navbar() {
           <div className="section-frame rounded-[1.75rem] px-4 py-3 md:px-6 md:py-4 flex items-center justify-between gap-4">
             <NavLink to="/" className="flex items-center gap-3 min-w-0">
               <img
-                className="h-12 w-12 rounded-2xl border border-[var(--line-soft)] bg-white/40 p-2"
+                className="h-12 w-12 rounded-2xl border border-(--line-soft) bg-white/40 p-2"
                 src={main_logo}
                 alt="U_M Logo"
                 width={48}
@@ -50,7 +50,7 @@ export default function Navbar() {
 
               <div className="min-w-0">
                 <p className="font-semibold truncate">Uttam Marakana</p>
-                <p className="text-xs uppercase tracking-[0.24em] text-[var(--text-2)] truncate">
+                <p className="text-xs uppercase tracking-[0.24em] text-(--text-2) truncate">
                   Shopify x React
                 </p>
               </div>
@@ -94,20 +94,20 @@ export default function Navbar() {
               </NavLink>
 
               <div className="flex items-center gap-3 pl-3">
-                <label className="flex items-center gap-2 rounded-full border border-[var(--line-soft)] bg-white/8 px-4 py-2 text-sm text-[var(--text-2)]">
+                <label className="flex items-center gap-2 rounded-full border border-(--line-soft) bg-white/8 px-4 py-2 text-sm text-(--text-2)">
                   <FaSearch className="text-xs" />
                   <input
                     type="text"
                     placeholder="Search work"
                     value={searchTerm}
                     onChange={handleSearchChange}
-                    className="w-40 bg-transparent text-[var(--text-1)] outline-none placeholder:text-[var(--text-2)]"
+                    className="w-40 bg-transparent text-(--text-1) outline-none placeholder:text-(--text-2)"
                   />
                 </label>
 
                 <button
                   onClick={toggleTheme}
-                  className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-[var(--line-soft)] bg-white/8"
+                  className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-(--line-soft) bg-white/8"
                   aria-label="Toggle theme"
                 >
                   {theme === "dark" ? <FaSun /> : <FaMoon />}
@@ -118,7 +118,7 @@ export default function Navbar() {
             <div className="flex items-center gap-3 lg:hidden">
               <button
                 onClick={toggleTheme}
-                className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-[var(--line-soft)] bg-white/8"
+                className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-(--line-soft) bg-white/8"
                 aria-label="Toggle theme"
               >
                 {theme === "dark" ? <FaSun /> : <FaMoon />}
@@ -126,7 +126,7 @@ export default function Navbar() {
 
               <button
                 onClick={() => setSearchOpen(true)}
-                className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-[var(--line-soft)] bg-white/8"
+                className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-(--line-soft) bg-white/8"
                 aria-label="Open search"
               >
                 <FaSearch />
@@ -134,7 +134,7 @@ export default function Navbar() {
 
               <button
                 onClick={() => setDrawerOpen(true)}
-                className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-[var(--line-soft)] bg-white/8"
+                className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-(--line-soft) bg-white/8"
                 aria-label="Open menu"
               >
                 <FaBars />
@@ -151,18 +151,18 @@ export default function Navbar() {
         >
           <div className="page-shell">
             <div className="section-frame flex items-center rounded-[1.75rem] px-4 py-3">
-              <FaSearch className="mr-3 text-[var(--text-2)]" />
+              <FaSearch className="mr-3 text-(--text-2)" />
               <input
                 autoFocus
                 type="text"
                 placeholder="Search projects"
                 value={searchTerm}
                 onChange={handleSearchChange}
-                className="flex-1 bg-transparent text-lg outline-none placeholder:text-[var(--text-2)]"
+                className="flex-1 bg-transparent text-lg outline-none placeholder:text-(--text-2)"
               />
               <button
                 onClick={clearMobileSearch}
-                className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-[var(--line-soft)]"
+                className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-(--line-soft)"
               >
                 <FaTimes />
               </button>
