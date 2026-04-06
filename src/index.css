@@ -73,6 +73,7 @@ html {
   background: var(--surface-0);
   color: var(--text-1);
   font-family: var(--font-body);
+  scroll-padding-top: 7rem;
 }
 
 body {
@@ -206,6 +207,26 @@ textarea {
   transform: translateY(-2px);
 }
 
+.clamp-2,
+.clamp-3,
+.clamp-5 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.clamp-2 {
+  -webkit-line-clamp: 2;
+}
+
+.clamp-3 {
+  -webkit-line-clamp: 3;
+}
+
+.clamp-5 {
+  -webkit-line-clamp: 5;
+}
+
 .metric-card {
   border-radius: 1.5rem;
   border: 1px solid var(--line-soft);
@@ -296,5 +317,30 @@ textarea {
 @media (max-width: 767px) {
   .page-shell {
     width: min(100% - 1.25rem, 1200px);
+  }
+
+  .premium-button {
+    width: 100%;
+  }
+
+  .eyebrow {
+    max-width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
