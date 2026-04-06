@@ -4,14 +4,18 @@ export default function ProjectCard({ project }) {
   return (
     <Link to={`/projects/details/${project.id}`} className="block h-full">
       <article className="premium-panel group flex h-full flex-col">
-        <div className="relative flex h-56 items-center justify-center overflow-hidden bg-[radial-gradient(circle_at_top,rgba(120,214,208,0.12),transparent_48%),linear-gradient(180deg,rgba(10,12,14,0.88),rgba(18,24,27,0.98))] p-3">
-          <img
-            src={project.image}
-            alt={project.title}
-            loading="lazy"
-            decoding="async"
-            className="h-full w-full rounded-[1.2rem] object-contain object-center transition duration-500 group-hover:scale-[1.02]"
-          />
+        <div className="relative p-3">
+          <div className="project-media-stage aspect-[16/10] overflow-hidden p-3">
+            <div className="project-media-frame h-full w-full overflow-hidden rounded-3xl p-2">
+              <img
+                src={project.image}
+                alt={project.title}
+                loading="lazy"
+                decoding="async"
+                className="project-media-image transition duration-500 group-hover:scale-[1.02]"
+              />
+            </div>
+          </div>
           <div className="absolute inset-x-0 bottom-0 h-16 bg-linear-to-t from-[rgba(10,12,14,0.68)] via-transparent to-transparent" />
           <div className="absolute left-4 top-4 inline-flex rounded-full border border-white/15 bg-black/35 px-3 py-1 text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-white/80 backdrop-blur">
             {project.tech}
@@ -28,7 +32,7 @@ export default function ProjectCard({ project }) {
                 {project.title}
               </h3>
             </div>
-            <span className="text-2xl text-(--brand-1) transition-transform duration-300 group-hover:translate-x-1">
+            <span className="mt-1 text-2xl text-(--brand-1) transition-transform duration-300 group-hover:translate-x-1">
               ↗
             </span>
           </div>
