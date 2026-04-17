@@ -61,6 +61,7 @@ const projectsData = [
       "Responsive storefront layout improvements across key templates",
       "Cleaner product discovery flow with stronger hierarchy",
       "Performance-aware UI refinements without overcomplicating theme structure",
+      "* Created by Uttam under Rootways Inc & Impex Solution. All rights reserved.",
     ],
   },
   {
@@ -125,6 +126,7 @@ const projectsData = [
       "Navigation restructuring for cleaner customer flow",
       "Responsive UI adjustments across key templates",
       "Product page and browsing improvements for easier scanning",
+      "* Created by Uttam under Rootways Inc & Impex Solution. All rights reserved."
     ],
   },
   {
