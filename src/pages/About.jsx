@@ -3,7 +3,7 @@ import personal from "../data/personal";
 import BackButton from "../components/BackButton";
 import usePageSeo from "../hooks/usePageSeo";
 import { getAbsoluteUrl } from "../lib/site";
-import profileImage from "../assets/profile.webp";
+import profileImage from "../assets/profile.png";
 
 const principles = [
   {

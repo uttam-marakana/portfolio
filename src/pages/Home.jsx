@@ -6,7 +6,7 @@ import PageTransition from "../components/PageTransition";
 import projectsData from "../data/projectsData";
 import usePageSeo from "../hooks/usePageSeo";
 import { getAbsoluteUrl } from "../lib/site";
-import profileImage from "../assets/profile.webp";
+import profileImage from "../assets/profile.png";
 
 const metrics = [
   { value: "3+", label: "Years in product-facing frontend work" },
