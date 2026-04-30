@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
+import { motion } from "framer-motion";
 
 export default function ReadmeTOC({ content }) {
   const [active, setActive] = useState("");
@@ -39,32 +40,18 @@ export default function ReadmeTOC({ content }) {
   if (!headings.length) return null;
 
   return (
-    <aside className="sticky top-24 hidden h-fit xl:block">
-      <div className="premium-panel p-5">
-        <p className="text-xs uppercase tracking-[0.24em] text-(--text-2)">
-          On this page
-        </p>
-        <h3 className="mt-2 font-(--font-display) text-2xl">
-          README map
-        </h3>
-
-        <ul className="mt-5 space-y-2 text-sm">
-          {headings.map((h) => (
-            <li key={h.id}>
-              <a
-                href={`#${h.id}`}
-                className={`block rounded-2xl border px-3 py-3 transition ${
-                  active === h.id
-                    ? "border-(--brand-1) bg-[rgba(255,141,87,0.12)] text-(--text-1)"
-                    : "border-transparent text-(--text-2) hover:border-(--line-soft) hover:text-(--text-1)"
-                }`}
-              >
-                {h.text}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </aside>
+    <motion.nav
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+    >
+      <ul>
+        {headings.map((h) => (
+          <li key={h.id} className={active === h.id ? "active" : ""}>
+            <a href={`#${h.id}`}>{h.text}</a>
+          </li>
+        ))}
+      </ul>
+    </motion.nav>
   );
 }
