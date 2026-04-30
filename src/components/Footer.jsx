@@ -1,13 +1,24 @@
 import { Link } from "react-router-dom";
 import SocialLinks from "./SocialLinks";
 import mainLogo from "../assets/logo.webp";
+import { motion } from "framer-motion";
 
 export default function Footer() {
   return (
-    <footer className="px-3 pb-6 pt-10">
+    <motion.footer
+      className="px-3 pb-6 pt-10"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+    >
       <div className="page-shell">
-        <div className="section-frame rounded-[2rem] px-6 py-10 md:px-10">
-          <div className="grid gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="section-frame rounded-4xl px-6 py-10 md:px-10">
+          <motion.div
+            className="grid gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: "easeOut", staggerChildren: 0.2 }}
+          >
             <div className="text-center lg:text-left">
               <div className="flex items-center justify-center lg:justify-start gap-3 mb-4">
                 <img
@@ -84,7 +95,7 @@ export default function Footer() {
               </h4>
               <SocialLinks />
             </div>
-          </div>
+          </motion.div>
 
           <div className="mt-10 flex flex-col gap-3 border-t border-(--line-soft) pt-6 text-sm text-(--text-2) md:flex-row md:items-center md:justify-between">
             <p>© {new Date().getFullYear()} Uttam Marakana. All rights reserved.</p>
@@ -92,6 +103,6 @@ export default function Footer() {
           </div>
         </div>
       </div>
-    </footer>
+    </motion.footer>
   );
 }

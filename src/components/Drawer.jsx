@@ -1,20 +1,27 @@
 import { NavLink } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 export default function Drawer({ open, setOpen }) {
   return (
     <>
-      <div
+      <motion.div
         className={`fixed inset-0 z-40 bg-black/45 backdrop-blur-sm transition ${
           open ? "opacity-100" : "opacity-0 pointer-events-none"
         }`}
         onClick={() => setOpen(false)}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: open ? 1 : 0 }}
+        transition={{ duration: 0.3 }}
       />
 
-      <div
+      <motion.div
         className={`fixed top-3 right-3 bottom-3 z-50 w-[min(20rem,calc(100vw-1.5rem))] rounded-[2rem] border border-(--line-soft) bg-(--surface-2) shadow-2xl
         transform transition-transform duration-300
         ${open ? "translate-x-0" : "translate-x-full"}`}
+        initial={{ x: "100%" }}
+        animate={{ x: open ? 0 : "100%" }}
+        transition={{ duration: 0.3 }}
       >
         <div className="flex items-center justify-between border-b border-(--line-soft) px-5 py-5">
           <div>
@@ -75,7 +82,7 @@ export default function Drawer({ open, setOpen }) {
             Hire Me
           </NavLink>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }

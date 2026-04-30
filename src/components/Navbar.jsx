@@ -5,6 +5,7 @@ import Drawer from "./Drawer";
 import { ThemeContext } from "../context/theme-context";
 import { SearchContext } from "../context/search-context";
 import main_logo from "../assets/logo.webp";
+import { motion } from "framer-motion";
 
 export default function Navbar() {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -34,8 +35,11 @@ export default function Navbar() {
 
   return (
     <>
-      <nav
+      <motion.nav
         className="sticky top-0 z-30 px-3 pt-3"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
       >
         <div className="page-shell">
           <div className="section-frame rounded-[1.75rem] px-4 py-3 md:px-6 md:py-4 flex items-center justify-between gap-4">
@@ -149,7 +153,7 @@ export default function Navbar() {
             </div>
           </div>
         </div>
-      </nav>
+      </motion.nav>
 
       {/* Mobile Search Overlay */}
       {searchOpen && (
