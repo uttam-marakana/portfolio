@@ -5,6 +5,7 @@ import BackButton from "../components/BackButton";
 import usePageSeo from "../hooks/usePageSeo";
 import { getAbsoluteUrl } from "../lib/site";
 import profileImage from "../assets/profile.png";
+import CountUp from "react-countup";
 
 const focusAreas = [
   {
@@ -135,11 +136,15 @@ export default function Resume() {
 
                 <div className="mt-8 grid gap-4 sm:grid-cols-3">
                   <div className="metric-card">
-                    <p className="metric-value">{personal.experience.length}</p>
+                    <p className="metric-value">
+                      <CountUp start={0} end={personal.experience.length} duration={2} />
+                    </p>
                     <p className="metric-label mt-3">Professional roles</p>
                   </div>
                   <div className="metric-card">
-                    <p className="metric-value">{personal.skills.length}+</p>
+                    <p className="metric-value">
+                      <CountUp start={0} end={personal.skills.length} duration={2} suffix="+" />
+                    </p>
                     <p className="metric-label mt-3">Core capabilities</p>
                   </div>
                   <div className="metric-card">

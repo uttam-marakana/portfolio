@@ -7,10 +7,12 @@ import projectsData from "../data/projectsData";
 import usePageSeo from "../hooks/usePageSeo";
 import { getAbsoluteUrl } from "../lib/site";
 import profileImage from "../assets/profile.png";
+import { motion } from "framer-motion";
+import CountUp from "react-countup";
 
 const metrics = [
-  { value: "3+", label: "Years in product-facing frontend work" },
-  { value: "2 Tracks", label: "Shopify systems and React applications" },
+  { value: 3, suffix: "+", label: "Years in product-facing frontend work" },
+  { value: 2, suffix: " Tracks", label: "Shopify systems and React applications" },
   { value: "Fast", label: "Performance-aware delivery from first pass" },
 ];
 
