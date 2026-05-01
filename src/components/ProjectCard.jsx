@@ -1,8 +1,12 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import CountUp from "react-countup";
+import useGitHubStats from "../hooks/useGitHubStats";
 
 export default function ProjectCard({ project }) {
+  const { stars, forks, loading } = useGitHubStats(project.github);
+  const techCount = project.stack?.length || 0;
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -22,8 +26,14 @@ export default function ProjectCard({ project }) {
               />
             </div>
             <div className="absolute inset-x-0 bottom-0 h-20 bg-linear-to-t from-[rgba(10,12,14,0.76)] via-[rgba(10,12,14,0.28)] to-transparent" />
-            <div className="absolute left-4 top-4 inline-flex rounded-full border border-white/15 bg-black/35 px-3 py-1 text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-white/80 backdrop-blur">
-              <CountUp start={0} end={project.tech.length} duration={2} />
+            <div className="absolute left-4 top-4 inline-flex items-center gap-2 rounded-full border border-white/15 bg-black/35 px-3 py-1 text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-white/80 backdrop-blur">
+              <CountUp start={0} end={techCount} duration={2} />
+              {project.github && !loading && (
+                <span className="flex items-center gap-1">
+                  <span>★{stars}</span>
+                  <span>⑂{forks}</span>
+                </span>
+              )}
             </div>
           </div>
 
