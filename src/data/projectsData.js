@@ -126,7 +126,7 @@ const projectsData = [
       "Navigation restructuring for cleaner customer flow",
       "Responsive UI adjustments across key templates",
       "Product page and browsing improvements for easier scanning",
-      "* Created by Uttam under Rootways Inc & Impex Solution. All rights reserved."
+      "* Created by Uttam under Rootways Inc & Impex Solution. All rights reserved.",
     ],
   },
   {
@@ -481,6 +481,227 @@ const projectsData = [
       "Phase-based UI redesign aimed at stronger premium presentation",
     ],
   },
+  {
+    id: "two-flags-one-heart",
+    tech: "shopify",
+    featured: false,
+    title: "Two Flags One Heart",
+    sector: "Ecommerce / Retail",
+    role: "Shopify Developer",
+    timeline: "Professional employment — store development and launch",
+    shortDescription:
+      "Developed and customized a Shopify eCommerce store, configured third-party applications, created store content and FAQs, and assisted in preparing the store for launch.",
+    overview:
+      "Contributed to the development of the Two Flags One Heart Shopify store by building and customizing the storefront, configuring third-party Shopify applications, organizing website content, creating FAQ pages, and ensuring a responsive shopping experience.",
+    problem:
+      "The store needed a fully functional, launch-ready Shopify presence with a customized storefront, integrated third-party tools, and well-organized content to support a smooth customer experience from day one.",
+    solution:
+      "I built and customized the Shopify storefront, configured and integrated third-party Shopify applications, developed and customized theme sections, created and organized website content, wrote FAQ pages, configured navigation and store settings, and assisted with store launch and QA testing.",
+    impact:
+      "The store launched with a customized, responsive storefront, integrated third-party tools, and well-structured content that supports a clear shopping experience across devices.",
+    image: "/assets/images/two-flags-one-heart.webp",
+    preview: "https://twoflagsoneheart.com/",
+    stack: [
+      "Shopify",
+      "Liquid",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Shopify Admin",
+      "Third-party Apps",
+    ],
+    services: [
+      "Shopify store build and customization",
+      "Third-party Shopify app configuration and integration",
+      "Shopify theme section development and customization",
+      "Website content creation and organization",
+      "FAQ page writing and structuring",
+      "Store navigation and settings configuration",
+      "Store launch assistance and QA",
+      "Responsive design implementation across devices",
+    ],
+    constraints: [
+      "The storefront had to be fully functional and launch-ready within the project timeline",
+      "Third-party app integrations needed to work reliably without custom development overhead",
+      "Content and FAQ pages had to be clear and helpful for first-time visitors to the store",
+    ],
+    process: [
+      "Built and customized the Shopify storefront to match the brand and product requirements",
+      "Configured and integrated third-party Shopify applications for store functionality",
+      "Developed and customized Shopify theme sections where needed for layout and content",
+      "Created and organized website content including product descriptions and informational pages",
+      "Wrote and structured FAQ pages to address common customer questions",
+      "Configured store navigation menus and core Shopify settings",
+      "Assisted with store launch preparation and quality assurance testing",
+      "Tested and ensured responsive design across desktop, tablet, and mobile devices",
+    ],
+    results: [
+      "A fully customized, launch-ready Shopify store with integrated third-party tools",
+      "Well-organized website content and FAQ pages that support customer browsing",
+      "Responsive storefront experience tested across multiple device types",
+    ],
+    gallery: [
+      {
+        image: "/assets/images/two-flags-one-heart.webp",
+        alt: "Two Flags One Heart Shopify storefront",
+        caption:
+          "Custom Shopify storefront built and customized for launch, with integrated third-party apps and organized content.",
+      },
+    ],
+    highlights: [
+      "Full Shopify store build from theme customization to launch",
+      "Third-party app configuration and integration for store operations",
+      "Custom theme section development and content organization",
+      "FAQ page creation and store settings configuration",
+      "Responsive design testing across devices",
+      "* Completed as part of professional employment. All rights reserved.",
+    ],
+  },
+  {
+    id: "arnik-jewellers",
+    tech: "shopify",
+    featured: true,
+    title: "Arnik Jewellers",
+    sector: "Luxury Watches & Jewellery / Ecommerce",
+    role: "Shopify Storefront Customization",
+    timeline: "Professional client project",
+
+    shortDescription:
+      "Customized a premium Shopify storefront for a luxury watch and jewellery retailer by extending the Supreme theme with reusable page templates, custom content sections, responsive improvements, and third-party integrations.",
+
+    overview:
+      "Arnik Jewellers is a luxury watch and jewellery retailer built on Shopify. Using the Supreme theme with the Royce preset as the foundation, I customized the storefront to better represent the brand through reusable jewellery landing pages, unique service pages, enhanced collection and product experiences, custom Shopify sections, and third-party app integration. The project focused on creating a premium, content-rich shopping experience while maintaining a scalable and maintainable Shopify architecture.",
+
+    problem:
+      "The base Shopify theme provided a strong foundation but required significant customization to match the client's premium brand identity. The business needed reusable layouts for multiple jewellery categories, dedicated service pages with custom content, stronger storytelling across informational pages, improved product discovery, and a seamless way to showcase social proof from Instagram.",
+
+    solution:
+      "I customized the Supreme Shopify theme (Royce preset) by developing reusable Shopify sections, implementing scalable jewellery landing page templates, creating unique layouts for selected service pages, refining collection and product templates, and enhancing the About page. I also integrated and configured the Omega Insta Feeds Shopify app to display Instagram content throughout the storefront, helping strengthen customer engagement while maintaining a responsive and premium shopping experience.",
+
+    impact:
+      "The completed storefront delivers a more polished and engaging customer journey through reusable content architecture, improved merchandising, enhanced informational pages, and responsive layouts. The customized structure allows the client to manage content more efficiently while maintaining a consistent luxury brand experience across the entire website.",
+
+    image: "/assets/images/arnik-jewellers.webp",
+
+    // preview: "https://www.arnikjewellers.com",
+
+    stack: [
+      "Shopify",
+      "Liquid",
+      "Supreme Theme",
+      "Royce Preset",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Responsive Design",
+      "Theme Customization",
+      "Custom Shopify Sections",
+      "Omega Insta Feeds"
+    ],
+
+    services: [
+      "Shopify storefront customization",
+      "Supreme Theme (Royce preset) customization",
+      "Reusable Shopify section development",
+      "Jewellery landing page implementation",
+      "Custom service page development",
+      "About page customization",
+      "Collection page customization",
+      "Product detail page enhancement",
+      "Responsive storefront optimization",
+      "Content integration",
+      "Third-party Shopify app integration",
+      "Omega Insta Feeds configuration"
+    ],
+
+    constraints: [
+      "Customize the existing Shopify theme without affecting maintainability or future upgrades.",
+      "Build reusable page layouts that could support multiple jewellery categories.",
+      "Design unique experiences for selected service pages while maintaining brand consistency.",
+      "Preserve a premium luxury aesthetic across informational and ecommerce pages.",
+      "Ensure responsive performance across desktop, tablet, and mobile devices.",
+      "Integrate third-party functionality without compromising storefront performance."
+    ],
+
+    process: [
+      "Audited the Supreme theme (Royce preset) to identify customization opportunities based on the client's requirements.",
+      "Customized homepage sections to improve luxury merchandising, promotional content, and visual hierarchy.",
+      "Developed a reusable jewellery landing page system that powers multiple jewellery categories using a consistent layout with category-specific content.",
+      "Collaborated with the designer to implement redesigned Jewellery and Services pages using custom Shopify sections and structured content.",
+      "Built unique layouts for selected service pages, including Financing Options and other informational pages, tailored to their specific content and user journeys.",
+      "Customized the About page to highlight the company's story, leadership, luxury watch expertise, and core brand values.",
+      "Refined collection pages to improve product discovery, merchandising, and customer browsing experience.",
+      "Enhanced product detail pages with improved layouts, richer product information, responsive galleries, and a streamlined purchasing experience.",
+      "Integrated and configured the Omega Insta Feeds Shopify app to display Instagram content across dedicated storefront sections and landing pages.",
+      "Optimized typography, spacing, responsive layouts, and overall UI consistency throughout the storefront.",
+      "Performed cross-browser, cross-device, and responsive testing before project delivery."
+    ],
+
+    results: [
+      "Customized Shopify storefront tailored to a luxury watch and jewellery retailer.",
+      "Reusable jewellery landing page system implemented across multiple jewellery categories.",
+      "Custom-designed service pages with content-focused layouts for specialized business services.",
+      "Enhanced About page to strengthen brand storytelling and customer trust.",
+      "Improved collection pages for better merchandising and product discovery.",
+      "Refined product detail pages with a more premium purchasing experience.",
+      "Successfully integrated Omega Insta Feeds to showcase live Instagram content.",
+      "Responsive storefront optimized across desktop, tablet, and mobile devices.",
+      "Scalable Shopify architecture supporting future merchandising and content expansion."
+    ],
+
+    gallery: [
+      {
+        image: "/assets/images/arnik-home.webp",
+        alt: "Arnik Jewellers homepage",
+        caption:
+          "Customized homepage featuring premium merchandising, luxury branding, and responsive Shopify sections."
+      },
+      {
+        image: "/assets/images/arnik-jewellery.webp",
+        alt: "Jewellery landing pages",
+        caption:
+          "Reusable jewellery landing page template implemented across multiple jewellery categories with category-specific content."
+      },
+      {
+        image: "/assets/images/arnik-services.webp",
+        alt: "Services pages",
+        caption:
+          "Custom-designed service pages, including Financing Options and customer service information, implemented using custom Shopify sections."
+      },
+      {
+        image: "/assets/images/arnik-about.webp",
+        alt: "About page",
+        caption:
+          "Brand-focused About page highlighting company heritage, leadership, expertise, and customer trust."
+      },
+      {
+        image: "/assets/images/arnik-collection.webp",
+        alt: "Collection page",
+        caption:
+          "Enhanced collection pages with improved merchandising, filtering, and luxury product browsing."
+      },
+      {
+        image: "/assets/images/arnik-product.webp",
+        alt: "Product detail page",
+        caption:
+          "Refined product detail page featuring premium galleries, detailed specifications, and an optimized purchasing experience."
+      }
+    ],
+
+    highlights: [
+      "Customized the Supreme Shopify theme using the Royce preset",
+      "Developed reusable jewellery landing page templates for multiple categories",
+      "Implemented bespoke service pages with unique layouts",
+      "Customized the About page with brand storytelling and trust-focused content",
+      "Enhanced collection and product detail pages for improved merchandising",
+      "Built reusable Shopify sections for scalable content management",
+      "Integrated and configured the Omega Insta Feeds Shopify app",
+      "Optimized responsive layouts across desktop, tablet, and mobile devices",
+      "Performance-aware Shopify customization while maintaining theme flexibility",
+      "* Completed as part of professional Shopify development. All rights reserved."
+    ]
+  },
 ];
 
 export default projectsData;
+
