@@ -123,7 +123,7 @@ textarea {
 }
 
 .page-shell {
-  width: min(1200px, calc(100% - 2rem));
+  width: min(1400px, calc(100% - 2rem));
   margin-inline: auto;
 }
 
@@ -337,7 +337,7 @@ textarea {
 
 @media (max-width: 767px) {
   .page-shell {
-    width: min(100% - 1.25rem, 1200px);
+    width: min(100% - 1.25rem, 1400px);
   }
 
   .premium-button {
