@@ -123,7 +123,7 @@ textarea {
 }
 
 .page-shell {
-  width: min(1400px, calc(100% - 2rem));
+  width: min(100px, calc(100% - 2rem));
   margin-inline: auto;
 }
 
