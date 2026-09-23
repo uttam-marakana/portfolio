@@ -30,12 +30,12 @@ const personal = {
     {
       company: "ShreeDocs Enterprise",
       role: "ReactJS Developer",
-      duration: "Mar 2024 – Feb 2025",
+      duration: "Mar 2024 – May 2025",
     },
     {
       company: "Vakratund Solution Pvt Ltd",
       role: "ReactJS Developer",
-      duration: "Sep 2023 – Feb 2024",
+      duration: "Aug 2023 – Feb 2024",
     },
     {
       company: "Bhavin Tank Technologies Pvt Ltd",
