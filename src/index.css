@@ -184,7 +184,7 @@ textarea {
 /* Responsive page container */
 .page-shell {
   width: calc(100% - 2rem);
-  max-width: 1600px;
+  max-width: 1400px;
   margin-inline: auto;
 }
 
