@@ -732,7 +732,7 @@ const projectsData = [
     impact:
       "The completed storefront delivers a more polished and engaging customer journey through reusable content architecture, improved merchandising, enhanced informational pages, and responsive layouts. The customized structure allows the client to manage content more efficiently while maintaining a consistent luxury brand experience across the entire website.",
 
-    image: "/assets/images/project catelogs/arnik/arnik-home.webp",
+    image: "/assets/images/arnik-jewellers.png",
 
     // preview: "https://www.arnikjewellers.com",
 
@@ -802,37 +802,37 @@ const projectsData = [
 
     gallery: [
       {
-        image: "/assets/images/project catelogs/arnik/arnik-home.webp",
+        image: "/assets/images/project catelogs/arnik/arnikhome.png",
         alt: "Arnik Jewellers homepage",
         caption:
           "Customized homepage featuring premium merchandising, luxury branding, and responsive Shopify sections.",
       },
       {
-        image: "/assets/images/project catelogs/arnik/arnik-jewellery.webp",
+        image: "/assets/images/project catelogs/arnik/arnikJewellery.png",
         alt: "Arnik Jewellers jewellery landing page",
         caption:
           "Reusable jewellery landing page template implemented across multiple jewellery categories with category-specific content.",
       },
       {
-        image: "/assets/images/project catelogs/arnik/arnik-services.webp",
+        image: "/assets/images/project catelogs/arnik/arnikServices.png",
         alt: "Arnik Jewellers services page",
         caption:
           "Custom-designed service pages implemented using custom Shopify sections and structured content.",
       },
       {
-        image: "/assets/images/project catelogs/arnik/arnik-about.webp",
+        image: "/assets/images/project catelogs/arnik/arnikAbout.png",
         alt: "Arnik Jewellers About page",
         caption:
           "Brand-focused About page highlighting company heritage, expertise, leadership, and customer trust.",
       },
       {
-        image: "/assets/images/project catelogs/arnik/arnik-collection.webp",
+        image: "/assets/images/project catelogs/arnik/arnikCollection.png",
         alt: "Arnik Jewellers collection page",
         caption:
           "Enhanced collection page with improved merchandising, filtering, and luxury product browsing.",
       },
       {
-        image: "/assets/images/project catelogs/arnik/arnik-product.webp",
+        image: "/assets/images/project catelogs/arnik/arnikPDP.png",
         alt: "Arnik Jewellers product detail page",
         caption:
           "Refined product detail page featuring premium galleries, detailed specifications, and an optimized purchasing experience.",
