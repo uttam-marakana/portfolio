@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap");
 @import "tailwindcss";
 
-/* enable class-based dark mode */
+/* Enable class-based dark mode */
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
@@ -9,24 +9,52 @@
   --animate-spin-slow: spin-slow 14s linear infinite;
   --animate-blob: blob 8s infinite;
 
+  /* Floating animation */
   @keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-15px); }
-    100% { transform: translateY(0px); }
+    0% {
+      transform: translateY(0px);
+    }
+
+    50% {
+      transform: translateY(-15px);
+    }
+
+    100% {
+      transform: translateY(0px);
+    }
   }
 
+  /* Slow rotation animation */
   @keyframes spin-slow {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
   }
 
+  /* Blob animation */
   @keyframes blob {
-    0% { transform: translate(0px, 0px) scale(1); }
-    33% { transform: translate(30px, -50px) scale(1.1); }
-    66% { transform: translate(-20px, 20px) scale(0.9); }
-    100% { transform: translate(0px, 0px) scale(1); }
+    0% {
+      transform: translate(0px, 0px) scale(1);
+    }
+
+    33% {
+      transform: translate(30px, -50px) scale(1.1);
+    }
+
+    66% {
+      transform: translate(-20px, 20px) scale(0.9);
+    }
+
+    100% {
+      transform: translate(0px, 0px) scale(1);
+    }
   }
 
+  /* Page entrance animation */
   @keyframes page-enter {
     from {
       opacity: 0;
@@ -39,36 +67,50 @@
     }
   }
 }
+
+/* Enable Tailwind typography plugin */
 @plugin "@tailwindcss/typography";
 
+/* Global design variables */
 :root {
   --font-display: "Fraunces", "Georgia", serif;
   --font-body: "Space Grotesk", "Segoe UI", sans-serif;
+
   --surface-0: #f4efe6;
   --surface-1: rgba(255, 251, 245, 0.72);
   --surface-2: rgba(255, 255, 255, 0.9);
+
   --text-1: #16110d;
   --text-2: #5d554d;
+
   --line-soft: rgba(38, 27, 20, 0.1);
+
   --brand-1: #ba5b31;
   --brand-2: #215d67;
   --brand-3: #dbc49a;
+
   --shadow-soft: 0 24px 70px rgba(28, 20, 12, 0.12);
 }
 
+/* Dark theme variables */
 .dark {
   --surface-0: #111415;
   --surface-1: rgba(19, 24, 26, 0.75);
   --surface-2: rgba(24, 29, 31, 0.92);
+
   --text-1: #f6f1e8;
   --text-2: #a8a39b;
+
   --line-soft: rgba(227, 216, 194, 0.12);
+
   --brand-1: #ff8d57;
   --brand-2: #78d6d0;
   --brand-3: #f3d5a1;
+
   --shadow-soft: 0 24px 70px rgba(0, 0, 0, 0.4);
 }
 
+/* Global HTML styles */
 html {
   background: var(--surface-0);
   color: var(--text-1);
@@ -76,17 +118,31 @@ html {
   scroll-padding-top: 7rem;
 }
 
+/* Global body styles */
 body {
   min-height: 100vh;
   background:
-    radial-gradient(circle at top left, rgba(120, 214, 208, 0.18), transparent 28%),
-    radial-gradient(circle at 80% 10%, rgba(255, 141, 87, 0.2), transparent 24%),
-    radial-gradient(circle at bottom right, rgba(219, 196, 154, 0.18), transparent 30%),
+    radial-gradient(
+      circle at top left,
+      rgba(120, 214, 208, 0.18),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 80% 10%,
+      rgba(255, 141, 87, 0.2),
+      transparent 24%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(219, 196, 154, 0.18),
+      transparent 30%
+    ),
     var(--surface-0);
   color: var(--text-1);
   font-family: var(--font-body);
 }
 
+/* Global interactive element transitions */
 a,
 button,
 input,
@@ -99,15 +155,18 @@ textarea {
     box-shadow 200ms ease;
 }
 
+/* React root container */
 #root {
   min-height: 100vh;
 }
 
+/* Main application shell */
 .app-shell {
   position: relative;
   isolation: isolate;
 }
 
+/* Decorative background grid */
 .app-shell::before {
   content: "";
   position: fixed;
@@ -122,11 +181,14 @@ textarea {
   z-index: -1;
 }
 
+/* Responsive page container */
 .page-shell {
-  width: min(1200px, calc(100% - 2rem));
+  width: calc(100% - 2rem);
+  max-width: 1400px;
   margin-inline: auto;
 }
 
+/* Shared glass section frame */
 .section-frame {
   border: 1px solid var(--line-soft);
   background: var(--surface-1);
@@ -134,6 +196,7 @@ textarea {
   backdrop-filter: blur(18px);
 }
 
+/* Small uppercase eyebrow label */
 .eyebrow {
   display: inline-flex;
   align-items: center;
@@ -149,6 +212,7 @@ textarea {
   text-transform: uppercase;
 }
 
+/* Eyebrow decorative indicator */
 .eyebrow::before {
   content: "";
   width: 0.5rem;
@@ -158,6 +222,7 @@ textarea {
   box-shadow: 0 0 18px rgba(255, 141, 87, 0.45);
 }
 
+/* Large display heading */
 .display-title {
   font-family: var(--font-display);
   font-size: clamp(3rem, 7vw, 6.2rem);
@@ -165,6 +230,7 @@ textarea {
   letter-spacing: -0.04em;
 }
 
+/* Section heading */
 .section-title {
   font-family: var(--font-display);
   font-size: clamp(2.05rem, 4vw, 3.25rem);
@@ -172,6 +238,7 @@ textarea {
   letter-spacing: -0.04em;
 }
 
+/* Section descriptive text */
 .section-copy {
   max-width: 42rem;
   color: var(--text-2);
@@ -179,6 +246,7 @@ textarea {
   line-height: 1.75;
 }
 
+/* Shared button styles */
 .premium-button {
   display: inline-flex;
   align-items: center;
@@ -191,22 +259,26 @@ textarea {
   font-weight: 600;
 }
 
+/* Solid button */
 .premium-button--solid {
   background: linear-gradient(135deg, var(--brand-1), #e2a158);
   color: #fff8f1;
   box-shadow: 0 16px 35px rgba(186, 91, 49, 0.25);
 }
 
+/* Ghost button */
 .premium-button--ghost {
   border-color: var(--line-soft);
   background: rgba(255, 255, 255, 0.04);
   color: var(--text-1);
 }
 
+/* Button hover animation */
 .premium-button:hover {
   transform: translateY(-2px);
 }
 
+/* Shared text clamping */
 .clamp-2,
 .clamp-3,
 .clamp-5 {
@@ -215,18 +287,22 @@ textarea {
   overflow: hidden;
 }
 
+/* Two-line text clamp */
 .clamp-2 {
   -webkit-line-clamp: 2;
 }
 
+/* Three-line text clamp */
 .clamp-3 {
   -webkit-line-clamp: 3;
 }
 
+/* Five-line text clamp */
 .clamp-5 {
   -webkit-line-clamp: 5;
 }
 
+/* Metric card */
 .metric-card {
   border-radius: 1.5rem;
   border: 1px solid var(--line-soft);
@@ -234,6 +310,7 @@ textarea {
   padding: 1.25rem;
 }
 
+/* Metric label */
 .metric-label {
   color: var(--text-2);
   font-size: 0.8rem;
@@ -241,18 +318,21 @@ textarea {
   text-transform: uppercase;
 }
 
+/* Metric value */
 .metric-value {
   font-family: var(--font-display);
   font-size: clamp(1.6rem, 3vw, 2.4rem);
   line-height: 1;
 }
 
+/* Navigation link */
 .premium-nav-link {
   position: relative;
   color: var(--text-2);
   font-size: 0.94rem;
 }
 
+/* Navigation link underline */
 .premium-nav-link::after {
   content: "";
   position: absolute;
@@ -266,16 +346,19 @@ textarea {
   transition: transform 200ms ease;
 }
 
+/* Navigation active and hover state */
 .premium-nav-link:hover,
 .premium-nav-link[data-active="true"] {
   color: var(--text-1);
 }
 
+/* Navigation underline active and hover state */
 .premium-nav-link:hover::after,
 .premium-nav-link[data-active="true"]::after {
   transform: scaleX(1);
 }
 
+/* Premium content panel */
 .premium-panel {
   position: relative;
   overflow: hidden;
@@ -285,21 +368,28 @@ textarea {
   box-shadow: var(--shadow-soft);
 }
 
+/* Premium panel decorative overlay */
 .premium-panel::before {
   content: "";
   position: absolute;
   inset: 0;
   background:
     linear-gradient(135deg, rgba(255, 255, 255, 0.12), transparent 45%),
-    radial-gradient(circle at top right, rgba(120, 214, 208, 0.18), transparent 28%);
+    radial-gradient(
+      circle at top right,
+      rgba(120, 214, 208, 0.18),
+      transparent 28%
+    );
   pointer-events: none;
 }
 
+/* Premium grid layout */
 .premium-grid {
   display: grid;
   gap: 1.5rem;
 }
 
+/* Project media container */
 .project-media-stage {
   display: flex;
   align-items: center;
@@ -314,6 +404,7 @@ textarea {
     inset 0 -14px 30px rgba(0, 0, 0, 0.18);
 }
 
+/* Project media image */
 .project-media-image {
   width: 100%;
   height: 100%;
@@ -321,23 +412,27 @@ textarea {
   object-position: center;
 }
 
+/* Rich text container */
 .premium-prose {
   color: var(--text-2);
 }
 
+/* Rich text headings */
 .premium-prose :where(h1, h2, h3, h4) {
   color: var(--text-1);
   font-family: var(--font-display);
   letter-spacing: -0.03em;
 }
 
+/* Rich text links */
 .premium-prose a {
   color: var(--brand-2);
 }
 
+/* Mobile responsive styles */
 @media (max-width: 767px) {
   .page-shell {
-    width: min(100% - 1.25rem, 1200px);
+    width: calc(100% - 1.25rem);
   }
 
   .premium-button {
@@ -351,6 +446,7 @@ textarea {
   }
 }
 
+/* Reduced motion accessibility */
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

@@ -17,7 +17,7 @@ const projectsData = [
       "I refined storefront structure, improved responsive layout behavior, tuned product templates, and tightened UI decisions around navigation and content grouping.",
     impact:
       "The result is a more composed buying journey with cleaner browsing paths, better visual consistency, and a storefront that feels more deliberate overall.",
-    image: "/assets/images/alpine-selection.webp",
+    image: "/assets/images/alpine-selection.png",
     preview: "https://uttam-rootways.myshopify.com",
     stack: [
       "Shopify",
@@ -50,7 +50,7 @@ const projectsData = [
     ],
     gallery: [
       {
-        image: "/assets/images/alpine-selection.webp",
+        image: "/assets/images/alpine-selection.png",
         alt: "Alpine Selection storefront overview",
         caption:
           "Primary storefront surface with cleaner hierarchy and more controlled merchandising.",
@@ -82,7 +82,7 @@ const projectsData = [
       "I reworked storefront sections, improved navigation patterns, refined layout responsiveness, and tightened visual consistency across the customer journey.",
     impact:
       "The storefront feels easier to scan and more trustworthy to shop through, with clearer structure and less visual drift between pages.",
-    image: "/assets/images/catalan-gourmet.webp",
+    image: "/assets/images/catalan-gourmet.png",
     preview: "https://dev-calatan-gourmet.myshopify.com",
     stack: [
       "Shopify",
@@ -115,7 +115,7 @@ const projectsData = [
     ],
     gallery: [
       {
-        image: "/assets/images/catalan-gourmet.webp",
+        image: "/assets/images/catalan-gourmet.png",
         alt: "Catalan Gourmet storefront view",
         caption:
           "A more coherent browsing experience with better navigation handoffs and cleaner structure.",
@@ -488,7 +488,7 @@ const projectsData = [
     title: "Two Flags One Heart",
     sector: "Ecommerce / Retail",
     role: "Shopify Developer",
-    timeline: "Professional employment — store development and launch",
+    timeline: "Store Development",
     shortDescription:
       "Developed and customized a Shopify eCommerce store, configured third-party applications, created store content and FAQs, and assisted in preparing the store for launch.",
     overview:
@@ -499,7 +499,7 @@ const projectsData = [
       "I built and customized the Shopify storefront, configured and integrated third-party Shopify applications, developed and customized theme sections, created and organized website content, wrote FAQ pages, configured navigation and store settings, and assisted with store launch and QA testing.",
     impact:
       "The store launched with a customized, responsive storefront, integrated third-party tools, and well-structured content that supports a clear shopping experience across devices.",
-    image: "/assets/images/two-flags-one-heart.webp",
+    image: "/assets/images/twoFlagsOneHeart.png",
     preview: "https://twoflagsoneheart.com/",
     stack: [
       "Shopify",
@@ -581,7 +581,7 @@ const projectsData = [
     impact:
       "The completed storefront delivers a more polished and engaging customer journey through reusable content architecture, improved merchandising, enhanced informational pages, and responsive layouts. The customized structure allows the client to manage content more efficiently while maintaining a consistent luxury brand experience across the entire website.",
 
-    image: "/assets/images/arnik-jewellers.webp",
+    image: "/assets/images/arnik-jewellers.png",
 
     // preview: "https://www.arnikjewellers.com",
 
@@ -596,7 +596,7 @@ const projectsData = [
       "Responsive Design",
       "Theme Customization",
       "Custom Shopify Sections",
-      "Omega Insta Feeds"
+      "Omega Insta Feeds",
     ],
 
     services: [
@@ -611,7 +611,7 @@ const projectsData = [
       "Responsive storefront optimization",
       "Content integration",
       "Third-party Shopify app integration",
-      "Omega Insta Feeds configuration"
+      "Omega Insta Feeds configuration",
     ],
 
     constraints: [
@@ -620,7 +620,7 @@ const projectsData = [
       "Design unique experiences for selected service pages while maintaining brand consistency.",
       "Preserve a premium luxury aesthetic across informational and ecommerce pages.",
       "Ensure responsive performance across desktop, tablet, and mobile devices.",
-      "Integrate third-party functionality without compromising storefront performance."
+      "Integrate third-party functionality without compromising storefront performance.",
     ],
 
     process: [
@@ -634,7 +634,7 @@ const projectsData = [
       "Enhanced product detail pages with improved layouts, richer product information, responsive galleries, and a streamlined purchasing experience.",
       "Integrated and configured the Omega Insta Feeds Shopify app to display Instagram content across dedicated storefront sections and landing pages.",
       "Optimized typography, spacing, responsive layouts, and overall UI consistency throughout the storefront.",
-      "Performed cross-browser, cross-device, and responsive testing before project delivery."
+      "Performed cross-browser, cross-device, and responsive testing before project delivery.",
     ],
 
     results: [
@@ -646,7 +646,7 @@ const projectsData = [
       "Refined product detail pages with a more premium purchasing experience.",
       "Successfully integrated Omega Insta Feeds to showcase live Instagram content.",
       "Responsive storefront optimized across desktop, tablet, and mobile devices.",
-      "Scalable Shopify architecture supporting future merchandising and content expansion."
+      "Scalable Shopify architecture supporting future merchandising and content expansion.",
     ],
 
     gallery: [
@@ -654,38 +654,38 @@ const projectsData = [
         image: "/assets/images/arnik-home.webp",
         alt: "Arnik Jewellers homepage",
         caption:
-          "Customized homepage featuring premium merchandising, luxury branding, and responsive Shopify sections."
+          "Customized homepage featuring premium merchandising, luxury branding, and responsive Shopify sections.",
       },
       {
         image: "/assets/images/arnik-jewellery.webp",
         alt: "Jewellery landing pages",
         caption:
-          "Reusable jewellery landing page template implemented across multiple jewellery categories with category-specific content."
+          "Reusable jewellery landing page template implemented across multiple jewellery categories with category-specific content.",
       },
       {
         image: "/assets/images/arnik-services.webp",
         alt: "Services pages",
         caption:
-          "Custom-designed service pages, including Financing Options and customer service information, implemented using custom Shopify sections."
+          "Custom-designed service pages, including Financing Options and customer service information, implemented using custom Shopify sections.",
       },
       {
         image: "/assets/images/arnik-about.webp",
         alt: "About page",
         caption:
-          "Brand-focused About page highlighting company heritage, leadership, expertise, and customer trust."
+          "Brand-focused About page highlighting company heritage, leadership, expertise, and customer trust.",
       },
       {
         image: "/assets/images/arnik-collection.webp",
         alt: "Collection page",
         caption:
-          "Enhanced collection pages with improved merchandising, filtering, and luxury product browsing."
+          "Enhanced collection pages with improved merchandising, filtering, and luxury product browsing.",
       },
       {
         image: "/assets/images/arnik-product.webp",
         alt: "Product detail page",
         caption:
-          "Refined product detail page featuring premium galleries, detailed specifications, and an optimized purchasing experience."
-      }
+          "Refined product detail page featuring premium galleries, detailed specifications, and an optimized purchasing experience.",
+      },
     ],
 
     highlights: [
@@ -698,10 +698,230 @@ const projectsData = [
       "Integrated and configured the Omega Insta Feeds Shopify app",
       "Optimized responsive layouts across desktop, tablet, and mobile devices",
       "Performance-aware Shopify customization while maintaining theme flexibility",
-      "* Completed as part of professional Shopify development. All rights reserved."
+      "* Completed as part of professional Shopify development. All rights reserved.",
+    ],
+  },
+  {
+    id: "chtools",
+    tech: "shopify",
+    featured: true,
+    title: "CH TOOLS",
+    sector: "Hardware & Tools / Ecommerce",
+    role: "Shopify Storefront Development & Customization",
+    timeline: "Professional client project — ongoing",
+
+    shortDescription:
+      "A professional Shopify e-commerce storefront for Canadian hardware, power tools, hand tools, construction equipment, and industrial supplies.",
+
+    overview:
+      "CH TOOLS — Canadian Hardware & Tools is a large-scale Shopify e-commerce storefront focused on professional tools, hardware, construction equipment, workshop supplies, safety products, and related industrial categories. The project focuses on refining the storefront experience, organizing a broad product catalogue, improving navigation and merchandising, and creating a responsive shopping experience that can support a large and diverse product range.",
+
+    problem:
+      "The store operates across a broad hardware and tools catalogue with multiple product categories, making clear navigation, product discovery, merchandising hierarchy, and responsive storefront behavior especially important. The storefront needs to help customers quickly move from high-level categories to specific tools and products while maintaining a consistent and professional e-commerce experience across devices.",
+
+    solution:
+      "I am customizing and refining the Shopify storefront around the store's extensive product catalogue and category structure. The work includes improving theme sections, navigation, collection and product presentation, responsive layouts, merchandising hierarchy, and reusable storefront components while keeping the implementation maintainable for future catalogue and content expansion.",
+
+    impact:
+      "The project is being structured to provide a clearer and more scalable shopping experience for a large hardware and tools catalogue, with stronger category organization, improved product discovery, responsive presentation, and a storefront structure that can support continued merchandising and content growth.",
+
+    image: "/assets/images/chTools.png",
+
+    preview: "[https://www.chtools.ca/](https://www.chtools.ca/)",
+
+    stack: [
+      "Shopify",
+      "Liquid",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Theme Customization",
+      "Responsive Design",
+      "Custom Shopify Sections",
+      "Ecommerce UX",
+    ],
+
+    services: [
+      "Shopify storefront development",
+      "Shopify theme customization",
+      "Custom section development",
+      "Navigation and mega-menu customization",
+      "Collection page optimization",
+      "Product template customization",
+      "Responsive storefront implementation",
+      "Merchandising and content hierarchy improvements",
+      "Large catalogue browsing optimization",
+      "UI and UX refinement",
+    ],
+
+    constraints: [
+      "The storefront needs to support a large and diverse hardware and tools catalogue without making navigation difficult.",
+      "Customers need clear paths from broad product categories to specific tools, accessories, and hardware products.",
+      "The existing storefront structure needs to remain maintainable while supporting ongoing catalogue and content expansion.",
+      "Responsive layouts must remain usable across desktop, tablet, and mobile devices despite information-heavy category and product pages.",
+      "Navigation and merchandising need to balance a large number of categories with a simple and understandable customer journey.",
+      "Storefront improvements must preserve the practical and professional character expected from a hardware and tools e-commerce business.",
+    ],
+
+    process: [
+      "Reviewed the existing CH TOOLS storefront and its broad product-category structure to identify opportunities for better hierarchy and product discovery.",
+      "Analyzed the navigation and category organization to establish clearer paths through power tools, hand tools, hardware, construction equipment, safety products, and related categories.",
+      "Customized Shopify theme sections to support the store's merchandising and content requirements.",
+      "Refined the primary navigation and mega-menu structure to make the large catalogue easier to explore.",
+      "Improved collection page presentation to support category-level browsing and product discovery.",
+      "Customized product detail layouts to provide clearer product information and stronger purchasing context.",
+      "Refined responsive layouts and spacing across key storefront surfaces for desktop, tablet, and mobile experiences.",
+      "Improved visual hierarchy across merchandising sections while keeping the storefront practical and commerce-focused.",
+      "Structured reusable storefront components so future content and merchandising updates can be implemented without unnecessary theme complexity.",
+      "Performed iterative UI testing and refinement across key customer-facing storefront pages.",
+    ],
+
+    results: [
+      "A more structured Shopify storefront designed to support a broad hardware and tools catalogue.",
+      "Clearer navigation and category organization for easier product discovery.",
+      "Improved collection and product presentation across key shopping surfaces.",
+      "Responsive storefront structure designed for desktop, tablet, and mobile customers.",
+      "Reusable Shopify sections and storefront components supporting future merchandising expansion.",
+      "A professional e-commerce experience aligned with CH TOOLS' Canadian hardware and tools positioning.",
+    ],
+
+    gallery: [
+      {
+        image: "/assets/images/chTools.png",
+        alt: "CH TOOLS Shopify storefront",
+        caption:
+          "Professional Canadian hardware and tools storefront designed around large-scale product discovery and merchandising.",
+      },
+    ],
+
+    highlights: [
+      "Shopify storefront development and theme customization",
+      "Navigation and mega-menu improvements for a large product catalogue",
+      "Collection and product template refinement",
+      "Custom Shopify sections for flexible merchandising",
+      "Responsive storefront optimization across devices",
+      "Improved product discovery and category hierarchy",
+      "Scalable storefront structure for future catalogue expansion",
+      "Professional e-commerce UX for hardware and construction products",
+      "* Ongoing professional Shopify development. All rights reserved.",
+    ],
+  },
+    {
+    id: "faqflow",
+    tech: "shopify",
+    featured: true,
+    title: "FAQFlow",
+    sector: "Shopify App / SaaS Product",
+    role: "Shopify App Developer",
+    timeline: "Personal product development — ongoing",
+
+    shortDescription:
+      "A Shopify FAQ management app designed to help merchants create, organize, publish, and manage storefront FAQs through a dedicated admin interface.",
+
+    overview:
+      "FAQFlow is a custom Shopify app developed to simplify FAQ management for Shopify merchants. The application provides a structured admin experience for managing FAQ categories and questions, publishing FAQ content, and connecting that content to the storefront through a reusable Shopify Theme App Extension.",
+
+    problem:
+      "Managing FAQ content directly inside theme sections can become difficult when a store has multiple categories, products, services, or customer questions. Merchants need a centralized way to create, organize, edit, publish, and maintain FAQ content without repeatedly rebuilding theme content.",
+
+    solution:
+      "I developed FAQFlow as an embedded Shopify application with a dedicated FAQ and category management system. The app provides CRUD workflows for FAQ content, category organization, publishing controls, pagination, and a storefront-facing FAQ section implemented through Shopify Theme App Extensions. The architecture separates merchant-side content management from storefront presentation so FAQ content can be maintained independently from the theme.",
+
+    impact:
+      "FAQFlow provides a more structured approach to Shopify FAQ management by moving content administration into a dedicated app interface while keeping storefront presentation flexible through reusable theme blocks and configurable FAQ sections.",
+
+    image: "/assets/images/faqFlow.png",
+
+    preview: "",
+
+    github: "",
+
+    stack: [
+      "Shopify",
+      "Shopify App",
+      "React",
+      "Remix",
+      "Prisma",
+      "SQLite",
+      "Shopify App Bridge",
+      "Shopify Polaris",
+      "Liquid",
+      "Theme App Extension",
+      "Shopify Admin API"
+    ],
+
+    services: [
+      "Shopify app development",
+      "Embedded admin application development",
+      "FAQ CRUD management",
+      "FAQ category management",
+      "Publishing workflow",
+      "Shopify Theme App Extension development",
+      "Storefront FAQ block development",
+      "Shopify Admin integration",
+      "Database schema design",
+      "Responsive app UI development"
+    ],
+
+    constraints: [
+      "FAQ content needed to be manageable independently from individual Shopify theme pages.",
+      "The app needed a clear merchant-facing workflow for creating, editing, organizing, and publishing FAQ content.",
+      "FAQ categories and questions needed a scalable data structure that could support future content expansion.",
+      "Storefront FAQ presentation needed to remain configurable without requiring merchants to manually modify Liquid code.",
+      "The application needed to work naturally inside Shopify's embedded admin experience.",
+      "The implementation needed to maintain a clear separation between merchant administration, persistent data, and storefront presentation."
+    ],
+
+    process: [
+      "Defined the FAQ and category data model to support structured content management.",
+      "Built the embedded Shopify admin interface around FAQ and category management workflows.",
+      "Implemented complete CRUD operations for FAQ categories and questions.",
+      "Added FAQ publishing functionality so merchants can control which content becomes visible on the storefront.",
+      "Implemented pagination for the FAQ management interface to support larger FAQ collections.",
+      "Integrated the Shopify Theme App Extension to expose FAQ content through storefront blocks.",
+      "Developed configurable storefront FAQ sections with customizable presentation and styling options.",
+      "Implemented interactive FAQ question expansion and collapse behavior with open and close indicators.",
+      "Refined responsive layouts so FAQ content remains usable across desktop, tablet, and mobile storefronts.",
+      "Performed QA and UI refinement across the admin application and storefront experience."
+    ],
+
+    results: [
+      "A functional Shopify FAQ management application with structured content administration.",
+      "Complete FAQ and category CRUD workflows for merchant-side content management.",
+      "Publishing workflow allowing merchants to control storefront FAQ visibility.",
+      "Reusable Shopify Theme App Extension for displaying FAQ content on storefront pages.",
+      "Configurable FAQ storefront presentation with interactive question expand/collapse behavior.",
+      "Pagination support for managing larger FAQ collections.",
+      "A scalable foundation for future FAQ features, analytics, search, and merchant tooling."
+    ],
+
+    gallery: [
+      {
+        image: "/assets/images/faqflow.webp",
+        alt: "FAQFlow Shopify app dashboard",
+        caption:
+          "Embedded Shopify app interface for managing FAQ categories, questions, and publishing workflows."
+      },
+      {
+        image: "/assets/images/faqflow-storefront.webp",
+        alt: "FAQFlow storefront FAQ section",
+        caption:
+          "Storefront FAQ block powered by the Shopify Theme App Extension with interactive question expansion."
+      }
+    ],
+
+    highlights: [
+      "Built a custom embedded Shopify app for FAQ management",
+      "Implemented complete FAQ and category CRUD operations",
+      "Added publishing workflow for controlling storefront FAQ visibility",
+      "Developed Shopify Theme App Extension for storefront integration",
+      "Created configurable FAQ storefront blocks with interactive expand/collapse behavior",
+      "Implemented pagination for scalable FAQ management",
+      "Designed database structure for scalable FAQ and category relationships",
+      "Built a merchant-focused admin workflow for maintaining FAQ content",
+      "* Personal Shopify app product developed by Uttam. All rights reserved."
     ]
   },
 ];
 
 export default projectsData;
-
