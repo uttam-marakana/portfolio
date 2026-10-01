@@ -292,10 +292,10 @@ const projectsData = [
       },
       {
         image:
-          "/assets/images/projectGalleries/Shopify/Shopify-Themes/TwoFlagsOneHeart/TwoFlagsOneHeart-Feature.png",
-        alt: "Two Flags One Heart feature page",
+          "/assets/images/projectGalleries/Shopify/Shopify-Themes/TwoFlagsOneHeart/TwoFlagsOneHeart-OurStory.png",
+        alt: "Two Flags One Heart Our Story page",
         caption:
-          "Feature or landing page showcasing focused brand content and storefront storytelling.",
+          "Our Story page showcasing focused brand content and storefront storytelling.",
       },
       {
         image:
@@ -306,8 +306,8 @@ const projectsData = [
       },
       {
         image:
-          "/assets/images/projectGalleries/Shopify/Shopify-Themes/TwoFlagsOneHeart/TwoFlagsOneHeart-About.png",
-        alt: "Two Flags One Heart about page",
+          "/assets/images/projectGalleries/Shopify/Shopify-Themes/TwoFlagsOneHeart/TwoFlagsOneHeart-Community.png",
+        alt: "Two Flags One Heart Community page",
         caption:
           "Brand and informational content presented within the customized Shopify storefront.",
       },
@@ -816,10 +816,10 @@ const projectsData = [
       },
       {
         image:
-          "/assets/images/projectGalleries/ReactJs/MultiNotesApp/MultiNotesApp-Responsive.png",
-        alt: "Multi Notes App responsive interface",
+          "/assets/images/projectGalleries/ReactJs/MultiNotesApp/MultiNotesApp-NoteDetails.png",
+        alt: "Multi Notes App Details interface",
         caption:
-          "Responsive workspace presentation designed for practical everyday note management.",
+          "Details workspace presentation designed for practical everyday note management.",
       },
     ],
 
@@ -1015,10 +1015,10 @@ const projectsData = [
       },
       {
         image:
-          "/assets/images/projectGalleries/ReactJs/DhatruCare/DhatruCare-Hospital.png",
-        alt: "Dhatru Care hospital page",
+          "/assets/images/projectGalleries/ReactJs/DhatruCare/DhatruCare-Department.png",
+        alt: "Dhatru Care Department page",
         caption:
-          "Hospital-focused content surface supporting the public healthcare experience.",
+          "Department-focused content surface supporting the public healthcare experience.",
       },
       {
         image:
@@ -1037,7 +1037,7 @@ const projectsData = [
       {
         image:
           "/assets/images/projectGalleries/ReactJs/DhatruCare/DhatruCare-AdminForm.png",
-        alt: "Dhatru Care admin form",
+        alt: "Dhatru Care admin DoctorForm",
         caption:
           "Admin-side form workflow backed by Firebase and Firestore data handling.",
       },
