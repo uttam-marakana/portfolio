@@ -25,7 +25,8 @@ const projectsData = [
 
     image: "/assets/images/alpine-selection.png",
 
-    preview: "https://uttam-rootways.myshopify.com",
+    preview:
+      "https://uttam-rootways.myshopify.com/?_ab=0&_bt=eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaUYxZEhSaGJTMXliMjkwZDJGNWN5NXRlWE5vYjNCcFpua3VZMjl0QmpvR1JWUT0iLCJleHAiOiIyMDI2LTEwLTAxVDEyOjQ4OjAzLjUwMloiLCJwdXIiOiJwZXJtYW5lbnRfcGFzc3dvcmRfYnlwYXNzIn19--d62477d235e48dec78dd4d3c9abfde07de78e37c&_fd=0&_sc=1&key=d07859344014a8d3c39e493c1a186f07660253c3395d4d47e5401c0458f8ec50&preview_theme_id=146115854507",
 
     stack: [
       "Shopify",
@@ -127,7 +128,8 @@ const projectsData = [
 
     image: "/assets/images/catalan-gourmet.png",
 
-    preview: "https://dev-calatan-gourmet.myshopify.com",
+    preview:
+      "https://dev-calatan-gourmet.myshopify.com/?_ab=0&_bt=eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaVprWlhZdFkyRnNZWFJoYmkxbmIzVnliV1YwTG0xNWMyaHZjR2xtZVM1amIyMEdPZ1pGVkE9PSIsImV4cCI6IjIwMjYtMTAtMDFUMTA6NDY6MzQuMjQ0WiIsInB1ciI6InBlcm1hbmVudF9wYXNzd29yZF9ieXBhc3MifX0%3D--7e1fe0ff6823d7526fa9f18957c6533a178dce2f&_fd=0&_sc=1&key=9a33b73de817a1d4a68eec1d532da8383a5c51bcbbfe692441d0758cde323421&preview_theme_id=159364808901",
 
     stack: [
       "Shopify",
@@ -349,7 +351,7 @@ const projectsData = [
 
     image: "/assets/images/arnik-jewellers.png",
 
-    // preview: "https://www.arnikjewellers.com",
+    preview: "https://www.arnikjewellers.com",
 
     stack: [
       "Shopify",
@@ -493,7 +495,7 @@ const projectsData = [
 
     image: "/assets/images/chTools.png",
 
-    preview: "https://www.chtools.ca/",
+    // preview: "https://www.chtools.ca/",
 
     stack: [
       "Shopify",
