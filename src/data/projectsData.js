@@ -758,7 +758,7 @@ const projectsData = [
 
     github: "uttam-marakana/multi-notes-app",
 
-    preview: "",
+    preview: "https://multi-notes-app.vercel.app/",
 
     stack: [
       "React",
@@ -1079,7 +1079,7 @@ const projectsData = [
 
     image: "/assets/images/tradeos.png",
 
-    github: "uttam-marakana/trading-dashboard",
+    // github: "uttam-marakana/trading-dashboard",
 
     preview: "",
 
@@ -1193,7 +1193,7 @@ const projectsData = [
 
     github: "uttam-marakana/portfolio",
 
-    preview: "",
+    preview: "https://codewithuttam-03.vercel.app/",
 
     stack: [
       "React",
