@@ -7,18 +7,26 @@ const projectsData = [
     sector: "Ecommerce / Merchandising",
     role: "Shopify storefront optimization",
     timeline: "Client storefront refinement",
+
     shortDescription:
       "A Shopify storefront cleanup focused on hierarchy, product discovery, and a more premium browsing experience.",
+
     overview:
       "A performance-aware Shopify implementation focused on clearer merchandising structure, stronger layout hierarchy, and a smoother product discovery flow.",
+
     problem:
       "The storefront needed cleaner visual hierarchy and better product navigation so visitors could browse collections and merchandising content with less friction.",
+
     solution:
       "I refined storefront structure, improved responsive layout behavior, tuned product templates, and tightened UI decisions around navigation and content grouping.",
+
     impact:
       "The result is a more composed buying journey with cleaner browsing paths, better visual consistency, and a storefront that feels more deliberate overall.",
+
     image: "/assets/images/alpine-selection.png",
+
     preview: "https://uttam-rootways.myshopify.com",
+
     stack: [
       "Shopify",
       "Liquid",
@@ -26,36 +34,64 @@ const projectsData = [
       "Responsive Layouts",
       "Storefront UX",
     ],
+
     services: [
       "Shopify theme refinement",
       "Collection and product template tuning",
       "Responsive merchandising cleanup",
       "Hierarchy and navigation polish",
     ],
+
     constraints: [
       "Improve the storefront without overcomplicating the theme structure",
       "Keep the buying journey easy to scan across collection-heavy pages",
       "Preserve flexibility for merchandising updates and future content changes",
     ],
+
     process: [
       "Audited storefront pages to identify weak hierarchy, noisy sections, and unclear browsing paths",
       "Restructured section composition so key merchandising content appeared in a stronger order",
       "Refined responsive layout behavior across collection and product templates",
       "Tightened visual spacing and interaction details so the storefront felt more premium and stable",
     ],
+
     results: [
       "Cleaner collection browsing and stronger visual rhythm through the storefront",
       "More deliberate merchandising presentation without adding unnecessary theme complexity",
       "A storefront UI that reads as more trustworthy, more polished, and easier to navigate",
     ],
+
     gallery: [
       {
-        image: "/assets/images/alpine-selection.png",
-        alt: "Alpine Selection storefront overview",
+        image:
+          "/assets/images/projectGalleries/Shopify/Shopify-Themes/AlpineSelection/AlpineSelection-Home.png",
+        alt: "Alpine Selection homepage",
         caption:
-          "Primary storefront surface with cleaner hierarchy and more controlled merchandising.",
+          "Primary storefront homepage with clearer hierarchy and controlled merchandising.",
+      },
+      {
+        image:
+          "/assets/images/projectGalleries/Shopify/Shopify-Themes/AlpineSelection/AlpineSelection-Collection.png",
+        alt: "Alpine Selection collection page",
+        caption:
+          "Collection browsing experience focused on product discovery and merchandising clarity.",
+      },
+      {
+        image:
+          "/assets/images/projectGalleries/Shopify/Shopify-Themes/AlpineSelection/AlpineSelection-Product.png",
+        alt: "Alpine Selection product details page",
+        caption:
+          "Product detail experience refined for stronger hierarchy and easier purchase evaluation.",
+      },
+      {
+        image:
+          "/assets/images/projectGalleries/Shopify/Shopify-Themes/AlpineSelection/AlpineSelection-About.png",
+        alt: "Alpine Selection about page",
+        caption:
+          "Brand and informational content presented within the refined storefront structure.",
       },
     ],
+
     highlights: [
       "Shopify theme customization aligned to merchandising goals",
       "Responsive storefront layout improvements across key templates",
@@ -64,6 +100,7 @@ const projectsData = [
       "* Created by Uttam under Rootways Inc & Impex Solution. All rights reserved.",
     ],
   },
+
   {
     id: "catalan-gourmet",
     tech: "shopify",
@@ -72,18 +109,26 @@ const projectsData = [
     sector: "Ecommerce / Food Retail",
     role: "Shopify UI and browsing optimization",
     timeline: "Storefront UX refinement",
+
     shortDescription:
       "A Shopify refinement project focused on navigation quality, responsive behavior, and more coherent product browsing.",
+
     overview:
       "A Shopify customization project aimed at improving UI consistency and helping customers move through products and collection content with less friction.",
+
     problem:
       "The browsing experience needed clearer navigation, more stable responsive behavior, and stronger consistency across key shopping surfaces.",
+
     solution:
       "I reworked storefront sections, improved navigation patterns, refined layout responsiveness, and tightened visual consistency across the customer journey.",
+
     impact:
       "The storefront feels easier to scan and more trustworthy to shop through, with clearer structure and less visual drift between pages.",
+
     image: "/assets/images/catalan-gourmet.png",
+
     preview: "https://dev-calatan-gourmet.myshopify.com",
+
     stack: [
       "Shopify",
       "Liquid",
@@ -91,36 +136,64 @@ const projectsData = [
       "Responsive UI",
       "Navigation UX",
     ],
+
     services: [
       "Theme cleanup",
       "Navigation restructuring",
       "Responsive storefront optimization",
       "Template-level UI consistency work",
     ],
+
     constraints: [
       "Food ecommerce pages need strong trust signals without becoming visually heavy",
       "Navigation needed to improve while keeping category access straightforward",
       "Responsive behavior had to stay stable across merchandising and product surfaces",
     ],
+
     process: [
       "Reviewed the storefront for layout drift and weak navigation handoffs",
       "Adjusted sections and template structure to improve category-to-product flow",
       "Normalized spacing, content grouping, and responsive behavior across key pages",
       "Used restrained visual refinement so the store felt cleaner without losing commerce focus",
     ],
+
     results: [
       "Stronger browsing flow through collections and product detail surfaces",
       "Less visual inconsistency between page types and responsive breakpoints",
       "A storefront that feels more coherent and easier to trust during purchase evaluation",
     ],
+
     gallery: [
       {
-        image: "/assets/images/catalan-gourmet.png",
-        alt: "Catalan Gourmet storefront view",
+        image:
+          "/assets/images/projectGalleries/Shopify/Shopify-Themes/CatalanGourmet/CatalanGourmet-Home.png",
+        alt: "Catalan Gourmet homepage",
         caption:
-          "A more coherent browsing experience with better navigation handoffs and cleaner structure.",
+          "Storefront homepage focused on clear navigation, product discovery, and responsive presentation.",
+      },
+      {
+        image:
+          "/assets/images/projectGalleries/Shopify/Shopify-Themes/CatalanGourmet/CatalanGourmet-Collection.png",
+        alt: "Catalan Gourmet collection page",
+        caption:
+          "Collection browsing surface with cleaner category-to-product navigation.",
+      },
+      {
+        image:
+          "/assets/images/projectGalleries/Shopify/Shopify-Themes/CatalanGourmet/CatalanGourmet-Product.png",
+        alt: "Catalan Gourmet product details page",
+        caption:
+          "Product detail layout refined for consistent responsive shopping and easier scanning.",
+      },
+      {
+        image:
+          "/assets/images/projectGalleries/Shopify/Shopify-Themes/CatalanGourmet/CatalanGourmet-About.png",
+        alt: "Catalan Gourmet about page",
+        caption:
+          "Informational brand content presented with the same visual consistency as the storefront.",
       },
     ],
+
     highlights: [
       "Theme customization focused on storefront consistency",
       "Navigation restructuring for cleaner customer flow",
@@ -129,6 +202,7 @@ const projectsData = [
       "* Created by Uttam under Rootways Inc & Impex Solution. All rights reserved.",
     ],
   },
+
   {
     id: "multi-notes-app",
     tech: "react",
@@ -137,19 +211,28 @@ const projectsData = [
     sector: "Productivity / SaaS-style UI",
     role: "React application build",
     timeline: "Personal product build",
+
     shortDescription:
       "A multi-board notes application with Firebase persistence and a dashboard-oriented interface.",
+
     overview:
       "A React-based notes system designed around multiple boards, persistent data, and a clean dashboard workflow for creating and organizing notes.",
+
     problem:
       "The goal was to create a notes interface that could handle multiple workspaces while staying fast, readable, and easy to extend.",
+
     solution:
       "I built a component-driven React app with Firebase Firestore persistence, multi-board note organization, and responsive dashboard-style interaction patterns.",
+
     impact:
       "The project demonstrates stronger state handling, persistent note management, and a more product-style approach than a simple CRUD example.",
-    image: "/assets/images/multi-note-app.webp",
+
+    image: "/assets/images/multi-note-app.png",
+
     github: "uttam-marakana/multi-notes-app",
+
     preview: "",
+
     stack: [
       "React",
       "Vite",
@@ -157,42 +240,64 @@ const projectsData = [
       "Firestore",
       "Responsive Dashboard UI",
     ],
+
     services: [
       "Product-style UI architecture",
       "Firebase persistence",
       "Board and note state modeling",
       "Responsive dashboard implementation",
     ],
+
     constraints: [
       "A notes product needs to stay fast even when the data model expands past a single list",
       "Workspace switching had to feel clear without adding unnecessary navigation depth",
       "The interface needed to show product thinking, not just CRUD mechanics",
     ],
+
     process: [
       "Modeled the app around board-level organization rather than a single note feed",
       "Connected Firestore persistence to keep notes consistent across sessions",
       "Built a reusable component system for note cards, board switching, and dashboard layout",
       "Tuned the UI for everyday usage with simpler spacing, hierarchy, and interaction framing",
     ],
+
     results: [
       "A more serious product-style notes experience than a basic demo app",
       "Persistent board-based workflows that are easier to scale and maintain",
       "Stronger evidence of React state, composition, and data-handling discipline",
     ],
+
     gallery: [
       {
-        image: "/assets/images/multi-note-app.webp",
-        alt: "Multi Notes App dashboard overview",
+        image:
+          "/assets/images/projectGalleries/ReactJs/MultiNotesApp/MultiNotesApp-Home.png",
+        alt: "Multi Notes App dashboard",
         caption:
-          "Board-level workspace structure presented in a product-style dashboard layout.",
+          "Dashboard overview showing the board-based workspace and note organization flow.",
       },
       {
-        image: "/assets/images/multi-notes-app-detail.webp",
-        alt: "Multi Notes App supporting interface visual",
+        image:
+          "/assets/images/projectGalleries/ReactJs/MultiNotesApp/MultiNotesApp-Board.png",
+        alt: "Multi Notes App board workspace",
         caption:
-          "Supporting product visual from the repo showing the same system thinking carried into branded app surfaces.",
+          "Selected board view showing notes organized within a focused workspace.",
+      },
+      {
+        image:
+          "/assets/images/projectGalleries/ReactJs/MultiNotesApp/MultiNotesApp-NoteEditor.png",
+        alt: "Multi Notes App note editor",
+        caption:
+          "Note creation and editing surface backed by persistent Firestore data.",
+      },
+      {
+        image:
+          "/assets/images/projectGalleries/ReactJs/MultiNotesApp/MultiNotesApp-Responsive.png",
+        alt: "Multi Notes App responsive interface",
+        caption:
+          "Responsive workspace presentation designed for practical everyday note management.",
       },
     ],
+
     highlights: [
       "Multiple note boards with clearer workspace separation",
       "Firebase Firestore integration for persistent note data",
@@ -200,6 +305,7 @@ const projectsData = [
       "Responsive UI tuned for practical everyday usage",
     ],
   },
+
   {
     id: "p2care-website",
     tech: "react",
@@ -208,67 +314,99 @@ const projectsData = [
     sector: "Healthcare Platform",
     role: "Frontend system implementation",
     timeline: "Service-platform frontend build",
+
     shortDescription:
       "A healthcare service platform focused on scalable UI structure and a cleaner appointment-oriented frontend.",
+
     overview:
       "A React frontend designed for healthcare services with scalable layout structure, reusable sections, and an interface prepared for service and booking workflows.",
+
     problem:
       "Healthcare service content needs to stay clear and trustworthy while still supporting multiple page types, user actions, and responsive layouts.",
+
     solution:
       "I implemented a modular React frontend with reusable UI patterns, responsive page structure, and integration-ready sections for service-oriented flows.",
+
     impact:
       "The project shows stronger component discipline and a clearer service-platform presentation than a static marketing site.",
-    image: "/assets/images/p2care.webp",
+
+    image: "/assets/images/p2care.png",
+
     github: "uttam-marakana/p2care",
+
     preview: "",
+
     stack: [
       "React",
       "React Router",
       "API Integration",
       "Component Architecture",
     ],
+
     services: [
       "Healthcare UI system implementation",
       "Reusable page composition",
       "Responsive service flows",
       "Integration-ready frontend structure",
     ],
+
     constraints: [
       "Healthcare interfaces need clarity and trust before visual experimentation",
       "Service content, appointments, and action paths had to fit one coherent frontend system",
       "Multiple page types needed to remain consistent across desktop and mobile",
     ],
+
     process: [
       "Built reusable layout sections instead of one-off page compositions",
       "Structured the routing and component system around healthcare service journeys",
       "Prepared the frontend for API-backed interactions and future service expansion",
       "Kept the visual treatment restrained so the interface felt clear and service-led",
     ],
+
     results: [
       "A stronger platform-ready frontend than a one-page healthcare marketing site",
       "Clearer service presentation with room for booking and data-backed workflows",
       "Better evidence of reusable React architecture across multiple page types",
     ],
+
     gallery: [
       {
-        image: "/assets/images/p2care.webp",
-        alt: "P2Care hero view",
+        image:
+          "/assets/images/projectGalleries/ReactJs/P2CareWebsite/P2CareWebsite-Home.png",
+        alt: "P2Care homepage",
         caption:
-          "The main healthcare service surface focused on clarity, trust, and modular page composition.",
+          "Healthcare platform homepage presenting services and primary patient-facing actions.",
       },
       {
-        image: "/assets/images/p2care-hospital.webp",
-        alt: "P2Care hospital detail visual",
+        image:
+          "/assets/images/projectGalleries/ReactJs/P2CareWebsite/P2CareWebsite-Services.png",
+        alt: "P2Care services page",
         caption:
-          "A supporting hospital-focused section that reinforces the medical service context.",
+          "Service-oriented page structure designed for clear healthcare information discovery.",
       },
       {
-        image: "/assets/images/p2care-doctors.webp",
-        alt: "P2Care doctor and care team visual",
+        image:
+          "/assets/images/projectGalleries/ReactJs/P2CareWebsite/P2CareWebsite-Appointments.png",
+        alt: "P2Care appointments page",
         caption:
-          "Team-oriented supporting content used to build a more complete service-platform presentation.",
+          "Appointment-oriented workflow surface prepared for healthcare service interactions.",
+      },
+      {
+        image:
+          "/assets/images/projectGalleries/ReactJs/P2CareWebsite/P2CareWebsite-Doctors.png",
+        alt: "P2Care doctors page",
+        caption:
+          "Doctor and care-team presentation within the reusable React page architecture.",
+      },
+      {
+        image:
+          "/assets/images/projectGalleries/ReactJs/P2CareWebsite/P2CareWebsite-Responsive.png",
+        alt: "P2Care responsive interface",
+        caption:
+          "Responsive healthcare interface structured for desktop, tablet, and mobile layouts.",
       },
     ],
+
     highlights: [
       "Scalable healthcare-oriented layout system",
       "Component architecture designed for reuse across multiple screens",
@@ -276,6 +414,7 @@ const projectsData = [
       "Frontend structure prepared for API-backed experiences",
     ],
   },
+
   {
     id: "dhatru-care",
     tech: "react",
@@ -284,19 +423,28 @@ const projectsData = [
     sector: "Healthcare / Admin Platform",
     role: "React + Firebase platform build",
     timeline: "Multi-surface healthcare platform",
+
     shortDescription:
       "A hospital platform with public website, admin dashboard, role-based auth, and Firestore-backed content management.",
+
     overview:
       "Dhatru Care is a healthcare platform built with React and Firebase, combining a public-facing hospital website with an admin dashboard, appointment-oriented flows, and role-based access control.",
+
     problem:
       "The product needed to support both the public hospital experience and internal admin workflows without collapsing into one messy frontend surface.",
+
     solution:
       "I structured the platform around React routing, admin domain separation, Firebase Authentication, Firestore data management, protected routes, and modular UI sections.",
+
     impact:
       "The result is a more production-oriented React system that demonstrates admin/public separation, serverless platform architecture, and healthcare-specific workflow thinking.",
-    image: "/assets/images/dhatru_care.webp",
+
+    image: "/assets/images/dhatru_care.png",
+
     github: "uttam-marakana/dhatru-care",
+
     preview: "https://dhatru-care.vercel.app/",
+
     stack: [
       "React",
       "Vite",
@@ -305,42 +453,71 @@ const projectsData = [
       "Tailwind CSS",
       "Formik + Yup",
     ],
+
     services: [
       "Public site and admin dashboard architecture",
       "Role-based authentication",
       "Firestore-backed content handling",
       "Protected route implementation",
     ],
+
     constraints: [
       "Public-facing trust and internal admin control had to coexist without UI drift",
       "Admin workflows needed stronger structure than a simple content CRUD screen",
       "Healthcare-specific actions had to stay clear while using a lean frontend stack",
     ],
+
     process: [
       "Separated public and admin surfaces so each user type had a clearer working context",
       "Integrated Firebase Authentication and protected route logic for role-aware access",
       "Used Firestore as the operational data layer for content and appointment-oriented flows",
       "Built modular interface sections to keep the platform easier to evolve over time",
     ],
+
     results: [
       "A more production-ready React platform with admin/public separation built in",
       "Serverless infrastructure choices that match a practical healthcare operations workflow",
       "Better demonstration of frontend system design than a standard brochure site",
     ],
+
     gallery: [
       {
-        image: "/assets/images/dhatru_care.webp",
-        alt: "Dhatru Care platform hero view",
+        image:
+          "/assets/images/projectGalleries/ReactJs/DhatruCare/DhatruCare-Home.png",
+        alt: "Dhatru Care homepage",
         caption:
-          "Public-facing healthcare platform presentation with stronger brand framing and service clarity.",
+          "Public-facing healthcare homepage presenting the hospital platform and services.",
       },
       {
-        image: "/assets/images/dhatru-care-hospital.webp",
-        alt: "Dhatru Care hospital supporting visual",
+        image:
+          "/assets/images/projectGalleries/ReactJs/DhatruCare/DhatruCare-Hospital.png",
+        alt: "Dhatru Care hospital page",
         caption:
-          "Supporting hospital image from the repo, useful for explaining the platform's care and institution context.",
+          "Hospital-focused content surface supporting the public healthcare experience.",
+      },
+      {
+        image:
+          "/assets/images/projectGalleries/ReactJs/DhatruCare/DhatruCare-Appointments.png",
+        alt: "Dhatru Care appointments page",
+        caption:
+          "Appointment-oriented interface connected to the platform's healthcare workflow.",
+      },
+      {
+        image:
+          "/assets/images/projectGalleries/ReactJs/DhatruCare/DhatruCare-AdminDashboard.png",
+        alt: "Dhatru Care admin dashboard",
+        caption:
+          "Protected admin dashboard for internal healthcare content and operational management.",
+      },
+      {
+        image:
+          "/assets/images/projectGalleries/ReactJs/DhatruCare/DhatruCare-AdminForm.png",
+        alt: "Dhatru Care admin form",
+        caption:
+          "Admin-side form workflow backed by Firebase and Firestore data handling.",
       },
     ],
+
     highlights: [
       "Public website plus admin dashboard in one structured frontend system",
       "Role-based access control with protected routes",
@@ -348,6 +525,7 @@ const projectsData = [
       "Bulk JSON upload workflow for admin-side content management",
     ],
   },
+
   {
     id: "tradeos-dashboard",
     tech: "react",
@@ -356,19 +534,28 @@ const projectsData = [
     sector: "Trading / Analytics Platform",
     role: "React execution intelligence dashboard",
     timeline: "Decision-control dashboard build",
+
     shortDescription:
       "A trading decision-control system focused on discipline, pre-trade validation, risk enforcement, and behavioral analytics.",
+
     overview:
       "TradeOS is a React dashboard designed as an execution intelligence system for traders, combining immutable trade logs, pre-trade analysis, enforcement rules, scoring, and performance analytics in one operator-facing interface.",
+
     problem:
       "Most trading interfaces stop at charting or logging. The harder problem is preventing emotional entries, enforcing session rules, and giving traders a clearer operating system before they commit to a trade.",
+
     solution:
       "I structured the product around React components, reusable calculation utilities, session stores, and dedicated enforcement engines for risk, discipline, execution validation, analytics, and behavior warnings. The system evaluates trades before execution instead of only reporting after the fact.",
+
     impact:
       "The result feels closer to a serious trading control layer than a generic dashboard demo, showing stronger product thinking around discipline, decision support, and measurable execution quality.",
-    image: "/assets/images/tradeos.webp",
+
+    image: "/assets/images/tradeos.png",
+
     github: "uttam-marakana/trading-dashboard",
+
     preview: "",
+
     stack: [
       "React",
       "Vite",
@@ -378,36 +565,71 @@ const projectsData = [
       "LocalStorage",
       "Day.js",
     ],
+
     services: [
       "Execution dashboard UI",
       "Risk and discipline rule modeling",
       "Analytics and charting surfaces",
       "Decision-support workflow design",
     ],
+
     constraints: [
       "The interface had to support fast trading decisions without turning into visual noise",
       "Validation, scorecards, and analytics needed to work together instead of as disconnected widgets",
       "The product needed to feel like an operating system for discipline, not just a trade logger",
     ],
+
     process: [
       "Designed the app around pre-trade evaluation rather than only post-trade reporting",
       "Split business logic into risk, execution, behavior, and discipline engines for clearer reasoning",
       "Used charts, summaries, and warnings to keep the interface readable under data-heavy conditions",
       "Structured state and persistence so the workflow stayed practical for repeat trading sessions",
     ],
+
     results: [
       "A more distinctive product concept than a generic admin-style dashboard",
       "Clearer evidence of complex domain modeling inside a React frontend",
       "A trading interface that emphasizes decision quality, rule enforcement, and operator discipline",
     ],
+
     gallery: [
       {
-        image: "/assets/images/tradeos.webp",
-        alt: "TradeOS dashboard hero view",
+        image:
+          "/assets/images/projectGalleries/ReactJs/TradeOSDashboard/TradeOSDashboard-Home.png",
+        alt: "TradeOS dashboard overview",
         caption:
-          "Execution-focused dashboard framing the product as a trading control layer instead of a simple tracker.",
+          "Execution-focused dashboard bringing trading controls, summaries, and decision support together.",
+      },
+      {
+        image:
+          "/assets/images/projectGalleries/ReactJs/TradeOSDashboard/TradeOSDashboard-PreTrade.png",
+        alt: "TradeOS pre-trade analysis",
+        caption:
+          "Pre-trade analysis surface for evaluating setup quality and execution conditions.",
+      },
+      {
+        image:
+          "/assets/images/projectGalleries/ReactJs/TradeOSDashboard/TradeOSDashboard-RiskValidation.png",
+        alt: "TradeOS risk validation",
+        caption:
+          "Risk and discipline validation workflow designed to enforce trading rules before entry.",
+      },
+      {
+        image:
+          "/assets/images/projectGalleries/ReactJs/TradeOSDashboard/TradeOSDashboard-Analytics.png",
+        alt: "TradeOS analytics dashboard",
+        caption:
+          "Analytics and charting surface for reviewing execution and performance data.",
+      },
+      {
+        image:
+          "/assets/images/projectGalleries/ReactJs/TradeOSDashboard/TradeOSDashboard-Behavior.png",
+        alt: "TradeOS behavioral analytics",
+        caption:
+          "Behavioral analysis surface highlighting repeated patterns and trading discipline signals.",
       },
     ],
+
     highlights: [
       "Pre-trade intelligence with risk, R:R, net PnL, and break-even preview",
       "Execution engine that can block invalid or high-risk trades before entry",
@@ -415,6 +637,7 @@ const projectsData = [
       "Behavioral analytics for overtrading, expectancy drift, and repeated mistakes",
     ],
   },
+
   {
     id: "portfolio",
     tech: "react",
@@ -423,19 +646,28 @@ const projectsData = [
     sector: "Personal Brand / Frontend Showcase",
     role: "Design and frontend implementation",
     timeline: "Productized personal site",
+
     shortDescription:
       "A portfolio system focused on project storytelling, GitHub README integration, and stronger frontend presentation.",
+
     overview:
       "This portfolio combines project presentation, GitHub README rendering, contact workflow, SEO improvements, and a more premium UI system in one React application.",
+
     problem:
       "A portfolio should not just list projects. It needs to signal implementation quality, writing quality, reliability, and taste in a single pass.",
+
     solution:
       "I built the site with React, structured data-driven project pages, Firebase contact handling, SEO tooling, and a redesigned visual system focused on stronger hierarchy.",
+
     impact:
       "The portfolio now works as both a project catalogue and a signal of frontend judgment, not just a static personal page.",
-    image: "/assets/images/portfolio.webp",
+
+    image: "/assets/images/portfolio.png",
+
     github: "uttam-marakana/portfolio",
+
     preview: "",
+
     stack: [
       "React",
       "Vite",
@@ -444,36 +676,71 @@ const projectsData = [
       "GitHub API",
       "SEO Metadata",
     ],
+
     services: [
       "Case-study system design",
       "SEO and metadata implementation",
       "Portfolio information architecture",
       "Premium UI redesign",
     ],
+
     constraints: [
       "The site had to feel personal without becoming visually generic or overloaded",
       "Project pages needed to support both quick scanning and deeper technical reading",
       "The repo itself had to become a stronger reliability signal, not just the visuals",
     ],
+
     process: [
       "Rebuilt the content model so projects could read like case studies instead of short cards",
       "Added route-level SEO, scroll handling, image optimization, and contact hardening",
       "Redesigned the visual system around stronger hierarchy, tighter spacing, and more intentional motion",
       "Used README integration as supporting technical context instead of the only project narrative",
     ],
+
     results: [
       "A stronger hiring and freelance signal than the original portfolio implementation",
       "Improved technical reliability alongside a more premium user-facing presentation",
       "A site structure that can keep growing with new projects, case studies, and service pages",
     ],
+
     gallery: [
       {
-        image: "/assets/images/portfolio.webp",
-        alt: "Portfolio homepage preview",
+        image:
+          "/assets/images/projectGalleries/ReactJs/Portfolio/Portfolio-Home.png",
+        alt: "Developer portfolio homepage",
         caption:
-          "The portfolio itself, rebuilt to work as a case-study system instead of a simple project list.",
+          "Portfolio homepage designed around stronger personal branding and project discovery.",
+      },
+      {
+        image:
+          "/assets/images/projectGalleries/ReactJs/Portfolio/Portfolio-Projects.png",
+        alt: "Portfolio projects page",
+        caption:
+          "Project catalogue presenting work through a structured, data-driven case-study system.",
+      },
+      {
+        image:
+          "/assets/images/projectGalleries/ReactJs/Portfolio/Portfolio-ProjectDetails.png",
+        alt: "Portfolio project details page",
+        caption:
+          "Project detail experience combining concise case-study content with technical context.",
+      },
+      {
+        image:
+          "/assets/images/projectGalleries/ReactJs/Portfolio/Portfolio-GitHubREADME.png",
+        alt: "Portfolio GitHub README section",
+        caption:
+          "GitHub README content integrated as supporting technical context for selected projects.",
+      },
+      {
+        image:
+          "/assets/images/projectGalleries/ReactJs/Portfolio/Portfolio-Contact.png",
+        alt: "Portfolio contact page",
+        caption:
+          "Contact workflow supporting professional inquiries within the portfolio experience.",
       },
     ],
+
     highlights: [
       "Project data model designed around case-study style content",
       "GitHub README rendering for technical context",
@@ -481,6 +748,7 @@ const projectsData = [
       "Phase-based UI redesign aimed at stronger premium presentation",
     ],
   },
+
   {
     id: "two-flags-one-heart",
     tech: "shopify",
@@ -489,18 +757,26 @@ const projectsData = [
     sector: "Ecommerce / Retail",
     role: "Shopify Developer",
     timeline: "Store Development",
+
     shortDescription:
       "Developed and customized a Shopify eCommerce store, configured third-party applications, created store content and FAQs, and assisted in preparing the store for launch.",
+
     overview:
       "Contributed to the development of the Two Flags One Heart Shopify store by building and customizing the storefront, configuring third-party Shopify applications, organizing website content, creating FAQ pages, and ensuring a responsive shopping experience.",
+
     problem:
       "The store needed a fully functional, launch-ready Shopify presence with a customized storefront, integrated third-party tools, and well-organized content to support a smooth customer experience from day one.",
+
     solution:
       "I built and customized the Shopify storefront, configured and integrated third-party Shopify applications, developed and customized theme sections, created and organized website content, wrote FAQ pages, configured navigation and store settings, and assisted with store launch and QA testing.",
+
     impact:
       "The store launched with a customized, responsive storefront, integrated third-party tools, and well-structured content that supports a clear shopping experience across devices.",
+
     image: "/assets/images/twoFlagsOneHeart.png",
+
     preview: "https://twoflagsoneheart.com/",
+
     stack: [
       "Shopify",
       "Liquid",
@@ -510,6 +786,7 @@ const projectsData = [
       "Shopify Admin",
       "Third-party Apps",
     ],
+
     services: [
       "Shopify store build and customization",
       "Third-party Shopify app configuration and integration",
@@ -520,11 +797,13 @@ const projectsData = [
       "Store launch assistance and QA",
       "Responsive design implementation across devices",
     ],
+
     constraints: [
       "The storefront had to be fully functional and launch-ready within the project timeline",
       "Third-party app integrations needed to work reliably without custom development overhead",
       "Content and FAQ pages had to be clear and helpful for first-time visitors to the store",
     ],
+
     process: [
       "Built and customized the Shopify storefront to match the brand and product requirements",
       "Configured and integrated third-party Shopify applications for store functionality",
@@ -535,19 +814,51 @@ const projectsData = [
       "Assisted with store launch preparation and quality assurance testing",
       "Tested and ensured responsive design across desktop, tablet, and mobile devices",
     ],
+
     results: [
       "A fully customized, launch-ready Shopify store with integrated third-party tools",
       "Well-organized website content and FAQ pages that support customer browsing",
       "Responsive storefront experience tested across multiple device types",
     ],
+
     gallery: [
       {
-        image: "/assets/images/two-flags-one-heart.webp",
-        alt: "Two Flags One Heart Shopify storefront",
+        image:
+          "/assets/images/projectGalleries/Shopify/Shopify-Themes/TwoFlagsOneHeart/TwoFlagsOneHeart-Home.png",
+        alt: "Two Flags One Heart homepage",
         caption:
-          "Custom Shopify storefront built and customized for launch, with integrated third-party apps and organized content.",
+          "Customized Shopify homepage presenting the brand, merchandising, and primary shopping paths.",
+      },
+      {
+        image:
+          "/assets/images/projectGalleries/Shopify/Shopify-Themes/TwoFlagsOneHeart/TwoFlagsOneHeart-Collection.png",
+        alt: "Two Flags One Heart collection page",
+        caption:
+          "Collection browsing experience organized for clear product discovery and navigation.",
+      },
+      {
+        image:
+          "/assets/images/projectGalleries/Shopify/Shopify-Themes/TwoFlagsOneHeart/TwoFlagsOneHeart-Feature.png",
+        alt: "Two Flags One Heart feature page",
+        caption:
+          "Feature or landing page showcasing focused brand content and storefront storytelling.",
+      },
+      {
+        image:
+          "/assets/images/projectGalleries/Shopify/Shopify-Themes/TwoFlagsOneHeart/TwoFlagsOneHeart-Product.png",
+        alt: "Two Flags One Heart product details page",
+        caption:
+          "Product detail experience customized for clear information and responsive purchasing flow.",
+      },
+      {
+        image:
+          "/assets/images/projectGalleries/Shopify/Shopify-Themes/TwoFlagsOneHeart/TwoFlagsOneHeart-About.png",
+        alt: "Two Flags One Heart about page",
+        caption:
+          "Brand and informational content presented within the customized Shopify storefront.",
       },
     ],
+
     highlights: [
       "Full Shopify store build from theme customization to launch",
       "Third-party app configuration and integration for store operations",
@@ -557,6 +868,7 @@ const projectsData = [
       "* Completed as part of professional employment. All rights reserved.",
     ],
   },
+
   {
     id: "arnik-jewellers",
     tech: "shopify",
@@ -651,40 +963,39 @@ const projectsData = [
 
     gallery: [
       {
-        image: "/assets/images/arnik-home.webp",
+        image:
+          "/assets/images/projectGalleries/Shopify/Shopify-Themes/ArnikJewellers/arnik-home.png",
         alt: "Arnik Jewellers homepage",
         caption:
           "Customized homepage featuring premium merchandising, luxury branding, and responsive Shopify sections.",
       },
       {
-        image: "/assets/images/arnik-jewellery.webp",
-        alt: "Jewellery landing pages",
-        caption:
-          "Reusable jewellery landing page template implemented across multiple jewellery categories with category-specific content.",
-      },
-      {
-        image: "/assets/images/arnik-services.webp",
-        alt: "Services pages",
-        caption:
-          "Custom-designed service pages, including Financing Options and customer service information, implemented using custom Shopify sections.",
-      },
-      {
-        image: "/assets/images/arnik-about.webp",
-        alt: "About page",
-        caption:
-          "Brand-focused About page highlighting company heritage, leadership, expertise, and customer trust.",
-      },
-      {
-        image: "/assets/images/arnik-collection.webp",
-        alt: "Collection page",
+        image:
+          "/assets/images/projectGalleries/Shopify/Shopify-Themes/ArnikJewellers/arnik-collection.png",
+        alt: "Arnik Jewellers collection page",
         caption:
           "Enhanced collection pages with improved merchandising, filtering, and luxury product browsing.",
       },
       {
-        image: "/assets/images/arnik-product.webp",
-        alt: "Product detail page",
+        image:
+          "/assets/images/projectGalleries/Shopify/Shopify-Themes/ArnikJewellers/arnik-jewellery.png",
+        alt: "Arnik Jewellers jewellery landing page",
+        caption:
+          "Reusable jewellery landing page template implemented across multiple jewellery categories with category-specific content.",
+      },
+      {
+        image:
+          "/assets/images/projectGalleries/Shopify/Shopify-Themes/ArnikJewellers/arnik-product.png",
+        alt: "Arnik Jewellers product detail page",
         caption:
           "Refined product detail page featuring premium galleries, detailed specifications, and an optimized purchasing experience.",
+      },
+      {
+        image:
+          "/assets/images/projectGalleries/Shopify/Shopify-Themes/ArnikJewellers/arnik-about.png",
+        alt: "Arnik Jewellers about page",
+        caption:
+          "Brand-focused About page highlighting company heritage, leadership, expertise, and customer trust.",
       },
     ],
 
@@ -701,6 +1012,7 @@ const projectsData = [
       "* Completed as part of professional Shopify development. All rights reserved.",
     ],
   },
+
   {
     id: "chtools",
     tech: "shopify",
@@ -727,7 +1039,7 @@ const projectsData = [
 
     image: "/assets/images/chTools.png",
 
-    preview: "[https://www.chtools.ca/](https://www.chtools.ca/)",
+    preview: "https://www.chtools.ca/",
 
     stack: [
       "Shopify",
@@ -787,10 +1099,32 @@ const projectsData = [
 
     gallery: [
       {
-        image: "/assets/images/chTools.png",
-        alt: "CH TOOLS Shopify storefront",
+        image:
+          "/assets/images/projectGalleries/Shopify/Shopify-Themes/CHTools/CHTools-Home.png",
+        alt: "CH TOOLS homepage",
         caption:
-          "Professional Canadian hardware and tools storefront designed around large-scale product discovery and merchandising.",
+          "Professional Canadian hardware and tools storefront designed around large-scale product discovery.",
+      },
+      {
+        image:
+          "/assets/images/projectGalleries/Shopify/Shopify-Themes/CHTools/CHTools-Collection.png",
+        alt: "CH TOOLS collection page",
+        caption:
+          "Category and collection surface organized for easier navigation across a broad product catalogue.",
+      },
+      {
+        image:
+          "/assets/images/projectGalleries/Shopify/Shopify-Themes/CHTools/CHTools-Product.png",
+        alt: "CH TOOLS product details page",
+        caption:
+          "Product detail presentation refined for clear information and stronger purchasing context.",
+      },
+      {
+        image:
+          "/assets/images/projectGalleries/Shopify/Shopify-Themes/CHTools/CHTools-About.png",
+        alt: "CH TOOLS about page",
+        caption:
+          "Informational storefront content presented with the same practical and professional visual structure.",
       },
     ],
 
@@ -806,7 +1140,8 @@ const projectsData = [
       "* Ongoing professional Shopify development. All rights reserved.",
     ],
   },
-    {
+
+  {
     id: "faqflow",
     tech: "shopify",
     featured: true,
@@ -830,7 +1165,7 @@ const projectsData = [
     impact:
       "FAQFlow provides a more structured approach to Shopify FAQ management by moving content administration into a dedicated app interface while keeping storefront presentation flexible through reusable theme blocks and configurable FAQ sections.",
 
-    image: "/assets/images/faqFlow.png",
+    image: "/assets/images/faqFlow\\.png",
 
     preview: "",
 
@@ -847,7 +1182,7 @@ const projectsData = [
       "Shopify Polaris",
       "Liquid",
       "Theme App Extension",
-      "Shopify Admin API"
+      "Shopify Admin API",
     ],
 
     services: [
@@ -860,7 +1195,7 @@ const projectsData = [
       "Storefront FAQ block development",
       "Shopify Admin integration",
       "Database schema design",
-      "Responsive app UI development"
+      "Responsive app UI development",
     ],
 
     constraints: [
@@ -869,7 +1204,7 @@ const projectsData = [
       "FAQ categories and questions needed a scalable data structure that could support future content expansion.",
       "Storefront FAQ presentation needed to remain configurable without requiring merchants to manually modify Liquid code.",
       "The application needed to work naturally inside Shopify's embedded admin experience.",
-      "The implementation needed to maintain a clear separation between merchant administration, persistent data, and storefront presentation."
+      "The implementation needed to maintain a clear separation between merchant administration, persistent data, and storefront presentation.",
     ],
 
     process: [
@@ -882,7 +1217,7 @@ const projectsData = [
       "Developed configurable storefront FAQ sections with customizable presentation and styling options.",
       "Implemented interactive FAQ question expansion and collapse behavior with open and close indicators.",
       "Refined responsive layouts so FAQ content remains usable across desktop, tablet, and mobile storefronts.",
-      "Performed QA and UI refinement across the admin application and storefront experience."
+      "Performed QA and UI refinement across the admin application and storefront experience.",
     ],
 
     results: [
@@ -892,22 +1227,38 @@ const projectsData = [
       "Reusable Shopify Theme App Extension for displaying FAQ content on storefront pages.",
       "Configurable FAQ storefront presentation with interactive question expand/collapse behavior.",
       "Pagination support for managing larger FAQ collections.",
-      "A scalable foundation for future FAQ features, analytics, search, and merchant tooling."
+      "A scalable foundation for future FAQ features, analytics, search, and merchant tooling.",
     ],
 
     gallery: [
       {
-        image: "/assets/images/faqflow.webp",
-        alt: "FAQFlow Shopify app dashboard",
+        image:
+          "/assets/images/projectGalleries/Shopify/Shopify-Apps/FAQFlow/FAQFlow-Home.png",
+        alt: "FAQFlow Shopify app home",
         caption:
-          "Embedded Shopify app interface for managing FAQ categories, questions, and publishing workflows."
+          "Embedded Shopify app home presenting FAQ management and publishing workflows.",
       },
       {
-        image: "/assets/images/faqflow-storefront.webp",
-        alt: "FAQFlow storefront FAQ section",
+        image:
+          "/assets/images/projectGalleries/Shopify/Shopify-Apps/FAQFlow/FAQFlow-Navigation-Page.png",
+        alt: "FAQFlow navigation page",
         caption:
-          "Storefront FAQ block powered by the Shopify Theme App Extension with interactive question expansion."
-      }
+          "A navigation-selected FAQ management page for organizing merchant-side FAQ content.",
+      },
+      {
+        image:
+          "/assets/images/projectGalleries/Shopify/Shopify-Apps/FAQFlow/FAQFlow-Navigation-Page-Admin-Form.png",
+        alt: "FAQFlow admin form",
+        caption:
+          "FAQ management form used to create or edit FAQ and category content inside the app.",
+      },
+      {
+        image:
+          "/assets/images/projectGalleries/Shopify/Shopify-Apps/FAQFlow/FAQFlow-Theme-Editor-Extension.png",
+        alt: "FAQFlow theme editor extension",
+        caption:
+          "Shopify theme editor showing the FAQFlow Theme App Extension block and schema settings.",
+      },
     ],
 
     highlights: [
@@ -919,8 +1270,8 @@ const projectsData = [
       "Implemented pagination for scalable FAQ management",
       "Designed database structure for scalable FAQ and category relationships",
       "Built a merchant-focused admin workflow for maintaining FAQ content",
-      "* Personal Shopify app product developed by Uttam. All rights reserved."
-    ]
+      "* Personal Shopify app product developed by Uttam. All rights reserved.",
+    ],
   },
 ];
 
