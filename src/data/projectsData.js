@@ -624,7 +624,7 @@ const projectsData = [
     image: "/assets/images/faqFlow.png",
 
     github: "https://github.com/uttam-marakana/faq-flow",
-    
+
     preview: "",
 
     stack: [
@@ -797,28 +797,28 @@ const projectsData = [
     gallery: [
       {
         image:
-          "/assets/images/projectGalleries/ReactJs/MultiNotesApp/MultiNotesApp-Home.png",
+          "/assets/images/projectGalleries/ReactJs/ReactJs-Website/MultiNotesApp/MultiNotesApp-Home.png",
         alt: "Multi Notes App dashboard",
         caption:
           "Dashboard overview showing the board-based workspace and note organization flow.",
       },
       {
         image:
-          "/assets/images/projectGalleries/ReactJs/MultiNotesApp/MultiNotesApp-Board.png",
+          "/assets/images/projectGalleries/ReactJs/ReactJs-Website/MultiNotesApp/MultiNotesApp-Board.png",
         alt: "Multi Notes App board workspace",
         caption:
           "Selected board view showing notes organized within a focused workspace.",
       },
       {
         image:
-          "/assets/images/projectGalleries/ReactJs/MultiNotesApp/MultiNotesApp-NoteEditor.png",
+          "/assets/images/projectGalleries/ReactJs/ReactJs-Website/MultiNotesApp/MultiNotesApp-NoteEditor.png",
         alt: "Multi Notes App note editor",
         caption:
           "Note creation and editing surface backed by persistent Firestore data.",
       },
       {
         image:
-          "/assets/images/projectGalleries/ReactJs/MultiNotesApp/MultiNotesApp-NoteDetails.png",
+          "/assets/images/projectGalleries/ReactJs/ReactJs-Website/MultiNotesApp/MultiNotesApp-NoteDetails.png",
         alt: "Multi Notes App Details interface",
         caption:
           "Details workspace presentation designed for practical everyday note management.",
@@ -899,35 +899,35 @@ const projectsData = [
     gallery: [
       {
         image:
-          "/assets/images/projectGalleries/ReactJs/P2CareWebsite/P2CareWebsite-Home.png",
+          "/assets/images/projectGalleries/ReactJs/ReactJs-Website/P2CareWebsite/P2CareWebsite-Home.png",
         alt: "P2Care homepage",
         caption:
           "Healthcare platform homepage presenting services and primary patient-facing actions.",
       },
       {
         image:
-          "/assets/images/projectGalleries/ReactJs/P2CareWebsite/P2CareWebsite-Services.png",
+          "/assets/images/projectGalleries/ReactJs/ReactJs-Website/P2CareWebsite/P2CareWebsite-Services.png",
         alt: "P2Care services page",
         caption:
           "Service-oriented page structure designed for clear healthcare information discovery.",
       },
       {
         image:
-          "/assets/images/projectGalleries/ReactJs/P2CareWebsite/P2CareWebsite-Appointments.png",
+          "/assets/images/projectGalleries/ReactJs/ReactJs-Website/P2CareWebsite/P2CareWebsite-Appointments.png",
         alt: "P2Care appointments page",
         caption:
           "Appointment-oriented workflow surface prepared for healthcare service interactions.",
       },
       {
         image:
-          "/assets/images/projectGalleries/ReactJs/P2CareWebsite/P2CareWebsite-Doctors.png",
+          "/assets/images/projectGalleries/ReactJs/ReactJs-Website/P2CareWebsite/P2CareWebsite-Doctors.png",
         alt: "P2Care doctors page",
         caption:
           "Doctor and care-team presentation within the reusable React page architecture.",
       },
       {
         image:
-          "/assets/images/projectGalleries/ReactJs/P2CareWebsite/P2CareWebsite-Responsive.png",
+          "/assets/images/projectGalleries/ReactJs/ReactJs-Website/P2CareWebsite/P2CareWebsite-Responsive.png",
         alt: "P2Care responsive interface",
         caption:
           "Responsive healthcare interface structured for desktop, tablet, and mobile layouts.",
@@ -1010,35 +1010,35 @@ const projectsData = [
     gallery: [
       {
         image:
-          "/assets/images/projectGalleries/ReactJs/DhatruCare/DhatruCare-Home.png",
+          "/assets/images/projectGalleries/ReactJs/ReactJs-Website/DhatruCare/DhatruCare-Home.png",
         alt: "Dhatru Care homepage",
         caption:
           "Public-facing healthcare homepage presenting the hospital platform and services.",
       },
       {
         image:
-          "/assets/images/projectGalleries/ReactJs/DhatruCare/DhatruCare-Department.png",
+          "/assets/images/projectGalleries/ReactJs/ReactJs-Website/DhatruCare/DhatruCare-Department.png",
         alt: "Dhatru Care Department page",
         caption:
           "Department-focused content surface supporting the public healthcare experience.",
       },
       {
         image:
-          "/assets/images/projectGalleries/ReactJs/DhatruCare/DhatruCare-Appointments.png",
+          "/assets/images/projectGalleries/ReactJs/ReactJs-Website/DhatruCare/DhatruCare-Appointments.png",
         alt: "Dhatru Care appointments page",
         caption:
           "Appointment-oriented interface connected to the platform's healthcare workflow.",
       },
       {
         image:
-          "/assets/images/projectGalleries/ReactJs/DhatruCare/DhatruCare-AdminDashboard.png",
+          "/assets/images/projectGalleries/ReactJs/ReactJs-Website/DhatruCare/DhatruCare-AdminDashboard.png",
         alt: "Dhatru Care admin dashboard",
         caption:
           "Protected admin dashboard for internal healthcare content and operational management.",
       },
       {
         image:
-          "/assets/images/projectGalleries/ReactJs/DhatruCare/DhatruCare-AdminForm.png",
+          "/assets/images/projectGalleries/ReactJs/ReactJs-Website/DhatruCare/DhatruCare-AdminForm.png",
         alt: "Dhatru Care admin DoctorForm",
         caption:
           "Admin-side form workflow backed by Firebase and Firestore data handling.",
@@ -1122,35 +1122,35 @@ const projectsData = [
     gallery: [
       {
         image:
-          "/assets/images/projectGalleries/ReactJs/TradeOSDashboard/TradeOSDashboard-Home.png",
+          "/assets/images/projectGalleries/ReactJs/ReactJs-Website/TradeOSDashboard/TradeOSDashboard-Home.png",
         alt: "TradeOS dashboard overview",
         caption:
           "Execution-focused dashboard bringing trading controls, summaries, and decision support together.",
       },
       {
         image:
-          "/assets/images/projectGalleries/ReactJs/TradeOSDashboard/TradeOSDashboard-PreTrade.png",
+          "/assets/images/projectGalleries/ReactJs/ReactJs-Website/TradeOSDashboard/TradeOSDashboard-PreTrade.png",
         alt: "TradeOS pre-trade analysis",
         caption:
           "Pre-trade analysis surface for evaluating setup quality and execution conditions.",
       },
       {
         image:
-          "/assets/images/projectGalleries/ReactJs/TradeOSDashboard/TradeOSDashboard-RiskValidation.png",
+          "/assets/images/projectGalleries/ReactJs/ReactJs-Website/TradeOSDashboard/TradeOSDashboard-RiskValidation.png",
         alt: "TradeOS risk validation",
         caption:
           "Risk and discipline validation workflow designed to enforce trading rules before entry.",
       },
       {
         image:
-          "/assets/images/projectGalleries/ReactJs/TradeOSDashboard/TradeOSDashboard-Analytics.png",
+          "/assets/images/projectGalleries/ReactJs/ReactJs-Website/TradeOSDashboard/TradeOSDashboard-Analytics.png",
         alt: "TradeOS analytics dashboard",
         caption:
           "Analytics and charting surface for reviewing execution and performance data.",
       },
       {
         image:
-          "/assets/images/projectGalleries/ReactJs/TradeOSDashboard/TradeOSDashboard-Behavior.png",
+          "/assets/images/projectGalleries/ReactJs/ReactJs-Website/TradeOSDashboard/TradeOSDashboard-Behavior.png",
         alt: "TradeOS behavioral analytics",
         caption:
           "Behavioral analysis surface highlighting repeated patterns and trading discipline signals.",
@@ -1233,35 +1233,35 @@ const projectsData = [
     gallery: [
       {
         image:
-          "/assets/images/projectGalleries/ReactJs/Portfolio/Portfolio-Home.png",
+          "/assets/images/projectGalleries/ReactJs/ReactJs-Website/Portfolio/Portfolio-Home.png",
         alt: "Developer portfolio homepage",
         caption:
           "Portfolio homepage designed around stronger personal branding and project discovery.",
       },
       {
         image:
-          "/assets/images/projectGalleries/ReactJs/Portfolio/Portfolio-Projects.png",
+          "/assets/images/projectGalleries/ReactJs/ReactJs-Website/Portfolio/Portfolio-Projects.png",
         alt: "Portfolio projects page",
         caption:
           "Project catalogue presenting work through a structured, data-driven case-study system.",
       },
       {
         image:
-          "/assets/images/projectGalleries/ReactJs/Portfolio/Portfolio-ProjectDetails.png",
+          "/assets/images/projectGalleries/ReactJs/ReactJs-Website/Portfolio/Portfolio-ProjectDetails.png",
         alt: "Portfolio project details page",
         caption:
           "Project detail experience combining concise case-study content with technical context.",
       },
       {
         image:
-          "/assets/images/projectGalleries/ReactJs/Portfolio/Portfolio-GitHubREADME.png",
+          "/assets/images/projectGalleries/ReactJs/ReactJs-Website/Portfolio/Portfolio-GitHubREADME.png",
         alt: "Portfolio GitHub README section",
         caption:
           "GitHub README content integrated as supporting technical context for selected projects.",
       },
       {
         image:
-          "/assets/images/projectGalleries/ReactJs/Portfolio/Portfolio-Contact.png",
+          "/assets/images/projectGalleries/ReactJs/ReactJs-Website/Portfolio/Portfolio-Contact.png",
         alt: "Portfolio contact page",
         caption:
           "Contact workflow supporting professional inquiries within the portfolio experience.",
