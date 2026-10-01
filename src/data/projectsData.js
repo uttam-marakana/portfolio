@@ -621,11 +621,11 @@ const projectsData = [
     impact:
       "FAQFlow provides a more structured approach to Shopify FAQ management by moving content administration into a dedicated app interface while keeping storefront presentation flexible through reusable theme blocks and configurable FAQ sections.",
 
-    image: "/assets/images/faqFlow\\.png",
+    image: "/assets/images/faqFlow.png",
 
+    github: "https://github.com/uttam-marakana/faq-flow",
+    
     preview: "",
-
-    github: "",
 
     stack: [
       "Shopify",
