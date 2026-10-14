@@ -731,6 +731,97 @@ const projectsData = [
   },
 
   {
+    id: "swashine-glowbox",
+    tech: "react",
+    featured: true,
+    title: "Swashine Glowbox",
+    sector: "Manufacturing / Product Showcase",
+    role: "React Developer",
+    timeline: "Product website development",
+    shortDescription:
+      "A product-focused website for LED glowboxes featuring product discovery, custom-size price estimation, WhatsApp enquiries, and dealer workflows.",
+    overview:
+      "Swashine Glowbox is a React-based website for an LED glowbox brand by Swastik Industries in Rajkot, Gujarat. It presents product options, supports custom-size enquiries, and provides dedicated experiences for customers and potential dealers.",
+    problem:
+      "The business needed a dedicated digital presence to showcase its LED glowbox range, communicate product options, support custom-size enquiries, and provide clear paths for customer and dealer engagement.",
+    solution:
+      "I developed a multi-page React application with product listing and detail pages, size and price filters, a custom-size calculator, WhatsApp enquiry links, dealer enquiry forms, and an administrative area for managing products, enquiries, FAQs, and Instagram content.",
+    impact:
+      "The implementation provides a structured product showcase and enquiry workflow, with a dedicated administrative interface and SEO support. Measured sales growth, traffic improvements, and conversion results have not been established from the available source code.",
+    image: "/assets/images/swashine-glowbox.webp",
+    github: "uttam-marakana/swashine-glowbox",
+    preview: "https://swashine.com/",
+    stack: [
+      "React 18",
+      "Vite",
+      "React Router DOM",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Firebase Authentication",
+      "Cloud Firestore",
+      "Firebase Storage",
+      "Formik",
+      "Yup",
+      "Lucide React",
+      "React Icons",
+    ],
+    services: [
+      "React website development",
+      "Product catalogue and detail page implementation",
+      "Product filtering and discovery",
+      "Custom-size price calculator",
+      "WhatsApp-based product enquiry workflow",
+      "Dealer and distributor enquiry forms",
+      "Administrative dashboard and protected routes",
+      "Firebase service integration",
+      "Route-level SEO and structured metadata",
+      "Responsive UI implementation",
+    ],
+    constraints: [
+      "Product information and enquiries needed to be organized into clear, separate workflows",
+      "Custom-size calculations needed to validate dimensions against the supported maximum size",
+      "Customer-facing pages and administrative routes needed distinct navigation and access handling",
+      "Firebase configuration needed to remain environment-based rather than hardcoded",
+      "Product enquiries needed a direct communication path through WhatsApp",
+    ],
+    process: [
+      "Structured the application using reusable components, layouts, page modules, context, and service layers",
+      "Implemented product listing and detail routes with filtering, product information, and gallery interactions",
+      "Built a custom-size calculator using area-based pricing and dimension validation",
+      "Integrated WhatsApp links for product enquiries and quotation requests",
+      "Implemented a validated dealer enquiry form and Firestore-backed inquiry submission",
+      "Created protected administrative routes and interfaces for product, enquiry, FAQ, and Instagram management",
+      "Added route-specific SEO metadata, canonical URLs, social sharing metadata, and structured data",
+    ],
+    results: [
+      "A multi-page product website with dedicated product discovery and detail experiences",
+      "A custom-size calculator that estimates pricing based on dimensions",
+      "Customer and dealer enquiry flows with WhatsApp integration",
+      "An administrative interface for managing key website content and enquiries",
+      "A modular React codebase with environment-based Firebase configuration",
+      "SEO implementation supporting page-specific metadata and structured data",
+    ],
+    gallery: [
+      {
+        image: "/assets/images/swashine-glowbox.webp",
+        alt: "Swashine Glowbox website overview",
+        caption:
+          "Product-focused website for presenting LED glowboxes and custom illuminated display solutions.",
+      },
+    ],
+    highlights: [
+      "Custom-size calculator with area-based price estimation",
+      "Product catalogue with size and price filters",
+      "Product detail pages with image galleries and print options",
+      "WhatsApp-based product enquiries and quotation requests",
+      "Dealer and distributor enquiry workflow",
+      "Protected admin dashboard with product and content management interfaces",
+      "Firebase Authentication and Firestore integration support",
+      "Route-specific SEO metadata and structured data",
+    ],
+  },
+
+  {
     id: "multi-notes-app",
     tech: "react",
     featured: true,
