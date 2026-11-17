@@ -598,6 +598,165 @@ const projectsData = [
   },
 
   {
+    id: "macnicom-tech",
+    tech: "shopify",
+    featured: true,
+    title: "Macnicom Tech",
+    sector: "Printing Supplies / Ecommerce",
+    role: "Shopify Storefront Development & Customization",
+    timeline: "Professional client project",
+
+    shortDescription:
+      "Customized a Shopify e-commerce storefront for printer cartridges, toner supplies, and refurbished printing products, with hierarchy-driven product discovery and customer login-based purchasing.",
+
+    overview:
+      "Macnicom Tech is a Shopify e-commerce storefront specializing in printer ink, toner cartridges, printer parts, and refurbished printing supplies. The implementation includes a collection-hierarchy-driven Part Finder, contextual collection filtering, and customer-specific purchasing access so visitors can explore product information while logged-in customers can access pricing and purchasing functionality.",
+
+    problem:
+      "The store's printer supplies catalogue is organized around related brand, series, and model collections. Customers need a straightforward way to identify compatible products, while the storefront also needs to distinguish between guest visitors who are researching products and authenticated customers who are permitted to purchase.",
+
+    solution:
+      "I customized the Shopify storefront with a multi-level Part Finder in the homepage hero section. Its Brand, Series, and Model dropdowns use the store's collection hierarchy to guide product discovery. I also implemented hierarchy-aware filtering on collection pages so product results can be narrowed according to the selected collection relationships. For customer access control, I customized the storefront to hide product prices and cart/purchasing controls from guest visitors, while keeping informative product details available. Customers must log in to access pricing and purchasing functionality.",
+
+    impact:
+      "The storefront provides a more guided way to find printer supplies through the Brand → Series → Model hierarchy. Guest visitors can review product information without seeing purchasing controls, while authenticated customers can access the buying experience. This separates product research from purchase access and creates a clearer catalogue-browsing workflow.",
+
+    image: "/assets/images/projects/macnicom-tech.png",
+
+    preview: "",
+
+    stack: [
+      "Shopify",
+      "Shopify Liquid",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Shopify Collections",
+      "Collection Metafields",
+      "Customer Authentication",
+      "Theme Customization",
+      "Responsive Design",
+    ],
+
+    services: [
+      "Shopify storefront customization",
+      "Homepage hero section development",
+      "Dynamic multi-level Part Finder implementation",
+      "Collection hierarchy and metafield integration",
+      "Hierarchy-based collection filtering",
+      "Guest and authenticated customer storefront experiences",
+      "Login-required price and purchasing access",
+      "Product information and detail page customization",
+      "Responsive storefront refinement",
+    ],
+
+    constraints: [
+      "Use the existing Shopify collection hierarchy to populate the Part Finder rather than maintaining duplicate, manually entered product lists.",
+      "Keep Brand, Series, and Model selection connected so each subsequent dropdown reflects the preceding selection.",
+      "Make collection browsing relevant to the selected hierarchy and its associated products.",
+      "Allow guest visitors to review informative product details while restricting price visibility and purchasing controls.",
+      "Make customer login the access requirement for pricing and purchasing functionality.",
+      "Keep the storefront experience clear and usable across desktop and mobile layouts.",
+    ],
+
+    process: [
+      "Reviewed the store's collection structure and the relationships used to represent Brand, Series, and Model levels.",
+      "Added a Part Finder interface to the homepage hero section with dependent Brand, Series, and Model dropdown fields.",
+      "Connected the Part Finder selections to the corresponding Shopify collection hierarchy to guide customers toward relevant products.",
+      "Customized collection-page filtering so product discovery follows the selected hierarchy-based collection relationships.",
+      "Implemented guest-facing storefront restrictions to hide product prices and cart/purchasing controls when the customer is not logged in.",
+      "Preserved informative product content for guest visitors, while requiring customer authentication to access pricing and purchasing functionality.",
+      "Reviewed the homepage, collection, product, comparison, and informational page experiences for consistent storefront presentation.",
+    ],
+
+    results: [
+      "A homepage Part Finder with Brand, Series, and Model dropdowns driven by Shopify collection hierarchy.",
+      "A guided product discovery flow that connects customer selections to relevant collections.",
+      "Collection-page filtering based on the selected hierarchy-related collections.",
+      "Guest visitors can browse product information without access to prices or purchasing controls.",
+      "Logged-in customers can access product pricing and purchasing functionality.",
+      "A more structured product discovery and customer access experience for a specialist printing-supplies catalogue.",
+    ],
+
+    gallery: [
+      {
+        image:
+          "/assets/images/projectGalleries/Shopify/Shopify-Themes/MacnicomTech/macnicom-home.png",
+        alt: "Macnicom Tech Shopify homepage",
+        caption:
+          "Homepage storefront featuring the hero-section Part Finder and product discovery content.",
+      },
+      {
+        image:
+          "/assets/images/projectGalleries/Shopify/Shopify-Themes/MacnicomTech/macnicom-collection.png",
+        alt: "Macnicom Tech collection page",
+        caption:
+          "Collection page showing the product catalogue and hierarchy-based browsing experience.",
+      },
+      {
+        image:
+          "/assets/images/projectGalleries/Shopify/Shopify-Themes/MacnicomTech/macnicom-product.png",
+        alt: "Macnicom Tech product detail page",
+        caption:
+          "Product detail page presenting product information and the customer purchasing interface.",
+      },
+      {
+        image:
+          "/assets/images/projectGalleries/Shopify/Shopify-Themes/MacnicomTech/macnicom-comparison.png",
+        alt: "Macnicom Tech product comparison page",
+        caption:
+          "Product comparison experience for reviewing selected printing supplies side by side.",
+      },
+      {
+        image:
+          "/assets/images/projectGalleries/Shopify/Shopify-Themes/MacnicomTech/macnicom-refurbished-toner.png",
+        alt: "Macnicom Tech refurbished toner information page",
+        caption:
+          "Informational content explaining the store's refurbished toner products and benefits.",
+      },
+      {
+        image:
+          "/assets/images/projectGalleries/Shopify/Shopify-Themes/MacnicomTech/macnicom-about.png",
+        alt: "Macnicom Tech about page",
+        caption:
+          "About page presenting the company's toner industry experience and product offering.",
+      },
+      {
+        image:
+          "/assets/images/projectGalleries/Shopify/Shopify-Themes/MacnicomTech/macnicom-why-choose-us.png",
+        alt: "Macnicom Tech why choose us page",
+        caption:
+          "Customer service, product quality, and shipping information presented on the storefront.",
+      },
+      {
+        image:
+          "/assets/images/projectGalleries/Shopify/Shopify-Themes/MacnicomTech/macnicom-contact.png",
+        alt: "Macnicom Tech contact page",
+        caption:
+          "Contact page with business details and a customer enquiry form.",
+      },
+      {
+        image:
+          "/assets/images/projectGalleries/Shopify/Shopify-Themes/MacnicomTech/macnicom-faq.png",
+        alt: "Macnicom Tech FAQ page",
+        caption:
+          "FAQ page organizing common questions about cartridges, refilling, compatibility, and support.",
+      },
+    ],
+
+    highlights: [
+      "Built a dynamic Brand → Series → Model Part Finder in the Shopify homepage hero section",
+      "Used Shopify collection hierarchy and metafield relationships to drive product discovery",
+      "Implemented hierarchy-based product filtering on collection pages",
+      "Customized guest storefront behavior to hide product prices and purchasing controls",
+      "Kept informative product details accessible to guest visitors",
+      "Required customer login for pricing and purchasing functionality",
+      "Customized homepage, collection, product, comparison, and informational storefront pages",
+      "* Completed as part of professional Shopify development. All rights reserved.",
+    ],
+  },
+
+  {
     id: "faqflow",
     tech: "shopify",
     featured: true,
@@ -952,8 +1111,7 @@ const projectsData = [
       {
         image: "/assets/images/projects/p2care-doctors.webp",
         alt: "Healthcare team image used on the P2Care website",
-        caption:
-          "Doctor team imagery used to support care-team presentation.",
+        caption: "Doctor team imagery used to support care-team presentation.",
       },
       {
         image: "/assets/images/projects/p2care-hospital.webp",
