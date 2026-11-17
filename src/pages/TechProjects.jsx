@@ -60,8 +60,8 @@ export default function TechProjects() {
     description: pageDescription,
     path: `/projects/${tech}`,
     image: isShopify
-      ? "/assets/images/shopify-banner.webp"
-      : "/assets/images/reactjs-banner.webp",
+      ? "/shopify-banner.webp"
+      : "/reactjs-banner.webp",
     keywords: [
       `${tech} projects`,
       "portfolio work",

@@ -167,7 +167,7 @@ export default function Home() {
                   alt="Uttam Marakana profile"
                   fetchPriority="high"
                   width="320"
-                  height="320"
+                  height="400"
                   className="aspect-4/5 w-full rounded-3xl object-cover"
                 />
               </div>

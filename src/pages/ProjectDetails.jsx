@@ -8,6 +8,7 @@ import { fetchReadme } from "../services/githubReadme";
 import ReadmeTOC from "../components/ReadmeTOC";
 import PageTransition from "../components/PageTransition";
 import BackButton from "../components/BackButton";
+import ProjectImage from "../components/ProjectImage";
 import usePageSeo from "../hooks/usePageSeo";
 import { getAbsoluteUrl } from "../lib/site";
 
@@ -35,13 +36,13 @@ export default function ProjectDetails() {
   );
   const galleryItems = project?.gallery?.length
     ? project.gallery
-    : [
-        {
-          image: project?.image,
-          alt: project?.title,
-          caption: project?.overview,
-        },
-      ];
+    : project?.image
+      ? [{
+          image: project.image,
+          alt: project.title,
+          caption: project.overview,
+        }]
+      : [];
 
   const pageSections = useMemo(() => {
     const baseSections = [
@@ -65,7 +66,7 @@ export default function ProjectDetails() {
       ? project.overview
       : "The requested project could not be found.",
     path: project ? `/projects/details/${project.id}` : "/projects",
-    image: project?.image || "/assets/images/portfolio.webp",
+    image: project?.image || "/portfolio.webp",
     type: "article",
     noIndex: !project,
     keywords: project
@@ -175,7 +176,7 @@ export default function ProjectDetails() {
                   </div>
 
                   <div className="project-media-stage aspect-16/11 overflow-hidden p-5 md:p-6 xl:p-7">
-                    <img
+                    <ProjectImage
                       src={project.image}
                       loading="eager"
                       decoding="async"
@@ -223,7 +224,7 @@ export default function ProjectDetails() {
                         className="premium-panel overflow-hidden"
                       >
                         <div className="project-media-stage aspect-4/3 border-b border-(--line-soft) px-4 py-4 md:px-5 md:py-5">
-                          <img
+                          <ProjectImage
                             src={item.image}
                             alt={item.alt}
                             loading="lazy"

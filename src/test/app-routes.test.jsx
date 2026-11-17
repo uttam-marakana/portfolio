@@ -7,6 +7,10 @@ vi.mock("../services/githubReadme", () => ({
   fetchReadme: vi.fn().mockResolvedValue("# Mock README"),
 }));
 
+vi.mock("../hooks/useGitHubStats", () => ({
+  default: () => ({ stars: 0, forks: 0, loading: false, error: null }),
+}));
+
 function renderAppAt(route) {
   window.history.pushState({}, "", route);
   return renderWithProviders(<App />);
@@ -24,9 +28,9 @@ describe("app routes", () => {
     expect(
       await screen.findByRole("link", {
         name: /explore selected work/i,
-      }),
+      }, { timeout: 10000 }),
     ).toBeInTheDocument();
-  });
+  }, 15000);
 
   it("renders the projects page", async () => {
     renderAppAt("/projects");

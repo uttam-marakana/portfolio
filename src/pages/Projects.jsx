@@ -22,7 +22,7 @@ const categoryCards = [
     ],
     icon: FaShopify,
     iconClassName: "text-3xl text-green-500",
-    image: "/assets/images/shopify-banner.webp",
+    image: "/shopify-banner.webp",
     edgeGradient:
       "linear-gradient(120deg, rgba(34,197,94,0.25), transparent 40%, transparent 60%, rgba(34,197,94,0.25))",
   },
@@ -38,7 +38,7 @@ const categoryCards = [
     ],
     icon: FaReact,
     iconClassName: "text-3xl text-cyan-400",
-    image: "/assets/images/reactjs-banner.webp",
+    image: "/reactjs-banner.webp",
     edgeGradient:
       "linear-gradient(120deg, rgba(56,189,248,0.25), transparent 40%, transparent 60%, rgba(56,189,248,0.25))",
   },
@@ -88,7 +88,7 @@ export default function Projects() {
     description:
       "Browse Shopify and React projects by Uttam Marakana, including storefront work, frontend applications, and performance-focused implementations.",
     path: "/projects",
-    image: "/assets/images/portfolio.webp",
+    image: "/portfolio.webp",
     keywords: [
       "Shopify projects",
       "React projects",

@@ -76,7 +76,7 @@ export default function Services() {
     description:
       "Shopify development, React frontend builds, UI cleanup, responsive fixes, and practical frontend support by Uttam Marakana.",
     path: "/services",
-    image: "/assets/images/portfolio.webp",
+    image: "/portfolio.webp",
     keywords: [
       "Shopify services",
       "React development services",

@@ -28,7 +28,7 @@ export default function Contact() {
     description:
       "Contact Uttam Marakana for Shopify development, React frontend work, ecommerce optimization, and freelance collaboration.",
     path: "/contact",
-    image: "/assets/images/portfolio.webp",
+    image: "/portfolio.webp",
     keywords: [
       "contact Shopify developer",
       "contact React developer",

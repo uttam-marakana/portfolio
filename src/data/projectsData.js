@@ -23,7 +23,7 @@ const projectsData = [
     impact:
       "The result is a more composed buying journey with cleaner browsing paths, better visual consistency, and a storefront that feels more deliberate overall.",
 
-    image: "/assets/images/alpine-selection.png",
+    image: "/assets/images/projects/alpine-selection.png",
 
     preview:
       "https://uttam-rootways.myshopify.com/?_ab=0&_bt=eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaUYxZEhSaGJTMXliMjkwZDJGNWN5NXRlWE5vYjNCcFpua3VZMjl0QmpvR1JWUT0iLCJleHAiOiIyMDI2LTEwLTAxVDEyOjQ4OjAzLjUwMloiLCJwdXIiOiJwZXJtYW5lbnRfcGFzc3dvcmRfYnlwYXNzIn19--d62477d235e48dec78dd4d3c9abfde07de78e37c&_fd=0&_sc=1&key=d07859344014a8d3c39e493c1a186f07660253c3395d4d47e5401c0458f8ec50&preview_theme_id=146115854507",
@@ -126,7 +126,7 @@ const projectsData = [
     impact:
       "The storefront feels easier to scan and more trustworthy to shop through, with clearer structure and less visual drift between pages.",
 
-    image: "/assets/images/catalan-gourmet.png",
+    image: "/assets/images/projects/catalan-gourmet.png",
 
     preview:
       "https://dev-calatan-gourmet.myshopify.com/?_ab=0&_bt=eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJaVprWlhZdFkyRnNZWFJoYmkxbmIzVnliV1YwTG0xNWMyaHZjR2xtZVM1amIyMEdPZ1pGVkE9PSIsImV4cCI6IjIwMjYtMTAtMDFUMTA6NDY6MzQuMjQ0WiIsInB1ciI6InBlcm1hbmVudF9wYXNzd29yZF9ieXBhc3MifX0%3D--7e1fe0ff6823d7526fa9f18957c6533a178dce2f&_fd=0&_sc=1&key=9a33b73de817a1d4a68eec1d532da8383a5c51bcbbfe692441d0758cde323421&preview_theme_id=159364808901",
@@ -229,7 +229,7 @@ const projectsData = [
     impact:
       "The store launched with a customized, responsive storefront, integrated third-party tools, and well-structured content that supports a clear shopping experience across devices.",
 
-    image: "/assets/images/twoFlagsOneHeart.png",
+    image: "/assets/images/projects/twoFlagsOneHeart.png",
 
     preview: "https://twoflagsoneheart.com/",
 
@@ -349,7 +349,7 @@ const projectsData = [
     impact:
       "The completed storefront delivers a more polished and engaging customer journey through reusable content architecture, improved merchandising, enhanced informational pages, and responsive layouts. The customized structure allows the client to manage content more efficiently while maintaining a consistent luxury brand experience across the entire website.",
 
-    image: "/assets/images/arnik-jewellers.png",
+    image: "/assets/images/projects/arnik-jewellers.png",
 
     preview: "https://www.arnikjewellers.com",
 
@@ -493,7 +493,7 @@ const projectsData = [
     impact:
       "The project is being structured to provide a clearer and more scalable shopping experience for a large hardware and tools catalogue, with stronger category organization, improved product discovery, responsive presentation, and a storefront structure that can support continued merchandising and content growth.",
 
-    image: "/assets/images/chTools.png",
+    image: "/assets/images/projects/chTools.png",
 
     // preview: "https://www.chtools.ca/",
 
@@ -621,7 +621,7 @@ const projectsData = [
     impact:
       "FAQFlow provides a more structured approach to Shopify FAQ management by moving content administration into a dedicated app interface while keeping storefront presentation flexible through reusable theme blocks and configurable FAQ sections.",
 
-    image: "/assets/images/faqFlow.png",
+    image: "/assets/images/projects/faqFlow.png",
 
     github: "https://github.com/uttam-marakana/faq-flow",
 
@@ -686,37 +686,6 @@ const projectsData = [
       "A scalable foundation for future FAQ features, analytics, search, and merchant tooling.",
     ],
 
-    gallery: [
-      {
-        image:
-          "/assets/images/projectGalleries/Shopify/Shopify-Apps/FAQFlow/FAQFlow-Home.png",
-        alt: "FAQFlow Shopify app home",
-        caption:
-          "Embedded Shopify app home presenting FAQ management and publishing workflows.",
-      },
-      {
-        image:
-          "/assets/images/projectGalleries/Shopify/Shopify-Apps/FAQFlow/FAQFlow-Navigation-Page.png",
-        alt: "FAQFlow navigation page",
-        caption:
-          "A navigation-selected FAQ management page for organizing merchant-side FAQ content.",
-      },
-      {
-        image:
-          "/assets/images/projectGalleries/Shopify/Shopify-Apps/FAQFlow/FAQFlow-Navigation-Page-Admin-Form.png",
-        alt: "FAQFlow admin form",
-        caption:
-          "FAQ management form used to create or edit FAQ and category content inside the app.",
-      },
-      {
-        image:
-          "/assets/images/projectGalleries/Shopify/Shopify-Apps/FAQFlow/FAQFlow-Theme-Editor-Extension.png",
-        alt: "FAQFlow theme editor extension",
-        caption:
-          "Shopify theme editor showing the FAQFlow Theme App Extension block and schema settings.",
-      },
-    ],
-
     highlights: [
       "Built a custom embedded Shopify app for FAQ management",
       "Implemented complete FAQ and category CRUD operations",
@@ -748,7 +717,7 @@ const projectsData = [
       "I developed a multi-page React application with product listing and detail pages, size and price filters, a custom-size calculator, WhatsApp enquiry links, dealer enquiry forms, and an administrative area for managing products, enquiries, FAQs, and Instagram content.",
     impact:
       "The implementation provides a structured product showcase and enquiry workflow, with a dedicated administrative interface and SEO support. Measured sales growth, traffic improvements, and conversion results have not been established from the available source code.",
-    image: "/assets/images/swashine-glowbox.webp",
+    image: null,
     github: "uttam-marakana/swashine-glowbox",
     preview: "https://swashine.com/",
     stack: [
@@ -801,14 +770,6 @@ const projectsData = [
       "A modular React codebase with environment-based Firebase configuration",
       "SEO implementation supporting page-specific metadata and structured data",
     ],
-    gallery: [
-      {
-        image: "/assets/images/swashine-glowbox.webp",
-        alt: "Swashine Glowbox website overview",
-        caption:
-          "Product-focused website for presenting LED glowboxes and custom illuminated display solutions.",
-      },
-    ],
     highlights: [
       "Custom-size calculator with area-based price estimation",
       "Product catalogue with size and price filters",
@@ -845,7 +806,7 @@ const projectsData = [
     impact:
       "The project demonstrates stronger state handling, persistent note management, and a more product-style approach than a simple CRUD example.",
 
-    image: "/assets/images/multi-note-app.png",
+    image: "/assets/images/projects/multi-note-app.webp",
 
     github: "uttam-marakana/multi-notes-app",
 
@@ -948,7 +909,7 @@ const projectsData = [
     impact:
       "The project shows stronger component discipline and a clearer service-platform presentation than a static marketing site.",
 
-    image: "/assets/images/p2care.png",
+    image: "/assets/images/projects/p2care.webp",
 
     github: "uttam-marakana/p2care",
 
@@ -989,39 +950,16 @@ const projectsData = [
 
     gallery: [
       {
-        image:
-          "/assets/images/projectGalleries/ReactJS/ReactJs-Website/P2CareWebsite/P2CareWebsite-Home.png",
-        alt: "P2Care homepage",
+        image: "/assets/images/projects/p2care-doctors.webp",
+        alt: "Healthcare team image used on the P2Care website",
         caption:
-          "Healthcare platform homepage presenting services and primary patient-facing actions.",
+          "Doctor team imagery used to support care-team presentation.",
       },
       {
-        image:
-          "/assets/images/projectGalleries/ReactJS/ReactJs-Website/P2CareWebsite/P2CareWebsite-Services.png",
-        alt: "P2Care services page",
+        image: "/assets/images/projects/p2care-hospital.webp",
+        alt: "Hospital building image used on the P2Care website",
         caption:
-          "Service-oriented page structure designed for clear healthcare information discovery.",
-      },
-      {
-        image:
-          "/assets/images/projectGalleries/ReactJS/ReactJs-Website/P2CareWebsite/P2CareWebsite-Appointments.png",
-        alt: "P2Care appointments page",
-        caption:
-          "Appointment-oriented workflow surface prepared for healthcare service interactions.",
-      },
-      {
-        image:
-          "/assets/images/projectGalleries/ReactJS/ReactJs-Website/P2CareWebsite/P2CareWebsite-Doctors.png",
-        alt: "P2Care doctors page",
-        caption:
-          "Doctor and care-team presentation within the reusable React page architecture.",
-      },
-      {
-        image:
-          "/assets/images/projectGalleries/ReactJS/ReactJs-Website/P2CareWebsite/P2CareWebsite-Responsive.png",
-        alt: "P2Care responsive interface",
-        caption:
-          "Responsive healthcare interface structured for desktop, tablet, and mobile layouts.",
+          "Hospital imagery used to support the healthcare service experience.",
       },
     ],
 
@@ -1057,7 +995,7 @@ const projectsData = [
     impact:
       "The result is a more production-oriented React system that demonstrates admin/public separation, serverless platform architecture, and healthcare-specific workflow thinking.",
 
-    image: "/assets/images/dhatru_care.png",
+    image: "/assets/images/projects/dhatru_care.webp",
 
     github: "uttam-marakana/dhatru-care",
 
@@ -1168,7 +1106,7 @@ const projectsData = [
     impact:
       "The result feels closer to a serious trading control layer than a generic dashboard demo, showing stronger product thinking around discipline, decision support, and measurable execution quality.",
 
-    image: "/assets/images/tradeos.png",
+    image: "/assets/images/projects/tradeos.webp",
 
     // github: "uttam-marakana/trading-dashboard",
 
@@ -1210,44 +1148,6 @@ const projectsData = [
       "A trading interface that emphasizes decision quality, rule enforcement, and operator discipline",
     ],
 
-    gallery: [
-      {
-        image:
-          "/assets/images/projectGalleries/ReactJS/ReactJs-Website/TradeOSDashboard/TradeOSDashboard-Home.png",
-        alt: "TradeOS dashboard overview",
-        caption:
-          "Execution-focused dashboard bringing trading controls, summaries, and decision support together.",
-      },
-      {
-        image:
-          "/assets/images/projectGalleries/ReactJS/ReactJs-Website/TradeOSDashboard/TradeOSDashboard-PreTrade.png",
-        alt: "TradeOS pre-trade analysis",
-        caption:
-          "Pre-trade analysis surface for evaluating setup quality and execution conditions.",
-      },
-      {
-        image:
-          "/assets/images/projectGalleries/ReactJS/ReactJs-Website/TradeOSDashboard/TradeOSDashboard-RiskValidation.png",
-        alt: "TradeOS risk validation",
-        caption:
-          "Risk and discipline validation workflow designed to enforce trading rules before entry.",
-      },
-      {
-        image:
-          "/assets/images/projectGalleries/ReactJS/ReactJs-Website/TradeOSDashboard/TradeOSDashboard-Analytics.png",
-        alt: "TradeOS analytics dashboard",
-        caption:
-          "Analytics and charting surface for reviewing execution and performance data.",
-      },
-      {
-        image:
-          "/assets/images/projectGalleries/ReactJS/ReactJs-Website/TradeOSDashboard/TradeOSDashboard-Behavior.png",
-        alt: "TradeOS behavioral analytics",
-        caption:
-          "Behavioral analysis surface highlighting repeated patterns and trading discipline signals.",
-      },
-    ],
-
     highlights: [
       "Pre-trade intelligence with risk, R:R, net PnL, and break-even preview",
       "Execution engine that can block invalid or high-risk trades before entry",
@@ -1280,7 +1180,7 @@ const projectsData = [
     impact:
       "The portfolio now works as both a project catalogue and a signal of frontend judgment, not just a static personal page.",
 
-    image: "/assets/images/portfolio.png",
+    image: "/portfolio.webp",
 
     github: "uttam-marakana/portfolio",
 
@@ -1331,7 +1231,7 @@ const projectsData = [
       },
       {
         image:
-          "/assets/images/projectGalleries/ReactJS/ReactJs-Website/Portfolio/Portfolio-Projects.png",
+          "/assets/images/projectGalleries/ReactJS/ReactJs-Website/Portfolio/Portfolio-Projects-Dashboard.png",
         alt: "Portfolio projects page",
         caption:
           "Project catalogue presenting work through a structured, data-driven case-study system.",

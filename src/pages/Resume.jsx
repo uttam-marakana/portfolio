@@ -159,6 +159,8 @@ export default function Resume() {
                   <img
                     src={profileImage}
                     alt="Uttam Marakana portrait"
+                    width="320"
+                    height="400"
                     className="aspect-4/5 w-full rounded-3xl object-cover"
                   />
                 </div>
