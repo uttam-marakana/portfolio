@@ -10,7 +10,7 @@ import PageTransition from "../components/PageTransition";
 import BackButton from "../components/BackButton";
 import ProjectImage from "../components/ProjectImage";
 import usePageSeo from "../hooks/usePageSeo";
-import { getAbsoluteUrl } from "../lib/site";
+import { getAbsoluteUrl, getProjectDetailsPath } from "../lib/site";
 
 function slugifyHeading(value) {
   return value
@@ -65,7 +65,7 @@ export default function ProjectDetails() {
     description: project
       ? project.overview
       : "The requested project could not be found.",
-    path: project ? `/projects/details/${project.id}` : "/projects",
+    path: project ? getProjectDetailsPath(project.id) : "/projects",
     image: project?.image || "/portfolio.webp",
     type: "article",
     noIndex: !project,
@@ -85,7 +85,7 @@ export default function ProjectDetails() {
           name: project.title,
           description: project.overview,
           image: getAbsoluteUrl(project.image),
-          url: getAbsoluteUrl(`/projects/details/${project.id}`),
+          url: getAbsoluteUrl(getProjectDetailsPath(project.id)),
           about: [...project.highlights, ...(project.results ?? [])],
           sameAs: project.github
             ? [`https://github.com/${project.github}`]

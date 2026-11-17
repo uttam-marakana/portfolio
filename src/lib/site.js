@@ -19,3 +19,7 @@ export function getAbsoluteUrl(path = "/") {
 
   return new URL(path, origin).toString();
 }
+
+export function getProjectDetailsPath(projectId) {
+  return `/projects/${encodeURIComponent(projectId)}/details`;
+}

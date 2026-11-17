@@ -41,7 +41,7 @@ This allows the Vite SPA to receive client-side routes such as:
 /about
 /projects
 /projects/shopify
-/projects/details/arnik-jewellers
+/projects/arnik-jewellers/details
 /contact
 ```
 

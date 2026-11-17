@@ -1,7 +1,14 @@
 import { Suspense, lazy } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter,
+  Navigate,
+  Routes,
+  Route,
+  useParams,
+} from "react-router-dom";
 import { Analytics } from "@vercel/analytics/react";
 import ScrollToTop from "./components/ScrollToTop";
+import { getProjectDetailsPath } from "./lib/site";
 
 const Navbar = lazy(() => import("./components/Navbar"));
 const Footer = lazy(() => import("./components/Footer"));
@@ -23,6 +30,17 @@ function PageLoader() {
     <div className="min-h-[60vh] flex items-center justify-center">
       <div className="w-8 h-8 rounded-full border-2 border-(--brand-2) border-t-transparent animate-spin"></div>
     </div>
+  );
+}
+
+function LegacyProjectDetailsRedirect() {
+  const { id } = useParams();
+
+  return (
+    <Navigate
+      to={id ? getProjectDetailsPath(id) : "/projects"}
+      replace
+    />
   );
 }
 
@@ -52,11 +70,15 @@ export default function App() {
               <Route path="/services" element={<Services />} />
               <Route path="/resume" element={<Resume />} />
               <Route path="/projects" element={<Projects />} />
-              <Route path="/projects/:tech" element={<TechProjects />} />
               <Route
                 path="/projects/details/:id"
+                element={<LegacyProjectDetailsRedirect />}
+              />
+              <Route
+                path="/projects/:id/details"
                 element={<ProjectDetails />}
               />
+              <Route path="/projects/:tech" element={<TechProjects />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="*" element={<NotFound />} />

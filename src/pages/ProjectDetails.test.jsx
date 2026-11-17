@@ -16,9 +16,9 @@ describe("ProjectDetails README fallback", () => {
   it("renders the fetch-layer README fallback text when the repository readme is unavailable", async () => {
     renderWithProvidersAndRouter(
       <Routes>
-        <Route path="/projects/details/:id" element={<ProjectDetails />} />
+        <Route path="/projects/:id/details" element={<ProjectDetails />} />
       </Routes>,
-      { route: "/projects/details/dhatru-care" },
+      { route: "/projects/dhatru-care/details" },
     );
 
     expect(

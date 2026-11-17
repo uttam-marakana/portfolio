@@ -7,7 +7,7 @@ import BackButton from "../components/BackButton";
 import projectsData from "../data/projectsData";
 import { SearchContext } from "../context/search-context";
 import usePageSeo from "../hooks/usePageSeo";
-import { getAbsoluteUrl } from "../lib/site";
+import { getAbsoluteUrl, getProjectDetailsPath } from "../lib/site";
 
 const categoryCards = [
   {
@@ -103,7 +103,7 @@ export default function Projects() {
       hasPart: filteredProjects.map((project) => ({
         "@type": "CreativeWork",
         name: project.title,
-        url: getAbsoluteUrl(`/projects/details/${project.id}`),
+        url: getAbsoluteUrl(getProjectDetailsPath(project.id)),
       })),
     },
   });

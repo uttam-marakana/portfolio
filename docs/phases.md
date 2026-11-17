@@ -56,7 +56,7 @@ Implemented route-driven portfolio navigation:
  /resume
  /projects
  /projects/:tech
- /projects/details/:id
+ /projects/:id/details
  /contact
  /*
 ```

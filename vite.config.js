@@ -3,11 +3,14 @@ import { defineConfig, loadEnv } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import projectsData from "./src/data/projectsData.js";
+import { getProjectDetailsPath } from "./src/lib/site.js";
 
 function generateSeoFiles(siteUrl) {
   const staticRoutes = ["/", "/about", "/services", "/resume", "/projects", "/contact"];
   const techRoutes = [...new Set(projectsData.map((project) => `/projects/${project.tech}`))];
-  const projectRoutes = projectsData.map((project) => `/projects/details/${project.id}`);
+  const projectRoutes = projectsData.map((project) =>
+    getProjectDetailsPath(project.id),
+  );
   const routes = [...new Set([...staticRoutes, ...techRoutes, ...projectRoutes])];
 
   return {

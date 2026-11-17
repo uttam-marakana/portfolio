@@ -7,7 +7,7 @@ import PageTransition from "../components/PageTransition";
 import BackButton from "../components/BackButton";
 import { SearchContext } from "../context/search-context";
 import usePageSeo from "../hooks/usePageSeo";
-import { getAbsoluteUrl } from "../lib/site";
+import { getAbsoluteUrl, getProjectDetailsPath } from "../lib/site";
 
 function matchesProject(project, searchTerm) {
   if (!searchTerm) return true;
@@ -76,7 +76,7 @@ export default function TechProjects() {
       hasPart: filteredProjects.map((project) => ({
         "@type": "CreativeWork",
         name: project.title,
-        url: getAbsoluteUrl(`/projects/details/${project.id}`),
+        url: getAbsoluteUrl(getProjectDetailsPath(project.id)),
       })),
     },
   });

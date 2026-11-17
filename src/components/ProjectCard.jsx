@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import CountUp from "react-countup";
 import useGitHubStats from "../hooks/useGitHubStats";
 import ProjectImage from "./ProjectImage";
+import { getProjectDetailsPath } from "../lib/site";
 
 export default function ProjectCard({ project }) {
   const { stars, forks, loading, error } = useGitHubStats(project.github);
@@ -14,7 +15,7 @@ export default function ProjectCard({ project }) {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
     >
-      <Link to={`/projects/details/${project.id}`} className="block h-full">
+      <Link to={getProjectDetailsPath(project.id)} className="block h-full">
         <article className="premium-panel group flex h-full flex-col overflow-hidden">
           <div className="relative border-b border-(--line-soft)">
             <div className="project-media-stage aspect-16/10 overflow-hidden px-4 pt-4 pb-3 md:px-5 md:pt-5 md:pb-4">

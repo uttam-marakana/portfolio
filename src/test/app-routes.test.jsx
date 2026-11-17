@@ -43,6 +43,15 @@ describe("app routes", () => {
     expect(await screen.findByText(/project library/i)).toBeInTheDocument();
   });
 
+  it("redirects legacy project URLs to the canonical project route", async () => {
+    renderAppAt("/projects/details/dhatru-care");
+
+    expect(
+      await screen.findByRole("heading", { name: /dhatru care platform/i }),
+    ).toBeInTheDocument();
+    expect(window.location.pathname).toBe("/projects/dhatru-care/details");
+  });
+
   it("renders the services page", async () => {
     renderAppAt("/services");
 

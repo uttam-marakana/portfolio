@@ -43,7 +43,8 @@ The application is structured as a data-driven portfolio system rather than a co
 - `/resume` — resume presentation/download flow
 - `/projects` — complete project catalogue
 - `/projects/:tech` — Shopify or React project catalogue
-- `/projects/details/:id` — project case study
+- `/projects/:id/details` — project case study
+- `/projects/details/:id` — legacy project URL, redirected to the canonical route
 - `/contact` — contact form
 - `*` — 404 page
 

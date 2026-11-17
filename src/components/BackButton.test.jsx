@@ -10,7 +10,7 @@ vi.mock("react-router-dom", async () => {
   return {
     ...actual,
     useNavigate: () => navigateMock,
-    useLocation: () => ({ pathname: "/projects/details/alpine-selection" }),
+    useLocation: () => ({ pathname: "/projects/alpine-selection/details" }),
   };
 });
 
@@ -20,7 +20,7 @@ describe("BackButton", () => {
   });
 
   it("navigates back when browser history is available", () => {
-    window.history.replaceState({ idx: 1 }, "", "/projects/details/alpine-selection");
+    window.history.replaceState({ idx: 1 }, "", "/projects/alpine-selection/details");
     render(<BackButton fallback="/projects" />);
 
     fireEvent.click(screen.getByRole("button", { name: /back to previous page/i }));
@@ -29,7 +29,7 @@ describe("BackButton", () => {
   });
 
   it("falls back to the provided route when there is no in-app history", () => {
-    window.history.replaceState({ idx: 0 }, "", "/projects/details/alpine-selection");
+    window.history.replaceState({ idx: 0 }, "", "/projects/alpine-selection/details");
     render(<BackButton fallback="/projects" />);
 
     fireEvent.click(screen.getByRole("button", { name: /back to previous page/i }));

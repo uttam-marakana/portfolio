@@ -132,14 +132,15 @@ React Router defines:
 ├── /resume
 ├── /projects
 │   └── /projects/:tech
-│       └── /projects/details/:id
+│       └── /projects/:id/details
 ├── /contact
 └── *
 ```
 
 `/projects/:tech` is data-driven and currently represents the Shopify and React tracks.
 
-`/projects/details/:id` resolves a project from `projectsData.js`.
+`/projects/:id/details` resolves a project from `projectsData.js`. The previous
+`/projects/details/:id` route redirects to the canonical project URL.
 
 Unknown project IDs render the project-not-found state and set the page to `noindex`.
 
