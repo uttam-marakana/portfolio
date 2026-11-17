@@ -11,6 +11,10 @@ vi.mock("../services/githubReadme", () => ({
   fetchReadme: vi.fn().mockResolvedValue("# Mock README"),
 }));
 
+vi.mock("../hooks/useGitHubStats", () => ({
+  default: () => ({ stars: 0, forks: 0, loading: false, error: null }),
+}));
+
 describe("Navbar integrations", () => {
   beforeEach(() => {
     localStorage.clear();

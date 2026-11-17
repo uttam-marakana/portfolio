@@ -64,6 +64,8 @@ export default function Footer() {
                 <img
                   src={mainLogo}
                   alt="Uttam Marakana Logo"
+                  width="48"
+                  height="48"
                   className="h-12 w-12 rounded-2xl border border-(--line-soft) bg-white/8 p-2"
                 />
 
@@ -139,4 +141,3 @@ export default function Footer() {
     </motion.footer>
   );
 }
-

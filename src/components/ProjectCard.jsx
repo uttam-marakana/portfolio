@@ -2,9 +2,10 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import CountUp from "react-countup";
 import useGitHubStats from "../hooks/useGitHubStats";
+import ProjectImage from "./ProjectImage";
 
 export default function ProjectCard({ project }) {
-  const { stars, forks, loading } = useGitHubStats(project.github);
+  const { stars, forks, loading, error } = useGitHubStats(project.github);
   const techCount = project.stack?.length || 0;
 
   return (
@@ -17,7 +18,7 @@ export default function ProjectCard({ project }) {
         <article className="premium-panel group flex h-full flex-col overflow-hidden">
           <div className="relative border-b border-(--line-soft)">
             <div className="project-media-stage aspect-16/10 overflow-hidden px-4 pt-4 pb-3 md:px-5 md:pt-5 md:pb-4">
-              <img
+              <ProjectImage
                 src={project.image}
                 alt={project.title}
                 loading="lazy"
@@ -28,11 +29,14 @@ export default function ProjectCard({ project }) {
             <div className="absolute inset-x-0 bottom-0 h-20 bg-linear-to-t from-[rgba(10,12,14,0.76)] via-[rgba(10,12,14,0.28)] to-transparent" />
             <div className="absolute left-4 top-4 inline-flex items-center gap-2 rounded-full border border-white/15 bg-black/35 px-3 py-1 text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-white/80 backdrop-blur">
               <CountUp start={0} end={techCount} duration={2} />
-              {project.github && !loading && (
+              {project.github && !loading && !error && (
                 <span className="flex items-center gap-1">
                   <span>★{stars}</span>
                   <span>⑂{forks}</span>
                 </span>
+              )}
+              {project.github && !loading && error && (
+                <span>GitHub stats unavailable</span>
               )}
             </div>
           </div>

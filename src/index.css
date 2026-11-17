@@ -142,6 +142,10 @@ body {
   font-family: var(--font-body);
 }
 
+img {
+  max-width: 100%;
+}
+
 /* Global interactive element transitions */
 a,
 button,
@@ -394,6 +398,8 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  min-width: 0;
   border-radius: 1.75rem;
   border: 1px solid rgba(255, 255, 255, 0.08);
   background:
@@ -408,8 +414,20 @@ textarea {
 .project-media-image {
   width: 100%;
   height: 100%;
+  max-width: 100%;
   object-fit: contain;
   object-position: center;
+}
+
+.project-media-fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  padding: 1.5rem;
+  color: var(--text-2);
+  text-align: center;
+  overflow-wrap: anywhere;
 }
 
 /* Rich text container */
