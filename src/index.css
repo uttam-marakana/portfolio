@@ -192,9 +192,13 @@ textarea {
 /* Responsive page container */
 .page-shell {
   width: calc(100% - 2rem);
-  max-width: 1400px;
+  max-width: 88rem;
   min-width: 0;
   margin-inline: auto;
+}
+
+main {
+  min-width: 0;
 }
 
 /* Shared glass section frame */
@@ -462,10 +466,6 @@ textarea {
     transform: none !important;
   }
 
-  .page-shell {
-    width: calc(100% - 1rem);
-  }
-
   .premium-button {
     width: 100%;
   }
@@ -493,10 +493,6 @@ textarea {
 }
 
 @media (max-width: 359px) {
-  .page-shell {
-    width: calc(100% - 0.75rem);
-  }
-
   .premium-panel {
     border-radius: 1.5rem;
   }

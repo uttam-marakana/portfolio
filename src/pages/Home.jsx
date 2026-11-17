@@ -129,7 +129,7 @@ export default function Home() {
 
   return (
     <PageTransition>
-      <section className="px-3 pt-6">
+      <section className="pt-6">
         <div className="page-shell premium-panel overflow-hidden px-6 py-8 md:px-10 md:py-12">
           <div className="grid items-center gap-10 lg:grid-cols-[1.15fr_0.85fr]">
             <div>
@@ -222,7 +222,7 @@ export default function Home() {
 
       <section
         ref={(el) => (sectionsRef.current[0] = el)}
-        className={`px-3 pt-8 ${revealClass}`}
+        className={`pt-8 ${revealClass}`}
       >
         <div className="page-shell premium-panel px-6 py-8 md:px-10 md:py-10">
           <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
@@ -248,7 +248,7 @@ export default function Home() {
 
       <section
         ref={(el) => (sectionsRef.current[1] = el)}
-        className={`px-3 pt-8 ${revealClass}`}
+        className={`pt-8 ${revealClass}`}
       >
         <div className="page-shell">
           <div className="grid gap-8 lg:grid-cols-[0.78fr_1.22fr]">
@@ -285,7 +285,7 @@ export default function Home() {
 
       <section
         ref={(el) => (sectionsRef.current[2] = el)}
-        className={`px-3 pt-8 ${revealClass}`}
+        className={`pt-8 ${revealClass}`}
       >
         <div className="page-shell premium-panel px-6 py-8 md:px-10">
           <span className="eyebrow">Approach</span>
@@ -317,7 +317,7 @@ export default function Home() {
 
       <section
         ref={(el) => (sectionsRef.current[3] = el)}
-        className={`px-3 py-8 ${revealClass}`}
+        className={`py-8 ${revealClass}`}
       >
         <div className="page-shell premium-panel px-6 py-10 md:px-10 md:py-12">
           <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-end">

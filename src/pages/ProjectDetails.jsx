@@ -123,7 +123,7 @@ export default function ProjectDetails() {
 
   return (
     <PageTransition>
-      <section className="px-3 pt-6 pb-8">
+      <section className="pt-6 pb-8">
         <div className="page-shell">
           <div className="space-y-6 xl:grid xl:grid-cols-[minmax(0,1fr)] xl:gap-8 xl:space-y-0">
             <div className="space-y-6">

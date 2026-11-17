@@ -83,7 +83,7 @@ export default function TechProjects() {
 
   return (
     <PageTransition>
-      <section className="px-3 pt-6 pb-8">
+      <section className="pt-6 pb-8">
         <div className="page-shell space-y-8">
           <BackButton fallback="/projects" />
 

@@ -13,7 +13,7 @@ export default function NotFound() {
 
   return (
     <PageTransition>
-      <section className="px-3 py-10">
+      <section className="py-10">
         <div className="page-shell space-y-8">
           <BackButton fallback="/" />
 
