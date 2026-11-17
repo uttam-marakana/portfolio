@@ -98,8 +98,8 @@ export default function Home() {
   /* ================= SCROLL REVEAL ================= */
   useEffect(() => {
     const revealSection = (section) => {
-      section.classList.remove("opacity-0", "translate-y-10");
-      section.classList.add("opacity-100", "translate-y-0");
+      section.classList.remove("translate-y-10");
+      section.classList.add("translate-y-0");
     };
 
     if (!("IntersectionObserver" in window)) {
@@ -125,7 +125,7 @@ export default function Home() {
   }, []);
 
   const revealClass =
-    "home-reveal opacity-0 translate-y-10 transition-all duration-700 ease-out";
+    "home-reveal translate-y-10 transition-all duration-700 ease-out";
 
   return (
     <PageTransition>
