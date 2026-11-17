@@ -97,16 +97,26 @@ export default function Home() {
 
   /* ================= SCROLL REVEAL ================= */
   useEffect(() => {
+    const revealSection = (section) => {
+      section.classList.remove("opacity-0", "translate-y-10");
+      section.classList.add("opacity-100", "translate-y-0");
+    };
+
+    if (!("IntersectionObserver" in window)) {
+      sectionsRef.current.forEach((section) => section && revealSection(section));
+      return undefined;
+    }
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.remove("opacity-0", "translate-y-10");
-            entry.target.classList.add("opacity-100", "translate-y-0");
+            revealSection(entry.target);
+            observer.unobserve(entry.target);
           }
         });
       },
-      { threshold: 0.15 },
+      { threshold: 0, rootMargin: "0px 0px -8% 0px" },
     );
 
     sectionsRef.current.forEach((el) => el && observer.observe(el));
@@ -115,7 +125,7 @@ export default function Home() {
   }, []);
 
   const revealClass =
-    "opacity-0 translate-y-10 transition-all duration-700 ease-out";
+    "home-reveal opacity-0 translate-y-10 transition-all duration-700 ease-out";
 
   return (
     <PageTransition>

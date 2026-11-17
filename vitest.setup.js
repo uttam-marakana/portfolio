@@ -22,7 +22,13 @@ Object.defineProperty(window, "matchMedia", {
 window.scrollTo = vi.fn();
 
 class MockIntersectionObserver {
-  observe = vi.fn();
+  constructor(callback) {
+    this.callback = callback;
+  }
+
+  observe = vi.fn((target) => {
+    this.callback([{ target, isIntersecting: true }]);
+  });
   unobserve = vi.fn();
   disconnect = vi.fn();
 }

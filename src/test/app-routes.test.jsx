@@ -30,6 +30,11 @@ describe("app routes", () => {
         name: /explore selected work/i,
       }, { timeout: 10000 }),
     ).toBeInTheDocument();
+
+    const selectedWorkHeading = screen.getByRole("heading", {
+      name: /projects with stronger structure and cleaner delivery/i,
+    });
+    expect(selectedWorkHeading.closest("section")).not.toHaveClass("opacity-0");
   }, 15000);
 
   it("renders the projects page", async () => {

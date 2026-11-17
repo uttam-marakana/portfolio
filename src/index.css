@@ -85,9 +85,11 @@
 
   --line-soft: rgba(38, 27, 20, 0.1);
 
-  --brand-1: #ba5b31;
+  --brand-1: #a74625;
   --brand-2: #215d67;
   --brand-3: #dbc49a;
+  --brand-button-end: #903b20;
+  --button-text: #fff8f1;
 
   --shadow-soft: 0 24px 70px rgba(28, 20, 12, 0.12);
 }
@@ -106,6 +108,8 @@
   --brand-1: #ff8d57;
   --brand-2: #78d6d0;
   --brand-3: #f3d5a1;
+  --brand-button-end: #f3d5a1;
+  --button-text: #16110d;
 
   --shadow-soft: 0 24px 70px rgba(0, 0, 0, 0.4);
 }
@@ -189,6 +193,7 @@ textarea {
 .page-shell {
   width: calc(100% - 2rem);
   max-width: 1400px;
+  min-width: 0;
   margin-inline: auto;
 }
 
@@ -229,17 +234,19 @@ textarea {
 /* Large display heading */
 .display-title {
   font-family: var(--font-display);
-  font-size: clamp(3rem, 7vw, 6.2rem);
+  font-size: clamp(2.25rem, 5vw + 1rem, 6.2rem);
   line-height: 0.95;
   letter-spacing: -0.04em;
+  overflow-wrap: anywhere;
 }
 
 /* Section heading */
 .section-title {
   font-family: var(--font-display);
-  font-size: clamp(2.05rem, 4vw, 3.25rem);
+  font-size: clamp(1.75rem, 3vw + 0.65rem, 3.25rem);
   line-height: 1;
   letter-spacing: -0.04em;
+  overflow-wrap: anywhere;
 }
 
 /* Section descriptive text */
@@ -265,8 +272,8 @@ textarea {
 
 /* Solid button */
 .premium-button--solid {
-  background: linear-gradient(135deg, var(--brand-1), #e2a158);
-  color: #fff8f1;
+  background: linear-gradient(135deg, var(--brand-1), var(--brand-button-end));
+  color: var(--button-text);
   box-shadow: 0 16px 35px rgba(186, 91, 49, 0.25);
 }
 
@@ -366,6 +373,7 @@ textarea {
 .premium-panel {
   position: relative;
   overflow: hidden;
+  min-width: 0;
   border-radius: 2rem;
   border: 1px solid var(--line-soft);
   background: var(--surface-2);
@@ -449,8 +457,13 @@ textarea {
 
 /* Mobile responsive styles */
 @media (max-width: 767px) {
+  .home-reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
   .page-shell {
-    width: calc(100% - 1.25rem);
+    width: calc(100% - 1rem);
   }
 
   .premium-button {
@@ -461,6 +474,35 @@ textarea {
     max-width: 100%;
     justify-content: center;
     text-align: center;
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    overflow-wrap: anywhere;
+  }
+
+  .display-title {
+    line-height: 1;
+  }
+
+  .section-title {
+    line-height: 1.08;
+  }
+
+  .metric-card {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 359px) {
+  .page-shell {
+    width: calc(100% - 0.75rem);
+  }
+
+  .premium-panel {
+    border-radius: 1.5rem;
+  }
+
+  .display-title {
+    font-size: clamp(2rem, 10vw, 2.25rem);
   }
 }
 
